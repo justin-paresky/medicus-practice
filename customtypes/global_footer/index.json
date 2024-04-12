@@ -1,0 +1,45 @@
+{
+  "format": "custom",
+  "id": "global_footer",
+  "label": "Global Footer",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "copywrite": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Copywrite",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,strong,em,hyperlink,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "links": {
+        "type": "Group",
+        "config": {
+          "label": "Links",
+          "repeat": true,
+          "fields": {
+            "button": {
+              "type": "Link",
+              "config": {
+                "label": "Button",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "footerPopup": {
+        "type": "Link",
+        "config": {
+          "label": "Footer Popup",
+          "placeholder": "",
+          "select": null
+        }
+      }
+    }
+  }
+}

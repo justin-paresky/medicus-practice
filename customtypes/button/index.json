@@ -1,0 +1,66 @@
+{
+  "format": "custom",
+  "id": "button",
+  "label": "Button",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "icon": {
+        "type": "Image",
+        "config": {
+          "label": "Icon",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "iconPosition": {
+        "type": "Select",
+        "config": {
+          "label": "Icon Position",
+          "placeholder": "",
+          "options": ["left", "right"],
+          "default_value": "left"
+        }
+      },
+      "link": {
+        "type": "Link",
+        "config": {
+          "label": "Link",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "select": null
+        }
+      },
+      "label": {
+        "type": "Text",
+        "config": {
+          "label": "Label",
+          "placeholder": ""
+        }
+      },
+      "variation": {
+        "type": "Select",
+        "config": {
+          "label": "Variation",
+          "placeholder": "",
+          "options": ["btn-primary", "btn-secondary", "btn-accent", "link-primary", "link-secondary", "link-accent"],
+          "default_value": "btn-primary"
+        }
+      },
+      "backgroundColor": {
+        "type": "Color",
+        "config": {
+          "label": "Background Color",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

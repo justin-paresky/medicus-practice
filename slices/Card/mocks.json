@@ -1,0 +1,300 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Success begins with the right environment. Here, over 23 medical and therapeutic specialties come together under one roof to create an inspiring community of healthcare professionals. Our locations set the highest standards in design, functionality, and comfort to facilitate collaborative work and shift the focus not only on healing but also on prevention. ",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Centrally located and easily accessible, our locations provide doctors and therapists with the necessary flexibility. Whether you're a practice founder or an established owner, we offer flexible and expandable solutions. Full-time or part-time, virtual, on-site, or home visits – your needs and those of your patients take center stage. Regardless of your practice model, we support private practitioners (Privatärzte), elective doctors (Wahlärzte), and practitioners affiliated with small insurance contracts on their path to success. Welcome to an environment that prioritizes healing, collaboration, and prevention.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"elevated": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://slicemachine.dev"
+				}
+			},
+			"tags": {
+				"__TYPE__": "FieldContent",
+				"value": "should",
+				"type": "Text"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Innovative Practice Concept",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"type": "Color",
+				"value": "#FFFFFF"
+			},
+			"icon": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+					"width": 3882,
+					"height": 2584
+				},
+				"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+				"width": 3882,
+				"height": 2584,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": "Innovative Practice Concept",
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"readMore": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Read More"
+			},
+			"readLess": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Read Less"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "profileCard",
+		"primary": {
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"elevated": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"avatar": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89",
+					"width": 3456,
+					"height": 3456
+				},
+				"url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?rect=0%2C0%2C3456%2C3456&w=67&h=67",
+				"width": 67,
+				"height": 67,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"tags": {
+				"__TYPE__": "FieldContent",
+				"value": "fighting",
+				"type": "Text"
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Dermatology",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"type": "Color",
+				"value": "#FBF4E8"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading6",
+						"content": {
+							"text": "Dr. Ernst Müller",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "cardWithActions",
+		"primary": {
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"elevated": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"tags": {
+				"__TYPE__": "FieldContent",
+				"value": "original",
+				"type": "Text"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Specialized Courses",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"type": "Color",
+				"value": "#FFFFFF"
+			},
+			"icon": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+					"width": 3456,
+					"height": 3456
+				},
+				"url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+				"width": 3456,
+				"height": 3456,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": "Icon",
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"readMore": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Read More"
+			},
+			"readLess": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Read Less"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Book"
+						}
+					],
+					[
+						"variation",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "btn-accent"
+						}
+					]
+				]
+			}
+		]
+	}
+]

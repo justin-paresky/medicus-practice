@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  position: relative;
+  overflow-x: visible;
+}
+
+.cardsContainer {
+  display: inline-flex;
+  transition: all 0.3s ease;
+  top: 72px;
+}
+
+.cardContainer {
+  position: relative;
+}
+
+.cardContainer > div {
+  height: 100%;
+  width: 100%;
+  max-width: initial;
+}
+
+.button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 2px;
+  width: 30px;
+  height: 24px;
+  position: relative;
+  transition: background-color 0.2s linear;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  @apply text-primary;
+}
+
+.button:active {
+  @apply bg-tan;
+}
+
+.left:before {
+  content: '<';
+  position: absolute;
+  top: -3px;
+  left: 8px;
+}
+
+.right:before {
+  content: '>';
+  position: absolute;
+  top: -3px;
+  left: 8px;
+}

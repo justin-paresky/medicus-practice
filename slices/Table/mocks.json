@@ -1,0 +1,124 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Taken"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ullamco sint irure commodo do sunt est. Labore quis quis tempor voluptate ipsum quis occaecat fugiat laboris nisi. Voluptate ipsum velit dolor consectetur mollit exercitation minim commodo ipsum id."
+						}
+					}
+				]
+			},
+			"label": {
+				"__TYPE__": "FieldContent",
+				"value": "known",
+				"type": "Text"
+			},
+			"link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com"
+				}
+			},
+			"variation": {
+				"__TYPE__": "FieldContent",
+				"value": "btn-accent",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"col1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Elit sit tempor amet qui id sit anim voluptate nisi commodo."
+									}
+								}
+							]
+						}
+					],
+					[
+						"col2",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Minim incididunt nostrud duis tempor deserunt dolor adipisicing exercitation consequat excepteur nostrud nulla exercitation laboris."
+									}
+								}
+							]
+						}
+					],
+					[
+						"col3",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Excepteur pariatur duis non non ad ipsum officia occaecat anim."
+									}
+								}
+							]
+						}
+					],
+					[
+						"col4",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Commodo tempor id enim sunt nisi culpa sint esse consectetur nulla aliquip voluptate."
+									}
+								}
+							]
+						}
+					],
+					[
+						"col5",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Ex non aliquip duis ea eiusmod ipsum nulla exercitation minim aliqua sint ipsum aliqua ipsum."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

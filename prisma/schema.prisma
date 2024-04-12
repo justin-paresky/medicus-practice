@@ -1,0 +1,254 @@
+// schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+model Language {
+  id                  String                @id @default(cuid())
+  englishName         String
+  nativeName          String
+  isoTwoLetterName    Culture
+  Article_i18n        Article_i18n[]
+  Course_i18n         Course_i18n[]
+  Provider            Provider?             @relation(fields: [providerId], references: [id])
+  providerId          String?
+  Treatment_i18n      Treatment_i18n[]
+  Specialization_i18n Specialization_i18n[]
+  Location_i18n       Location_i18n[]
+  Amenity_i18n        Amenity_i18n[]
+  Practice_i18n       Practice_i18n[]
+}
+
+model Article {
+  id           String         @id @default(cuid())
+  name         String
+  date         DateTime
+  Article_i18n Article_i18n[]
+}
+
+model Article_i18n {
+  Article     Article  @relation(fields: [articleId], references: [id])
+  articleId   String
+  Language    Language @relation(fields: [languageId], references: [id])
+  languageId  String
+  title       String
+  description String
+
+  @@unique([articleId, languageId])
+}
+
+model Course {
+  id          String        @id @default(cuid())
+  name        String
+  icon        Icon?         @relation(fields: [iconId], references: [id])
+  Course_i18n Course_i18n[]
+  iconId      String?
+}
+
+model Course_i18n {
+  Course      Course   @relation(fields: [courseId], references: [id])
+  courseId    String
+  Language    Language @relation(fields: [languageId], references: [id])
+  languageId  String
+  title       String
+  description String
+
+  @@unique([courseId, languageId])
+}
+
+model Provider {
+  id                  String           @id @default(cuid())
+  name                String
+  description         String
+  credentials         String
+  dob                 DateTime
+  gender              String?
+  specializations     Specialization[]
+  treatments          Treatment[]
+  qualifications      String[]
+  personalDescription String[]
+  languages           Language[]
+  email               String?          @unique
+  website             String?
+  phone               String?
+  insurance           String[]
+  openTime            DateTime
+  closeTime           DateTime
+  createdAt           DateTime         @default(now()) @map(name: "created_at")
+  updatedAt           DateTime         @updatedAt @map(name: "updated_at")
+}
+
+model Post {
+  id        String  @id @default(cuid())
+  title     String
+  content   String?
+  published Boolean @default(false)
+  author    User?   @relation(fields: [authorId], references: [id])
+  authorId  String?
+}
+
+model Treatment {
+  id               String           @id @default(cuid())
+  name             String
+  Provider         Provider?        @relation(fields: [providerId], references: [id])
+  providerId       String?
+  Specialization   Specialization?  @relation(fields: [specializationId], references: [id])
+  specializationId String?
+  Treatment_i18n   Treatment_i18n[]
+}
+
+model Treatment_i18n {
+  Treatment   Treatment @relation(fields: [treatmentId], references: [id])
+  treatmentId String
+  Language    Language  @relation(fields: [languageId], references: [id])
+  languageId  String
+  title       String
+  description String?
+
+  @@unique([treatmentId, languageId])
+}
+
+model Specialization {
+  id                  String                @id @default(cuid())
+  name                String
+  treatments          Treatment[]
+  Practice            Practice?             @relation(fields: [practiceId], references: [id])
+  practiceId          String?
+  Provider            Provider?             @relation(fields: [providerId], references: [id])
+  providerId          String?
+  reviews             Review[]
+  icon                Icon?                 @relation(fields: [iconId], references: [id])
+  Specialization_i18n Specialization_i18n[]
+  iconId              String?
+}
+
+model Specialization_i18n {
+  Specialization   Specialization @relation(fields: [specializationId], references: [id])
+  specializationId String
+  Language         Language       @relation(fields: [languageId], references: [id])
+  languageId       String
+  title            String
+  description      String
+
+  @@unique([specializationId, languageId])
+}
+
+model Location {
+  id            String          @id @default(cuid())
+  name          String
+  title         String
+  lat           Float
+  long          Float
+  icon          Icon?           @relation(fields: [iconId], references: [id])
+  Review        Review[]
+  Practice      Practice[]
+  Location_i18n Location_i18n[]
+  iconId        String?
+}
+
+model Location_i18n {
+  Location   Location @relation(fields: [locationId], references: [id])
+  locationId String
+  Language   Language @relation(fields: [languageId], references: [id])
+  languageId String
+  title      String
+
+  @@unique([locationId, languageId])
+}
+
+model Review {
+  id               String          @id @default(cuid())
+  name             String
+  location         Location        @relation(fields: [locationId], references: [id])
+  rating           Float
+  Specialization   Specialization? @relation(fields: [specializationId], references: [id])
+  description      String
+  Practice         Practice?       @relation(fields: [practiceId], references: [id])
+  practiceId       String?
+  locationId       String
+  specializationId String?
+  createdAt        DateTime        @default(now()) @map(name: "created_at")
+}
+
+model Amenity {
+  id           String         @id @default(cuid())
+  name         String
+  title        String
+  icon         Icon?          @relation(fields: [iconId], references: [id])
+  Practice     Practice?      @relation(fields: [practiceId], references: [id])
+  practiceId   String?
+  Amenity_i18n Amenity_i18n[]
+  iconId       String?
+}
+
+model Amenity_i18n {
+  Amenity    Amenity  @relation(fields: [amenityId], references: [id])
+  amenityId  String
+  Language   Language @relation(fields: [languageId], references: [id])
+  languageId String
+  title      String
+
+  @@unique([amenityId, languageId])
+}
+
+model Practice {
+  id              String           @id @default(cuid())
+  name            String
+  Location        Location         @relation(fields: [locationId], references: [id])
+  ratings         Review[]
+  specializations Specialization[]
+  amenities       Amenity[]
+  locationId      String
+  Practice_i18n   Practice_i18n[]
+}
+
+model Practice_i18n {
+  Practice            Practice @relation(fields: [practiceId], references: [id])
+  practiceId          String
+  Language            Language @relation(fields: [languageId], references: [id])
+  languageId          String
+  title               String
+  description         String
+  address             String?
+  website             String?
+  phone               String?
+  locationDescription String?
+  railDescription     String?
+  busDescription      String?
+  carDescription      String?
+
+  @@unique([practiceId, languageId])
+}
+
+model Icon {
+  id             String           @id @default(cuid())
+  name           String
+  image          Bytes?
+  Specialization Specialization[]
+  Course         Course[]
+  Location       Location[]
+  Amenity        Amenity[]
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String?
+  email     String?  @unique
+  createdAt DateTime @default(now()) @map(name: "created_at")
+  updatedAt DateTime @updatedAt @map(name: "updated_at")
+  posts     Post[]
+
+  @@map(name: "users")
+}
+
+enum Culture {
+  en_US
+  de_AT
+}

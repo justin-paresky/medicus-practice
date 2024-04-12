@@ -1,0 +1,282 @@
+{
+  "id": "card",
+  "type": "SharedSlice",
+  "name": "Card",
+  "description": "Card",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "icon": {
+          "type": "Image",
+          "config": {
+            "label": "Icon",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading3,strong,em,heading2,heading1"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,strong,em,hyperlink,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "elevated": {
+          "type": "Boolean",
+          "config": {
+            "label": "Elevated",
+            "placeholder_false": "The card doesn't have a shadow",
+            "placeholder_true": "The card does have a shadow",
+            "default_value": true
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "Optional link for when the card is clicked",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "config": {
+            "label": "Background Color",
+            "placeholder": ""
+          }
+        },
+        "tags": {
+          "type": "Text",
+          "config": {
+            "label": "Tags",
+            "placeholder": "Semicolon separated (e.g. vienna;graz)"
+          }
+        },
+        "readMore": {
+          "type": "Text",
+          "config": {
+            "label": "Read More",
+            "placeholder": ""
+          }
+        },
+        "readLess": {
+          "type": "Text",
+          "config": {
+            "label": "Read Less",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "cardWithActions",
+      "name": "Card With Actions",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "icon": {
+          "type": "Image",
+          "config": {
+            "label": "Icon",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading3,strong,em,heading2,heading1"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,strong,em,hyperlink,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "elevated": {
+          "type": "Boolean",
+          "config": {
+            "label": "Elevated",
+            "placeholder_false": "The card doesn't have a shadow",
+            "placeholder_true": "The card does have a shadow",
+            "default_value": true
+          }
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "config": {
+            "label": "Background Color",
+            "placeholder": ""
+          }
+        },
+        "tags": {
+          "type": "Text",
+          "config": {
+            "label": "Tags",
+            "placeholder": "Semicolon separated (e.g. vienna;graz)"
+          }
+        },
+        "readMore": {
+          "type": "Text",
+          "config": {
+            "label": "Read More",
+            "placeholder": ""
+          }
+        },
+        "readLess": {
+          "type": "Text",
+          "config": {
+            "label": "Read Less",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "Label",
+            "placeholder": ""
+          }
+        },
+        "variation": {
+          "type": "Select",
+          "config": {
+            "label": "Variation",
+            "placeholder": "",
+            "options": [
+              "btn-primary",
+              "btn-secondary",
+              "btn-accent",
+              "link-primary",
+              "link-secondary",
+              "link-accent"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "profileCard",
+      "name": "Profile Card",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "avatar": {
+          "type": "Image",
+          "config": {
+            "label": "Avatar",
+            "constraint": {
+              "width": 67,
+              "height": 67
+            },
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading6,strong,em"
+          }
+        },
+        "subtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subtitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,strong,em,hyperlink,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,strong,em,hyperlink,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "elevated": {
+          "type": "Boolean",
+          "config": {
+            "label": "Elevated",
+            "placeholder_false": "The card doesn't have a shadow",
+            "placeholder_true": "The card does have a shadow",
+            "default_value": true
+          }
+        },
+        "backgroundColor": {
+          "type": "Color",
+          "config": {
+            "label": "Background Color",
+            "placeholder": ""
+          }
+        },
+        "tags": {
+          "type": "Text",
+          "config": {
+            "label": "Tags",
+            "placeholder": "Semicolon separated (e.g. vienna;graz)"
+          }
+        },
+        "readMore": {
+          "type": "Text",
+          "config": {
+            "label": "Read More",
+            "placeholder": ""
+          }
+        },
+        "readLess": {
+          "type": "Text",
+          "config": {
+            "label": "Read Less",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

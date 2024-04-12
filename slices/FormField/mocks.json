@@ -1,0 +1,310 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"placeholder": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Name"
+			},
+			"name": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "name"
+			},
+			"disabled": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"required": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"autoFocus": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Name"
+			},
+			"icon": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
+					"width": 3424,
+					"height": 3424
+				},
+				"url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
+				"width": 3424,
+				"height": 3424,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"autoComplete": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "off"
+			},
+			"readOnly": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "email",
+		"primary": {
+			"placeholder": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Email"
+			},
+			"name": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Email"
+			},
+			"disabled": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"required": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"autoFocus": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Email"
+			},
+			"autoComplete": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "off"
+			},
+			"readOnly": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "submit",
+		"primary": {
+			"name": {
+				"__TYPE__": "FieldContent",
+				"value": "deep",
+				"type": "Text"
+			},
+			"disabled": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"label": {
+				"__TYPE__": "FieldContent",
+				"value": "direction",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "phone",
+		"primary": {
+			"placeholder": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Phone"
+			},
+			"name": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Phone"
+			},
+			"disabled": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"required": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"autoFocus": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Phone"
+			},
+			"autocompletC": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "off"
+			},
+			"readOnly": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "textArea",
+		"primary": {
+			"disabled": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"required": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"autoFocus": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Comments"
+			},
+			"readOnly": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"wrap": {
+				"__TYPE__": "FieldContent",
+				"value": "soft",
+				"type": "Select"
+			},
+			"placeholder": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Want to tell us more about what you’re looking for?"
+			},
+			"name": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "comments"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "check",
+		"primary": {
+			"name": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "agreement-check"
+			},
+			"disabled": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"required": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"label": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "I agree with the Terms and Privacy Policy",
+							"spans": [
+								{
+									"type": "hyperlink",
+									"start": 17,
+									"end": 22,
+									"data": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://www.medicus-practice.at",
+										"target": "_blank"
+									}
+								},
+								{
+									"type": "hyperlink",
+									"start": 27,
+									"end": 41,
+									"data": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://www.medicus-practice.at",
+										"target": "_blank"
+									}
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"checked": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"readOnly": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"value": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "agree"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

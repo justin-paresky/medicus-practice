@@ -1,0 +1,1256 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Your Practice, As Flexible As You Are",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Whether you’re starting a new practice, relocating an existing one, or opening a second office, we empower you to achieve your vision. Choose the practice style that best suits your needs with peace of mind and no investment costs, brokerage fees, or commissions:",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "list-item",
+						"content": {
+							"text": "Virtual: See patients remotely using secure telemedicine",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 8
+								}
+							]
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "list-item",
+						"content": {
+							"text": "Home Visits: provide care in the comfort of your patients' homes",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 13
+								}
+							]
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "list-item",
+						"content": {
+							"text": "Part-Time or Full-Time On-Site: Maintain a flexible schedule with on-site consultations",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 31
+								}
+							]
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "list-item",
+						"content": {
+							"text": "Insurance, Elective, or Private: Cater to KFA insurance patients, elective or private patients - the choice is yours! ",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 32
+								}
+							]
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "You decide how your perfect practice day looks - start your dream practice today!",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea",
+					"width": 3500,
+					"height": 2338
+				},
+				"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?rect=0%2C7%2C3500%2C2324&w=476&h=316",
+				"width": 476,
+				"height": 316,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 7
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io"
+				}
+			},
+			"variable": {
+				"__TYPE__": "FieldContent",
+				"value": "link-accent",
+				"type": "Select"
+			},
+			"showFilter": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#6c027c",
+				"type": "Color"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://twitter.com"
+							}
+						}
+					],
+					[
+						"label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "book a call"
+						}
+					],
+					[
+						"variation",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "btn-accent"
+						}
+					],
+					[
+						"captionColor",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#864648",
+							"type": "Color"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "imageRight",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Your Practice. Your Network. \nYour Success",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Maintain complete autonomy and freedom in your practice. Avoid the burdens of co-ownership and liability, yet still benefit from a vibrant interdisciplinary team of like-minded therapists and specialists. This supportive network allows you to consult colleagues on complex cases, effortlessly refer patients to the right specialists when needed, and even secure coverage when you have time off.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "\nFocus on your patients and your practice with the confidence of knowing you have a supportive network and resources behind you.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea",
+					"width": 3500,
+					"height": 2338
+				},
+				"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?rect=0%2C7%2C3500%2C2324&w=476&h=316",
+				"width": 476,
+				"height": 316,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 7
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com"
+				}
+			},
+			"label": {
+				"__TYPE__": "FieldContent",
+				"value": "remember",
+				"type": "Text"
+			},
+			"variable": {
+				"__TYPE__": "FieldContent",
+				"value": "link-accent",
+				"type": "Select"
+			},
+			"showFilter": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"filterPlaceholder": {
+				"__TYPE__": "FieldContent",
+				"value": "hall",
+				"type": "Text"
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#111198",
+				"type": "Color"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://prismic.io"
+							}
+						}
+					],
+					[
+						"label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "book a call"
+						}
+					],
+					[
+						"variation",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "btn-accent",
+							"type": "Select"
+						}
+					],
+					[
+						"captionColor",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#c038c4",
+							"type": "Color"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withList",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Your Practice Made Easy: Finally Be a Doctor Again",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+					"width": 3168,
+					"height": 4752
+				},
+				"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?rect=0%2C1324%2C3168%2C2103&w=476&h=316",
+				"width": 476,
+				"height": 316,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 1324
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://slicemachine.dev"
+				}
+			},
+			"variable": {
+				"__TYPE__": "FieldContent",
+				"value": "link-accent",
+				"type": "Select"
+			},
+			"showFilter": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"filterPlaceholder": {
+				"__TYPE__": "FieldContent",
+				"value": "experience",
+				"type": "Text"
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#30d410",
+				"type": "Color"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"icon",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+								"width": 3168,
+								"height": 4752
+							},
+							"url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+							"width": 3168,
+							"height": 4752,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"label",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Equipped for Success: Get immediate access to furnished practice spaces and cutting-edge equipment",
+										"spans": [
+											{
+												"type": "strong",
+												"start": 0,
+												"end": 21
+											}
+										]
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"label",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Focus on Your Patients: Our dedicated front- and back-office team handles administrative tasks, freeing you to focus on what matters most - your patients",
+										"spans": [
+											{
+												"type": "strong",
+												"start": 0,
+												"end": 23
+											}
+										]
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"icon",
+						{
+							"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyNDc5MjI3fDA&ixlib=rb-4.0.3&q=85",
+							"alt": "orange fruits under blue sky during daytime",
+							"origin": {
+								"id": "eaOjEz8746k",
+								"url": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyNDc5MjI3fDA&ixlib=rb-4.0.3&q=85",
+								"width": 5688,
+								"height": 3792
+							},
+							"width": 5688,
+							"height": 3792,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"label",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Practice with Independence & Support: Enjoy the independence of running your own practice with the support of a collaborative team",
+										"spans": [
+											{
+												"type": "strong",
+												"start": 0,
+												"end": 37
+											}
+										]
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"icon",
+						{
+							"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI0NzkyMjd8MA&ixlib=rb-4.0.3&q=85",
+							"alt": "flat lay photography of sliced pomegranate, lime, and lemon",
+							"origin": {
+								"id": "7r1HxvVC7AY",
+								"url": "https://images.unsplash.com/photo-1546548970-71785318a17b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI0NzkyMjd8MA&ixlib=rb-4.0.3&q=85",
+								"width": 3104,
+								"height": 4656
+							},
+							"width": 3104,
+							"height": 4656,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"label",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Zero Hidden Costs: No investment costs, brokerage fees, or commissions. Start practicing with complete peace of mind",
+										"spans": [
+											{
+												"type": "strong",
+												"start": 0,
+												"end": 18
+											}
+										]
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"icon",
+						{
+							"url": "https://images.unsplash.com/photo-1581340752304-a781f821e8ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI0NzkyMjd8MA&ixlib=rb-4.0.3&q=85",
+							"alt": "sliced green lime on brown wooden table",
+							"origin": {
+								"id": "UFrsHcCi21A",
+								"url": "https://images.unsplash.com/photo-1581340752304-a781f821e8ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI0NzkyMjd8MA&ixlib=rb-4.0.3&q=85",
+								"width": 3092,
+								"height": 5353
+							},
+							"width": 3092,
+							"height": 5353,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"label",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Unmatched Flexibility: Choose the work model that best suits your schedule and needs",
+										"spans": [
+											{
+												"type": "strong",
+												"start": 0,
+												"end": 22
+											}
+										]
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"icon",
+						{
+							"url": "https://images.unsplash.com/photo-1577234286642-fc512a5f8f11?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI0NzkyMjd8MA&ixlib=rb-4.0.3&q=85",
+							"alt": "sliced grapefruits",
+							"origin": {
+								"id": "ezSFnAFi9hY",
+								"url": "https://images.unsplash.com/photo-1577234286642-fc512a5f8f11?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyfHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI0NzkyMjd8MA&ixlib=rb-4.0.3&q=85",
+								"width": 3024,
+								"height": 4032
+							},
+							"width": 3024,
+							"height": 4032,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withForm",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Least"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laborum eu aute sint eiusmod Lorem. Dolore dolore et non labore mollit ullamco fugiat occaecat id ex magna labore aliquip minim enim. Cupidatat cupidatat cillum qui eiusmod dolor eu qui consectetur officia magna aute adipisicing irure reprehenderit tempor."
+						}
+					}
+				]
+			},
+			"backgroundImage": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+					"width": 4160,
+					"height": 3120
+				},
+				"url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+				"width": 4160,
+				"height": 3120,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"form": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "DocumentLink",
+					"id": "mock_document_id"
+				}
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#4d5b49",
+				"type": "Color"
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#fe1d22",
+				"type": "Color"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "twoColumns",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "The Medicus Practice difference",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"column1": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "We believe that doctors and therapists should have the flexibility to address the unique needs of their patients while seamlessly integrating into a vibrant, interdisciplinary community of healthcare professionals.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "\nOur dedication extends to creating a professional environment that fosters health and well-being, effortlessly adapting to individual requirements. What sets us apart is our holistic philosophy; we don’t endorse isolated solutions.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "\nWith over 23 different medical and therapeutic specialties under one roof, we are cultivating a community of healthcare professionals supporting each other, making it seamless for patients to access comprehensive care.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"column2": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Our collaborative setting enables doctors and therapists to choose the approach that suits them best – whether it’s part-time, full-time, virtual, through home visits, or on-site. Through our digital solutions and fully-equipped treatment and therapy rooms, we empower healthcare providers to successfully lead their practices, while our experienced and friendly teams manage practice efficiency and ensure smooth workflows.",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "\nThis approach provides doctors and therapists with the time for more personalized and humane treatment, shifting the focus beyond mere disease management to proactive prevention. It’s a win-win situation for doctors, therapists, and, most importantly, patients.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#ba7d87",
+				"type": "Color"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withHeartbeat",
+		"primary": {
+			"title1": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Health is Wealth",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title2": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Strong Roots",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title3": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Joint Creation",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"backgroundImage": {
+				"origin": {
+					"id": "7WAGthfGJ9w",
+					"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyNDc5MjI3fDA&ixlib=rb-4.0.3&q=85",
+					"width": 5460,
+					"height": 3640
+				},
+				"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyNDc5MjI3fDA&ixlib=rb-4.0.3&q=85",
+				"width": 5460,
+				"height": 3640,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"alt": "yellow lemon fruit on white surface",
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"description1": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "We are convinced that prevention is better than cure. That's why we create an environment for proactive maintenance and improvement of health."
+			},
+			"description2": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "The trust of our healthcare professionals and their patients trust in us is the foundation of success."
+			},
+			"description3": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Adhere to performance principles.  We foster an open and direct feedback culture and reward the outstanding performance of our employees"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "largeImage",
+		"primary": {
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+					"width": 3882,
+					"height": 2584
+				},
+				"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?rect=649%2C0%2C2584%2C2584&w=480&h=480",
+				"width": 480,
+				"height": 480,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 649,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com"
+				}
+			},
+			"label": {
+				"__TYPE__": "FieldContent",
+				"value": "touch",
+				"type": "Text"
+			},
+			"variable": {
+				"__TYPE__": "FieldContent",
+				"value": "btn-secondary",
+				"type": "Select"
+			},
+			"showFilter": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"filterPlaceholder": {
+				"__TYPE__": "FieldContent",
+				"value": "wealth",
+				"type": "Text"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "When doctors, therapists, and patients choose Medicus Practice, they choose more than just a space – they gain reliable partners. \n\nOur employees are the heart of Medicus Practice, deditaced to change the healthcare system for the better. With a friendly smile and professional expertise, our teams not only ensure smooth processes but also make every visit a matter of trust.\n\nTo meet this standard, we continuously invest in the training and development of our employees, aiming not only to guarantee medical excellence but also to establish a personal, trusting relationship with our doctors, therapists, and, above all, patients.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Our people are the key to trust and quality",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#fac5aa",
+				"type": "Color"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://twitter.com"
+							}
+						}
+					],
+					[
+						"variation",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "btn-secondary"
+						}
+					],
+					[
+						"buttonColor",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Color",
+							"value": "#F18E79"
+						}
+					],
+					[
+						"captionColor",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Color",
+							"value": "#F18E79"
+						}
+					],
+					[
+						"label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "join the team"
+						}
+					],
+					[
+						"buttonCaption",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "Become part of the Medicus Practice team",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withCardSlider",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Real Doctors. Real Results. Discover Why They Choose Us.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"label": {
+				"__TYPE__": "FieldContent",
+				"value": "army",
+				"type": "Text"
+			},
+			"variable": {
+				"__TYPE__": "FieldContent",
+				"value": "btn-primary",
+				"type": "Select"
+			},
+			"showFilter": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"filterPlaceholder": {
+				"__TYPE__": "FieldContent",
+				"value": "hungry",
+				"type": "Text"
+			},
+			"slider": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "DocumentLink",
+					"id": "testimonials_slider"
+				}
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"type": "Color",
+				"value": "#215045"
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"type": "Color",
+				"value": "#FBF4E0"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withGrid",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "You take care of patients, we do the rest",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Elevate your medical or therapeutic practice with our streamlined and comprehensive services, empowering you to focus on what matters most - your patients.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+					"width": 5616,
+					"height": 3744
+				},
+				"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?rect=0%2C8%2C5616%2C3728&w=476&h=316",
+				"width": 476,
+				"height": 316,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 8
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"backgroundImage": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.prismic.io/medicus-practice/ZgrzvMt2UUcvBUBe_whitepattern_beijebackground.png?auto=format,compress",
+					"width": 5792,
+					"height": 8192
+				},
+				"url": "https://images.prismic.io/medicus-practice/ZgrzvMt2UUcvBUBe_whitepattern_beijebackground.png?auto=format,compress",
+				"width": 5792,
+				"height": 8192,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"label": {
+				"__TYPE__": "FieldContent",
+				"value": "produce",
+				"type": "Text"
+			},
+			"variable": {
+				"__TYPE__": "FieldContent",
+				"value": "btn-secondary",
+				"type": "Select"
+			},
+			"showFilter": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"filterPlaceholder": {
+				"__TYPE__": "FieldContent",
+				"value": "rabbit",
+				"type": "Text"
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"type": "Color",
+				"value": "#F4F0E8"
+			},
+			"cards": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "DocumentLink",
+					"id": "our_services_cards"
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withPhotos",
+		"primary": {
+			"photos": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "DocumentLink",
+					"id": "location_photos"
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

@@ -1,0 +1,36 @@
+{
+  "format": "custom",
+  "id": "card_grid",
+  "label": "Card Grid",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "colNumber": {
+        "type": "Select",
+        "config": {
+          "label": "Number Of Columns",
+          "placeholder": "",
+          "options": ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"]
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "card": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

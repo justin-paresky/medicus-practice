@@ -1,0 +1,95 @@
+{
+  "format": "custom",
+  "id": "photos",
+  "label": "Photos",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading2,heading3,heading4,heading5,heading6,strong,em"
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "showFilter": {
+        "type": "Boolean",
+        "config": {
+          "label": "Show Filter",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false
+        }
+      },
+      "filterPlaceholder": {
+        "type": "Text",
+        "config": {
+          "label": "Filter Placeholder",
+          "placeholder": ""
+        }
+      },
+      "showTabs": {
+        "type": "Boolean",
+        "config": {
+          "label": "Show Tabs",
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false
+        }
+      },
+      "link": {
+        "type": "Link",
+        "config": {
+          "label": "Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "label": {
+        "type": "Text",
+        "config": {
+          "label": "Label",
+          "placeholder": ""
+        }
+      },
+      "variation": {
+        "type": "Select",
+        "config": {
+          "label": "Variation",
+          "placeholder": "",
+          "options": ["btn-secondary", "btn-primary", "btn-accent", "link-primary", "link-secondary", "link-accent"],
+          "default_value": "btn-secondary"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "image_gallery": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

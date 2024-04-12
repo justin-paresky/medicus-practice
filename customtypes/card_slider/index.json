@@ -1,0 +1,53 @@
+{
+  "format": "custom",
+  "id": "card_slider",
+  "label": "Card Slider",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "infinite": {
+        "type": "Boolean",
+        "config": {
+          "label": "Infinite",
+          "placeholder_false": "Slider stops on first/last card",
+          "placeholder_true": "Slider loops on arrow click",
+          "default_value": true
+        }
+      },
+      "autoplay": {
+        "type": "Boolean",
+        "config": {
+          "label": "Autoplay",
+          "placeholder_false": "Slider does not automatically play",
+          "placeholder_true": "Slider automatically plays",
+          "default_value": false
+        }
+      },
+      "autoplayInterval": {
+        "type": "Number",
+        "config": {
+          "label": "Autoplay Interval",
+          "placeholder": "How many seconds between card slides"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "card": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "format": "custom",
+  "id": "global_header",
+  "label": "Global Header",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "locales": {
+        "type": "Group",
+        "config": {
+          "label": "Locales",
+          "repeat": true,
+          "fields": {
+            "localeLabel": {
+              "type": "Text",
+              "config": {
+                "label": "Locale Label",
+                "placeholder": ""
+              }
+            },
+            "localeKey": {
+              "type": "Text",
+              "config": {
+                "label": "Locale Key",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "links": {
+        "type": "Group",
+        "config": {
+          "label": "Links",
+          "repeat": true,
+          "fields": {
+            "button": {
+              "type": "Link",
+              "config": {
+                "label": "Button",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "button": {
+        "type": "Link",
+        "config": {
+          "label": "Button",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    }
+  }
+}

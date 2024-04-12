@@ -1,0 +1,52 @@
+{
+  "format": "custom",
+  "id": "form",
+  "label": "Form",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "primaryButton": {
+        "type": "Link",
+        "config": {
+          "label": "Primary Button",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "secondaryButton": {
+        "type": "Link",
+        "config": {
+          "label": "Secondary Button",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "confirmationModal": {
+        "type": "Link",
+        "config": {
+          "label": "Confirmation Modal",
+          "select": "document",
+          "customtypes": ["modal"]
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "form_field": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

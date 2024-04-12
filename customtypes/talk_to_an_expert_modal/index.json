@@ -1,0 +1,120 @@
+{
+  "format": "custom",
+  "id": "talk_to_an_expert_modal",
+  "label": "Talk To An Expert Modal",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "leftPane": {
+        "type": "Group",
+        "config": {
+          "label": "Left Pane",
+          "repeat": true,
+          "fields": {
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "Title",
+                "placeholder": ""
+              }
+            },
+            "form": {
+              "type": "Link",
+              "config": {
+                "label": "Form",
+                "select": "document"
+              }
+            }
+          }
+        }
+      },
+      "rightPane": {
+        "type": "Group",
+        "config": {
+          "label": "Right Pane",
+          "repeat": true,
+          "fields": {
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "Title",
+                "placeholder": ""
+              }
+            },
+            "icon1": {
+              "type": "Image",
+              "config": {
+                "label": "Icon One",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "label1": {
+              "type": "Text",
+              "config": {
+                "label": "Label One",
+                "placeholder": ""
+              }
+            },
+            "icon2": {
+              "type": "Image",
+              "config": {
+                "label": "Icon Two",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "label2": {
+              "type": "Text",
+              "config": {
+                "label": "Label Two",
+                "placeholder": ""
+              }
+            },
+            "icon3": {
+              "type": "Image",
+              "config": {
+                "label": "Icon Three",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "label3": {
+              "type": "Text",
+              "config": {
+                "label": "Label Three",
+                "placeholder": ""
+              }
+            },
+            "avatar": {
+              "type": "Image",
+              "config": {
+                "label": "Avatar",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "description": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Description",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "phone": {
+              "type": "Link",
+              "config": {
+                "label": "Phone",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
