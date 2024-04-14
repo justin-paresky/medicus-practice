@@ -1,0 +1,19 @@
+.table img {
+  @apply h-[22px] w-[22px]
+}
+
+.table {
+  @apply text-[1rem]
+}
+
+.table td, .table th {
+  @apply py-6 border-b border-gray-light box-border
+}
+
+.table td:not(:first-child), .table th:not(:first-child) {
+  @apply px-4
+}
+
+.table td:not(:nth-child(1)) p {
+  @apply flex flex-row justify-center
+}

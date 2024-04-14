@@ -1,4 +1,6 @@
 /* eslint-disable react/button-has-type */
+'use client';
+
 import { PrismicNextImage } from '@prismicio/next';
 import { type Content, isFilled } from '@prismicio/client';
 
@@ -25,12 +27,10 @@ export default function Button({
   type,
   variation = 'btn-primary',
 }: ButtonProps) {
-  const className = `btn ${variation}`;
-
   if (isFilled.link(link)) {
     return (
       <a
-        className={className}
+        className={`flex flex-row items-center gap-2 ${variation}`}
         href={link.url}
         style={{ backgroundColor: backgroundColor || undefined, borderColor: backgroundColor || undefined }}
       >
@@ -42,7 +42,7 @@ export default function Button({
 
   return (
     <button
-      className={className}
+      className={`btn ${variation}`}
       disabled={disabled}
       name={name}
       onClick={onClick}

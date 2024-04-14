@@ -10,9 +10,10 @@ export default async function WithGrid({ primary }: WithGridProps) {
   const { title, description, titleColor } = primary;
   const client = createClient();
 
-  const cards = isFilled.contentRelationship(primary.cards)
-    ? await client.getByUID('card_grid', primary.cards.id)
-    : null;
+  const cards =
+    isFilled.contentRelationship(primary.cards) && primary.cards.uid
+      ? await client.getByUID('card_grid', primary.cards.uid)
+      : null;
 
   return (
     <div className="flex w-[100%] flex-col gap-5">

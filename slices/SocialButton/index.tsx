@@ -1,5 +1,5 @@
-import { Content } from '@prismicio/client';
-import { SliceComponentProps } from '@prismicio/react';
+import { type Content, isFilled } from '@prismicio/client';
+import { SliceComponentProps, PrismicLink, PrismicImage } from '@prismicio/react';
 
 /**
  * Props for `SocialButton`.
@@ -10,10 +10,14 @@ export type SocialButtonProps = SliceComponentProps<Content.SocialButtonSlice>;
  * Component for "SocialButton" Slices.
  */
 const SocialButton = ({ slice }: SocialButtonProps): JSX.Element => {
+  const {
+    primary: { link, icon },
+  } = slice;
   return (
-    <section data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
-      Placeholder component for social_button (variation: {slice.variation}) Slices
-    </section>
+    <PrismicLink className="h-[34px] w-[34px] bg-none text-transparent child:h-[34px] child:w-[34px]" field={link}>
+      {isFilled.image(icon)}
+      <PrismicImage field={icon} />
+    </PrismicLink>
   );
 };
 

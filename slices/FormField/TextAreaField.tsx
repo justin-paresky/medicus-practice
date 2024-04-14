@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
 import { KeyTextField, NumberField, BooleanField, SelectField } from '@prismicio/client';
 
 import TextArea from '@/components/TextArea';
@@ -32,6 +31,6 @@ export default function TextAreaField(props: TextAreaFieldProps) {
     wrap: props.wrap as 'soft' | 'hard',
     onChange: () => null,
   };
-  const id = `text-area-${uuidv4()}`;
+  const id = `text-area-${properties.name}`;
   return <TextArea id={id} {...properties} />;
 }

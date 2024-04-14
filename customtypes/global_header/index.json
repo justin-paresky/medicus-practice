@@ -20,17 +20,35 @@
           "label": "Locales",
           "repeat": true,
           "fields": {
-            "localeLabel": {
+            "label": {
               "type": "Text",
               "config": {
-                "label": "Locale Label",
+                "label": "Label",
                 "placeholder": ""
               }
             },
-            "localeKey": {
+            "key": {
               "type": "Text",
               "config": {
-                "label": "Locale Key",
+                "label": "Key",
+                "placeholder": ""
+              }
+            },
+            "flag": {
+              "type": "Image",
+              "config": {
+                "label": "Flag",
+                "constraint": {
+                  "height": 30,
+                  "width": 50
+                },
+                "thumbnails": []
+              }
+            },
+            "shortLabel": {
+              "type": "Text",
+              "config": {
+                "label": "Short Label",
                 "placeholder": ""
               }
             }
@@ -43,23 +61,63 @@
           "label": "Links",
           "repeat": true,
           "fields": {
-            "button": {
+            "icon": {
+              "type": "Image",
+              "config": {
+                "label": "Icon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "link": {
               "type": "Link",
               "config": {
-                "label": "Button",
+                "label": "Link",
                 "placeholder": "",
+                "allowTargetBlank": false,
                 "select": null
+              }
+            },
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
               }
             }
           }
         }
       },
-      "button": {
-        "type": "Link",
+      "ctas": {
+        "type": "Group",
         "config": {
-          "label": "Button",
-          "placeholder": "",
-          "select": null
+          "label": "CTAs",
+          "repeat": true,
+          "fields": {
+            "icon": {
+              "type": "Image",
+              "config": {
+                "label": "Icon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            }
+          }
         }
       },
       "slices": {

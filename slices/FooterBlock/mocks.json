@@ -9,8 +9,10 @@
 					{
 						"type": "heading6",
 						"content": {
-							"text": "Determine"
-						}
+							"text": "The Medicus Practice",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			}
@@ -20,37 +22,61 @@
 				"__TYPE__": "GroupItemContent",
 				"value": [
 					[
-						"button",
-						{
-							"__TYPE__": "LinkContent",
-							"value": {
-								"__TYPE__": "ExternalLink",
-								"url": "http://twitter.com"
-							}
-						}
-					],
-					[
-						"textBlock",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "Consectetur commodo ut consectetur non reprehenderit nisi."
-									}
-								}
-							]
-						}
-					],
-					[
 						"socialLinks",
 						{
 							"__TYPE__": "LinkContent",
 							"value": {
 								"__TYPE__": "DocumentLink",
-								"id": "mock_document_id"
+								"id": "social_links"
 							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "wfwef",
+								"target": ""
+							}
+						}
+					],
+					[
+						"label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "wefewfwef"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "efwefefew",
+								"target": ""
+							}
+						}
+					],
+					[
+						"label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "ewfweffwwe"
 						}
 					]
 				]

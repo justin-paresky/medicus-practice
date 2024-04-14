@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
 import { KeyTextField, NumberField, BooleanField } from '@prismicio/client';
 
 import Input from '@/components/Input';
@@ -33,7 +32,7 @@ export default function TextField(props: TextFieldProps) {
     size: props.size as number,
     title: props.title as string,
   };
-  const id = `text-box-${uuidv4()}`;
+  const id = `text-box-${properties.name}`;
   return (
     <Input
       icon={

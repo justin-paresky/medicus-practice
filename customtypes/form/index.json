@@ -12,28 +12,74 @@
         },
         "type": "UID"
       },
-      "primaryButton": {
-        "type": "Link",
-        "config": {
-          "label": "Primary Button",
-          "placeholder": "",
-          "select": null
-        }
-      },
-      "secondaryButton": {
-        "type": "Link",
-        "config": {
-          "label": "Secondary Button",
-          "placeholder": "",
-          "select": null
-        }
-      },
       "confirmationModal": {
         "type": "Link",
         "config": {
           "label": "Confirmation Modal",
           "select": "document",
           "customtypes": ["modal"]
+        }
+      },
+      "primaryButtonIcon": {
+        "type": "Image",
+        "config": {
+          "label": "Primary Button Icon",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "primaryButtonLink": {
+        "type": "Link",
+        "config": {
+          "label": "Primary Button Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "primaryButtonLabel": {
+        "type": "Text",
+        "config": {
+          "label": "Primary Button Label",
+          "placeholder": ""
+        }
+      },
+      "primaryButtonVariation": {
+        "type": "Select",
+        "config": {
+          "label": "Primary Button Variation",
+          "placeholder": "",
+          "options": ["btn-primary", "btn-secondary", "btn-accent", "link-primary", "link-secondary", "link-accent"]
+        }
+      },
+      "secondaryButtonIcon": {
+        "type": "Image",
+        "config": {
+          "label": "Secondary Button Icon",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "secondaryButtonLink": {
+        "type": "Link",
+        "config": {
+          "label": "Secondary Button Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "secondaryButtonLabel": {
+        "type": "Text",
+        "config": {
+          "label": "Secondary Button Label",
+          "placeholder": ""
+        }
+      },
+      "secondaryButtonVariation": {
+        "type": "Select",
+        "config": {
+          "label": "Secondary Button Variation",
+          "placeholder": "",
+          "options": ["btn-primary", "btn-secondary", "btn-accent", "link-primary", "link-secondary", "link-accent"]
         }
       },
       "slices": {

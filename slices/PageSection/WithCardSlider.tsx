@@ -10,9 +10,10 @@ export default async function WithCardSlider({ primary }: WithCardSliderProps) {
   const { title, description, titleColor } = primary;
   const client = createClient();
 
-  const slider = isFilled.contentRelationship(primary.slider)
-    ? await client.getByUID('card_slider', primary.slider.id)
-    : null;
+  const slider =
+    isFilled.contentRelationship(primary.slider) && primary.slider.uid
+      ? await client.getByUID('card_slider', primary.slider.uid)
+      : null;
 
   return (
     <div className="flex w-[100%] flex-col gap-5">

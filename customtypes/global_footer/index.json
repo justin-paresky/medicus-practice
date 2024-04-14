@@ -7,12 +7,10 @@
   "json": {
     "Main": {
       "copywrite": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Copywrite",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "multi": "paragraph,preformatted,strong,em,hyperlink,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "links": {
@@ -21,15 +19,29 @@
           "label": "Links",
           "repeat": true,
           "fields": {
-            "button": {
+            "link": {
               "type": "Link",
               "config": {
-                "label": "Button",
+                "label": "Link",
                 "placeholder": "",
                 "select": null
               }
+            },
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
             }
           }
+        }
+      },
+      "footerPopupLink": {
+        "type": "Text",
+        "config": {
+          "label": "Footer Popup Link",
+          "placeholder": ""
         }
       },
       "footerPopup": {

@@ -9,8 +9,10 @@
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Taken"
-						}
+							"text": "A Better Model for Your Practice - The Best of Both Worlds",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -20,15 +22,17 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Ullamco sint irure commodo do sunt est. Labore quis quis tempor voluptate ipsum quis occaecat fugiat laboris nisi. Voluptate ipsum velit dolor consectetur mollit exercitation minim commodo ipsum id."
-						}
+							"text": "Experience the freedom and flexibility to practice your way, with a supportive network to streamline administrative tasks and optimize costs. Empower yourself to focus on what matters most - your patients - with the support of a collaborative network and innovative technology solutions.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
 			"label": {
 				"__TYPE__": "FieldContent",
-				"value": "known",
-				"type": "Text"
+				"type": "Text",
+				"value": "join the waitlist"
 			},
 			"link": {
 				"__TYPE__": "LinkContent",
@@ -39,28 +43,14 @@
 			},
 			"variation": {
 				"__TYPE__": "FieldContent",
-				"value": "btn-accent",
-				"type": "Select"
+				"type": "Select",
+				"value": "btn-secondary"
 			}
 		},
 		"items": [
 			{
 				"__TYPE__": "GroupItemContent",
 				"value": [
-					[
-						"col1",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "Elit sit tempor amet qui id sit anim voluptate nisi commodo."
-									}
-								}
-							]
-						}
-					],
 					[
 						"col2",
 						{
@@ -69,8 +59,10 @@
 								{
 									"type": "paragraph",
 									"content": {
-										"text": "Minim incididunt nostrud duis tempor deserunt dolor adipisicing exercitation consequat excepteur nostrud nulla exercitation laboris."
-									}
+										"text": "Solo practice (Insurance)",
+										"spans": []
+									},
+									"direction": "ltr"
 								}
 							]
 						}
@@ -83,8 +75,10 @@
 								{
 									"type": "paragraph",
 									"content": {
-										"text": "Excepteur pariatur duis non non ad ipsum officia occaecat anim."
-									}
+										"text": "Solo practice (Private)",
+										"spans": []
+									},
+									"direction": "ltr"
 								}
 							]
 						}
@@ -97,8 +91,10 @@
 								{
 									"type": "paragraph",
 									"content": {
-										"text": "Commodo tempor id enim sunt nisi culpa sint esse consectetur nulla aliquip voluptate."
-									}
+										"text": "PVZ (Insurance)",
+										"spans": []
+									},
+									"direction": "ltr"
 								}
 							]
 						}
@@ -111,7 +107,552 @@
 								{
 									"type": "paragraph",
 									"content": {
-										"text": "Ex non aliquip duis ea eiusmod ipsum nulla exercitation minim aliqua sint ipsum aliqua ipsum."
+										"text": "Medicus Practice",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"col1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Self-employed",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"col2",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "image",
+									"data": {
+										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+										"alt": "sliced orange fruit on white surface",
+										"origin": {
+											"id": "92HwFhCp-MQ",
+											"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+											"width": 3699,
+											"height": 2959
+										},
+										"width": 3699,
+										"height": 2959,
+										"edit": {
+											"background": "transparent",
+											"zoom": 1,
+											"crop": {
+												"x": 0,
+												"y": 0
+											}
+										},
+										"credits": null,
+										"__TYPE__": "ImageContent"
+									}
+								}
+							]
+						}
+					],
+					[
+						"col3",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "image",
+									"data": {
+										"__TYPE__": "ImageContent",
+										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+										"alt": "sliced orange fruit on white surface",
+										"origin": {
+											"id": "92HwFhCp-MQ",
+											"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+											"width": 3699,
+											"height": 2959
+										},
+										"width": 3699,
+										"height": 2959,
+										"edit": {
+											"background": "transparent",
+											"zoom": 1,
+											"crop": {
+												"x": 0,
+												"y": 0
+											}
+										}
+									}
+								}
+							]
+						}
+					],
+					[
+						"col5",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "image",
+									"data": {
+										"__TYPE__": "ImageContent",
+										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+										"alt": "sliced orange fruit on white surface",
+										"origin": {
+											"id": "92HwFhCp-MQ",
+											"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+											"width": 3699,
+											"height": 2959
+										},
+										"width": 3699,
+										"height": 2959,
+										"edit": {
+											"background": "transparent",
+											"zoom": 1,
+											"crop": {
+												"x": 0,
+												"y": 0
+											}
+										}
+									}
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"col1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Economic and professional independence",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"col3",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "image",
+									"data": {
+										"__TYPE__": "ImageContent",
+										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+										"alt": "sliced orange fruit on white surface",
+										"origin": {
+											"id": "92HwFhCp-MQ",
+											"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+											"width": 3699,
+											"height": 2959
+										},
+										"width": 3699,
+										"height": 2959,
+										"edit": {
+											"background": "transparent",
+											"zoom": 1,
+											"crop": {
+												"x": 0,
+												"y": 0
+											}
+										}
+									}
+								}
+							]
+						}
+					],
+					[
+						"col5",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "image",
+									"data": {
+										"__TYPE__": "ImageContent",
+										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+										"alt": "sliced orange fruit on white surface",
+										"origin": {
+											"id": "92HwFhCp-MQ",
+											"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+											"width": 3699,
+											"height": 2959
+										},
+										"width": 3699,
+										"height": 2959,
+										"edit": {
+											"background": "transparent",
+											"zoom": 1,
+											"crop": {
+												"x": 0,
+												"y": 0
+											}
+										}
+									}
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"col1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "More time for patients",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"col3",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "image",
+									"data": {
+										"__TYPE__": "ImageContent",
+										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+										"alt": "sliced orange fruit on white surface",
+										"origin": {
+											"id": "92HwFhCp-MQ",
+											"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+											"width": 3699,
+											"height": 2959
+										},
+										"width": 3699,
+										"height": 2959,
+										"edit": {
+											"background": "transparent",
+											"zoom": 1,
+											"crop": {
+												"x": 0,
+												"y": 0
+											}
+										}
+									}
+								}
+							]
+						}
+					],
+					[
+						"col5",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "image",
+									"data": {
+										"__TYPE__": "ImageContent",
+										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+										"alt": "sliced orange fruit on white surface",
+										"origin": {
+											"id": "92HwFhCp-MQ",
+											"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+											"width": 3699,
+											"height": 2959
+										},
+										"width": 3699,
+										"height": 2959,
+										"edit": {
+											"background": "transparent",
+											"zoom": 1,
+											"crop": {
+												"x": 0,
+												"y": 0
+											}
+										}
+									}
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"col1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Interdisciplinary Collaboration",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"col4",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "image",
+									"data": {
+										"__TYPE__": "ImageContent",
+										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+										"alt": "sliced orange fruit on white surface",
+										"origin": {
+											"id": "92HwFhCp-MQ",
+											"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+											"width": 3699,
+											"height": 2959
+										},
+										"width": 3699,
+										"height": 2959,
+										"edit": {
+											"background": "transparent",
+											"zoom": 1,
+											"crop": {
+												"x": 0,
+												"y": 0
+											}
+										}
+									}
+								}
+							]
+						}
+					],
+					[
+						"col5",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "image",
+									"data": {
+										"__TYPE__": "ImageContent",
+										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+										"alt": "sliced orange fruit on white surface",
+										"origin": {
+											"id": "92HwFhCp-MQ",
+											"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+											"width": 3699,
+											"height": 2959
+										},
+										"width": 3699,
+										"height": 2959,
+										"edit": {
+											"background": "transparent",
+											"zoom": 1,
+											"crop": {
+												"x": 0,
+												"y": 0
+											}
+										}
+									}
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"col1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Reduced entrepreneurial risk & cost reduction",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"col4",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "image",
+									"data": {
+										"__TYPE__": "ImageContent",
+										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+										"alt": "sliced orange fruit on white surface",
+										"origin": {
+											"id": "92HwFhCp-MQ",
+											"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+											"width": 3699,
+											"height": 2959
+										},
+										"width": 3699,
+										"height": 2959,
+										"edit": {
+											"background": "transparent",
+											"zoom": 1,
+											"crop": {
+												"x": 0,
+												"y": 0
+											}
+										}
+									}
+								}
+							]
+						}
+					],
+					[
+						"col5",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "image",
+									"data": {
+										"__TYPE__": "ImageContent",
+										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+										"alt": "sliced orange fruit on white surface",
+										"origin": {
+											"id": "92HwFhCp-MQ",
+											"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+											"width": 3699,
+											"height": 2959
+										},
+										"width": 3699,
+										"height": 2959,
+										"edit": {
+											"background": "transparent",
+											"zoom": 1,
+											"crop": {
+												"x": 0,
+												"y": 0
+											}
+										}
+									}
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"col1",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Relief from administrative tasks",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"col4",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "image",
+									"data": {
+										"__TYPE__": "ImageContent",
+										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+										"alt": "sliced orange fruit on white surface",
+										"origin": {
+											"id": "92HwFhCp-MQ",
+											"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+											"width": 3699,
+											"height": 2959
+										},
+										"width": 3699,
+										"height": 2959,
+										"edit": {
+											"background": "transparent",
+											"zoom": 1,
+											"crop": {
+												"x": 0,
+												"y": 0
+											}
+										}
+									}
+								}
+							]
+						}
+					],
+					[
+						"col5",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "image",
+									"data": {
+										"__TYPE__": "ImageContent",
+										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+										"alt": "sliced orange fruit on white surface",
+										"origin": {
+											"id": "92HwFhCp-MQ",
+											"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
+											"width": 3699,
+											"height": 2959
+										},
+										"width": 3699,
+										"height": 2959,
+										"edit": {
+											"background": "transparent",
+											"zoom": 1,
+											"crop": {
+												"x": 0,
+												"y": 0
+											}
+										}
 									}
 								}
 							]

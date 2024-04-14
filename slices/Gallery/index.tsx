@@ -54,6 +54,7 @@ const ImageGallery = ({ slice }: ImageGalleryProps): JSX.Element => {
           return (
             isFilled.image(photo.image) && (
               <div
+                key={photo.image.id}
                 className={`${idx === 0 ? 'col-span-4 row-span-4 h-[100%]' : 'col-span-1 row-span-1'} carousel-item relative w-full cursor-pointer rounded shadow-lg`}
               >
                 <PrismicNextImage

@@ -28,7 +28,7 @@
   }
 
   a {
-    @apply text-green-dark
+    @apply text-green-dark font-sans
   }
 
   a:hover {

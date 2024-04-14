@@ -1,6 +1,12 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-var */
 /* eslint-disable import/no-mutable-exports */
 /* eslint-disable no-process-env */
 import { PrismaClient } from '@prisma/client';
+
+declare global {
+  var prisma: PrismaClient | undefined;
+}
 
 let prisma: PrismaClient;
 

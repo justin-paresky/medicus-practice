@@ -260,28 +260,6 @@ type FormDocumentDataSlicesSlice = FormFieldSlice;
  */
 interface FormDocumentData {
   /**
-   * Primary Button field in *Form*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: form.primaryButton
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  primaryButton: prismic.LinkField;
-
-  /**
-   * Secondary Button field in *Form*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: form.secondaryButton
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  secondaryButton: prismic.LinkField;
-
-  /**
    * Confirmation Modal field in *Form*
    *
    * - **Field Type**: Content Relationship
@@ -291,6 +269,98 @@ interface FormDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
   confirmationModal: prismic.ContentRelationshipField<'modal'>;
+
+  /**
+   * Primary Button Icon field in *Form*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: form.primaryButtonIcon
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  primaryButtonIcon: prismic.ImageField<never>;
+
+  /**
+   * Primary Button Link field in *Form*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: form.primaryButtonLink
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  primaryButtonLink: prismic.LinkField;
+
+  /**
+   * Primary Button Label field in *Form*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: form.primaryButtonLabel
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  primaryButtonLabel: prismic.KeyTextField;
+
+  /**
+   * Primary Button Variation field in *Form*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: form.primaryButtonVariation
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  primaryButtonVariation: prismic.SelectField<
+    'btn-primary' | 'btn-secondary' | 'btn-accent' | 'link-primary' | 'link-secondary' | 'link-accent'
+  >;
+
+  /**
+   * Secondary Button Icon field in *Form*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: form.secondaryButtonIcon
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  secondaryButtonIcon: prismic.ImageField<never>;
+
+  /**
+   * Secondary Button Link field in *Form*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: form.secondaryButtonLink
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  secondaryButtonLink: prismic.LinkField;
+
+  /**
+   * Secondary Button Label field in *Form*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: form.secondaryButtonLabel
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  secondaryButtonLabel: prismic.KeyTextField;
+
+  /**
+   * Secondary Button Variation field in *Form*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: form.secondaryButtonVariation
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  secondaryButtonVariation: prismic.SelectField<
+    'btn-primary' | 'btn-secondary' | 'btn-accent' | 'link-primary' | 'link-secondary' | 'link-accent'
+  >;
 
   /**
    * Slice Zone field in *Form*
@@ -324,14 +394,24 @@ export type FormDocument<Lang extends string = string> = prismic.PrismicDocument
  */
 export interface GlobalFooterDocumentDataLinksItem {
   /**
-   * Button field in *Global Footer → Links*
+   * Link field in *Global Footer → Links*
    *
    * - **Field Type**: Link
    * - **Placeholder**: *None*
-   * - **API ID Path**: global_footer.links[].button
+   * - **API ID Path**: global_footer.links[].link
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  button: prismic.LinkField;
+  link: prismic.LinkField;
+
+  /**
+   * Label field in *Global Footer → Links*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_footer.links[].label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  label: prismic.KeyTextField;
 }
 
 /**
@@ -341,13 +421,13 @@ interface GlobalFooterDocumentData {
   /**
    * Copywrite field in *Global Footer*
    *
-   * - **Field Type**: Rich Text
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
    * - **API ID Path**: global_footer.copywrite
    * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  copywrite: prismic.RichTextField;
+  copywrite: prismic.KeyTextField;
 
   /**
    * Links field in *Global Footer*
@@ -359,6 +439,17 @@ interface GlobalFooterDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   links: prismic.GroupField<Simplify<GlobalFooterDocumentDataLinksItem>>;
+
+  /**
+   * Footer Popup Link field in *Global Footer*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_footer.footerPopupLink
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  footerPopupLink: prismic.KeyTextField;
 
   /**
    * Footer Popup field in *Global Footer*
@@ -392,24 +483,44 @@ export type GlobalFooterDocument<Lang extends string = string> = prismic.Prismic
  */
 export interface GlobalHeaderDocumentDataLocalesItem {
   /**
-   * Locale Label field in *Global Header → Locales*
+   * Label field in *Global Header → Locales*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: global_header.locales[].localeLabel
+   * - **API ID Path**: global_header.locales[].label
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  localeLabel: prismic.KeyTextField;
+  label: prismic.KeyTextField;
 
   /**
-   * Locale Key field in *Global Header → Locales*
+   * Key field in *Global Header → Locales*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: global_header.locales[].localeKey
+   * - **API ID Path**: global_header.locales[].key
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  localeKey: prismic.KeyTextField;
+  key: prismic.KeyTextField;
+
+  /**
+   * Flag field in *Global Header → Locales*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_header.locales[].flag
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  flag: prismic.ImageField<never>;
+
+  /**
+   * Short Label field in *Global Header → Locales*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_header.locales[].shortLabel
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  shortLabel: prismic.KeyTextField;
 }
 
 /**
@@ -417,14 +528,69 @@ export interface GlobalHeaderDocumentDataLocalesItem {
  */
 export interface GlobalHeaderDocumentDataLinksItem {
   /**
-   * Button field in *Global Header → Links*
+   * Icon field in *Global Header → Links*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_header.links[].icon
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  icon: prismic.ImageField<never>;
+
+  /**
+   * Link field in *Global Header → Links*
    *
    * - **Field Type**: Link
    * - **Placeholder**: *None*
-   * - **API ID Path**: global_header.links[].button
+   * - **API ID Path**: global_header.links[].link
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  button: prismic.LinkField;
+  link: prismic.LinkField;
+
+  /**
+   * Label field in *Global Header → Links*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_header.links[].label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  label: prismic.KeyTextField;
+}
+
+/**
+ * Item in *Global Header → CTAs*
+ */
+export interface GlobalHeaderDocumentDataCtasItem {
+  /**
+   * Icon field in *Global Header → CTAs*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_header.ctas[].icon
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  icon: prismic.ImageField<never>;
+
+  /**
+   * Link field in *Global Header → CTAs*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_header.ctas[].link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  link: prismic.LinkField;
+
+  /**
+   * Label field in *Global Header → CTAs*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_header.ctas[].label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  label: prismic.KeyTextField;
 }
 
 type GlobalHeaderDocumentDataSlicesSlice = never;
@@ -467,15 +633,15 @@ interface GlobalHeaderDocumentData {
   links: prismic.GroupField<Simplify<GlobalHeaderDocumentDataLinksItem>>;
 
   /**
-   * Button field in *Global Header*
+   * CTAs field in *Global Header*
    *
-   * - **Field Type**: Link
+   * - **Field Type**: Group
    * - **Placeholder**: *None*
-   * - **API ID Path**: global_header.button
+   * - **API ID Path**: global_header.ctas[]
    * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   * - **Documentation**: https://prismic.io/docs/field#group
    */
-  button: prismic.LinkField;
+  ctas: prismic.GroupField<Simplify<GlobalHeaderDocumentDataCtasItem>>;
 
   /**
    * Slice Zone field in *Global Header*
@@ -845,6 +1011,70 @@ export type SocialLinksDocument<Lang extends string = string> = prismic.PrismicD
   Lang
 >;
 
+type SpecializationPageDocumentDataSlicesSlice = PageSectionSlice | HeroSlice;
+
+/**
+ * Content for Specialization Page documents
+ */
+interface SpecializationPageDocumentData {
+  /**
+   * Slice Zone field in *Specialization Page*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: specialization_page.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<SpecializationPageDocumentDataSlicesSlice> /**
+   * Meta Description field in *Specialization Page*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: specialization_page.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Specialization Page*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: specialization_page.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Specialization Page*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: specialization_page.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Specialization Page document from Prismic
+ *
+ * - **API ID**: `specialization_page`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type SpecializationPageDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<
+  Simplify<SpecializationPageDocumentData>,
+  'specialization_page',
+  Lang
+>;
+
 /**
  * Item in *Talk To An Expert Modal → Left Pane*
  */
@@ -1105,6 +1335,7 @@ export type AllDocumentTypes =
   | ModalDocument
   | PhotosDocument
   | SocialLinksDocument
+  | SpecializationPageDocument
   | TalkToAnExpertModalDocument
   | TextPageDocument;
 
@@ -1509,17 +1740,27 @@ export interface FooterBlockSliceDefaultItem {
    * - **API ID Path**: footer_block.items[].socialLinks
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  socialLinks: prismic.ContentRelationshipField<'social_links'>;
+  socialLinks: prismic.ContentRelationshipField;
 
   /**
-   * Button field in *FooterBlock → Items*
+   * Link field in *FooterBlock → Items*
    *
    * - **Field Type**: Link
    * - **Placeholder**: *None*
-   * - **API ID Path**: footer_block.items[].button
+   * - **API ID Path**: footer_block.items[].link
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  button: prismic.LinkField;
+  link: prismic.LinkField;
+
+  /**
+   * Label field in *FooterBlock → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: footer_block.items[].label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  label: prismic.KeyTextField;
 }
 
 /**
@@ -3629,6 +3870,16 @@ export interface PageSectionSliceWithFormPrimary {
   description: prismic.RichTextField;
 
   /**
+   * Description Color field in *PageSection → Primary*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.descriptionColor
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  descriptionColor: prismic.ColorField;
+
+  /**
    * Background Image field in *PageSection → Primary*
    *
    * - **Field Type**: Image
@@ -4305,6 +4556,7 @@ declare module '@prismicio/client' {
       GlobalHeaderDocumentData,
       GlobalHeaderDocumentDataLocalesItem,
       GlobalHeaderDocumentDataLinksItem,
+      GlobalHeaderDocumentDataCtasItem,
       GlobalHeaderDocumentDataSlicesSlice,
       HomeDocument,
       HomeDocumentData,
@@ -4320,6 +4572,9 @@ declare module '@prismicio/client' {
       SocialLinksDocument,
       SocialLinksDocumentData,
       SocialLinksDocumentDataSlicesSlice,
+      SpecializationPageDocument,
+      SpecializationPageDocumentData,
+      SpecializationPageDocumentDataSlicesSlice,
       TalkToAnExpertModalDocument,
       TalkToAnExpertModalDocumentData,
       TalkToAnExpertModalDocumentDataLeftPaneItem,

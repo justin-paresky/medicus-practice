@@ -766,6 +766,13 @@
             "multi": "paragraph,preformatted,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,heading3,heading4,heading5,heading6"
           }
         },
+        "descriptionColor": {
+          "type": "Color",
+          "config": {
+            "label": "Description Color",
+            "placeholder": ""
+          }
+        },
         "backgroundImage": {
           "type": "Image",
           "config": {

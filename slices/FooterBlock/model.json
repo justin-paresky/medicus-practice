@@ -36,18 +36,23 @@
           "type": "Link",
           "config": {
             "label": "Social Links",
-            "select": "document",
-            "customtypes": [
-              "social_links"
-            ]
+            "select": "document"
           }
         },
-        "button": {
+        "link": {
           "type": "Link",
           "config": {
-            "label": "Button",
+            "label": "Link",
             "placeholder": "",
+            "allowTargetBlank": true,
             "select": null
+          }
+        },
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "Label",
+            "placeholder": ""
           }
         }
       }

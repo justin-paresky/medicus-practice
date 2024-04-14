@@ -4,6 +4,9 @@ import { ThemeProvider } from '@mui/material/styles';
 import type { Metadata } from 'next';
 
 import theme from './theme';
+
+import Main from '@/components/Main';
+
 import './globals.css';
 
 const neueEinstellung = localFont({
@@ -89,7 +92,9 @@ export default function RootLayout({
     <html lang="en">
       <AppRouterCacheProvider>
         <ThemeProvider theme={theme}>
-          <body className={`${cormorantGaramond.variable} ${neueEinstellung.variable}`}>{children}</body>
+          <body className={`${cormorantGaramond.variable} ${neueEinstellung.variable}`}>
+            <Main>{children}</Main>
+          </body>
         </ThemeProvider>
       </AppRouterCacheProvider>
     </html>

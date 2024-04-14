@@ -652,7 +652,7 @@
 	},
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "withForm",
+		"variation": "withGrid",
 		"primary": {
 			"title": {
 				"__TYPE__": "StructuredTextContent",
@@ -660,8 +660,10 @@
 					{
 						"type": "heading2",
 						"content": {
-							"text": "Least"
-						}
+							"text": "You take care of patients, we do the rest",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -671,21 +673,46 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Laborum eu aute sint eiusmod Lorem. Dolore dolore et non labore mollit ullamco fugiat occaecat id ex magna labore aliquip minim enim. Cupidatat cupidatat cillum qui eiusmod dolor eu qui consectetur officia magna aute adipisicing irure reprehenderit tempor."
-						}
+							"text": "Elevate your medical or therapeutic practice with our streamlined and comprehensive services, empowering you to focus on what matters most - your patients.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+					"width": 5616,
+					"height": 3744
+				},
+				"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?rect=0%2C8%2C5616%2C3728&w=476&h=316",
+				"width": 476,
+				"height": 316,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 8
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
 			},
 			"backgroundImage": {
 				"origin": {
 					"id": "main",
-					"url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
-					"width": 4160,
-					"height": 3120
+					"url": "https://images.prismic.io/medicus-practice/ZgrzvMt2UUcvBUBe_whitepattern_beijebackground.png?auto=format,compress",
+					"width": 5792,
+					"height": 8192
 				},
-				"url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
-				"width": 4160,
-				"height": 3120,
+				"url": "https://images.prismic.io/medicus-practice/ZgrzvMt2UUcvBUBe_whitepattern_beijebackground.png?auto=format,compress",
+				"width": 5792,
+				"height": 8192,
 				"edit": {
 					"zoom": 1,
 					"crop": {
@@ -699,21 +726,207 @@
 				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			},
-			"form": {
+			"link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"label": {
+				"__TYPE__": "FieldContent",
+				"value": "produce",
+				"type": "Text"
+			},
+			"variable": {
+				"__TYPE__": "FieldContent",
+				"value": "btn-secondary",
+				"type": "Select"
+			},
+			"showFilter": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"filterPlaceholder": {
+				"__TYPE__": "FieldContent",
+				"value": "rabbit",
+				"type": "Text"
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"type": "Color",
+				"value": "#F4F0E8"
+			},
+			"cards": {
 				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "DocumentLink",
-					"id": "mock_document_id"
+					"id": "our_services_cards"
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withCardSlider",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Real Doctors. Real Results. Discover Why They Choose Us.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"label": {
+				"__TYPE__": "FieldContent",
+				"value": "army",
+				"type": "Text"
+			},
+			"variable": {
+				"__TYPE__": "FieldContent",
+				"value": "btn-primary",
+				"type": "Select"
+			},
+			"showFilter": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"filterPlaceholder": {
+				"__TYPE__": "FieldContent",
+				"value": "hungry",
+				"type": "Text"
+			},
+			"slider": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "DocumentLink",
+					"id": "testimonials_slider"
 				}
 			},
 			"backgroundColor": {
 				"__TYPE__": "FieldContent",
-				"value": "#4d5b49",
-				"type": "Color"
+				"type": "Color",
+				"value": "#215045"
 			},
 			"titleColor": {
 				"__TYPE__": "FieldContent",
-				"value": "#fe1d22",
+				"type": "Color",
+				"value": "#FBF4E0"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withPhotos",
+		"primary": {
+			"photos": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "DocumentLink",
+					"id": "location_photos"
+				}
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withForm",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Don’t Miss Out: Get Early Access & Exclusive Offers",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"backgroundImage": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.prismic.io/medicus-practice/ZgwYjst2UUcvBVhi_newsletterpattern.jpg?auto=format,compress",
+					"width": 5792,
+					"height": 8192
+				},
+				"url": "https://images.prismic.io/medicus-practice/ZgwYjst2UUcvBVhi_newsletterpattern.jpg?auto=format,compress",
+				"width": 5792,
+				"height": 8192,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Join our waitlist to be among the first to access our innovative practice model. Launching Soon: Be Among the First to Experience Medicus Practice. Get exclusive updates, early-bird offers, and invitations to informative events tailored for the healthcare community.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"form": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "DocumentLink",
+					"id": "newsletter_form"
+				}
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"type": "Color",
+				"value": "#FBF4E0"
+			},
+			"descriptionColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#59a773",
 				"type": "Color"
 			}
 		},
@@ -883,7 +1096,7 @@
 			"description3": {
 				"__TYPE__": "FieldContent",
 				"type": "Text",
-				"value": "Adhere to performance principles.  We foster an open and direct feedback culture and reward the outstanding performance of our employees"
+				"value": "Adhere to performance principles. We foster an open and direct feedback culture and reward the outstanding performance of our employees"
 			}
 		},
 		"items": [
@@ -1041,215 +1254,6 @@
 						}
 					]
 				]
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "withCardSlider",
-		"primary": {
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "Real Doctors. Real Results. Discover Why They Choose Us.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"link": {
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "ExternalLink",
-					"url": "http://google.com"
-				}
-			},
-			"label": {
-				"__TYPE__": "FieldContent",
-				"value": "army",
-				"type": "Text"
-			},
-			"variable": {
-				"__TYPE__": "FieldContent",
-				"value": "btn-primary",
-				"type": "Select"
-			},
-			"showFilter": {
-				"__TYPE__": "BooleanContent",
-				"value": false
-			},
-			"filterPlaceholder": {
-				"__TYPE__": "FieldContent",
-				"value": "hungry",
-				"type": "Text"
-			},
-			"slider": {
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "DocumentLink",
-					"id": "testimonials_slider"
-				}
-			},
-			"backgroundColor": {
-				"__TYPE__": "FieldContent",
-				"type": "Color",
-				"value": "#215045"
-			},
-			"titleColor": {
-				"__TYPE__": "FieldContent",
-				"type": "Color",
-				"value": "#FBF4E0"
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "withGrid",
-		"primary": {
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "You take care of patients, we do the rest",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"description": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Elevate your medical or therapeutic practice with our streamlined and comprehensive services, empowering you to focus on what matters most - your patients.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"image": {
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
-					"width": 5616,
-					"height": 3744
-				},
-				"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?rect=0%2C8%2C5616%2C3728&w=476&h=316",
-				"width": 476,
-				"height": 316,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 8
-					},
-					"background": "transparent"
-				},
-				"credits": null,
-				"alt": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
-			"backgroundImage": {
-				"origin": {
-					"id": "main",
-					"url": "https://images.prismic.io/medicus-practice/ZgrzvMt2UUcvBUBe_whitepattern_beijebackground.png?auto=format,compress",
-					"width": 5792,
-					"height": 8192
-				},
-				"url": "https://images.prismic.io/medicus-practice/ZgrzvMt2UUcvBUBe_whitepattern_beijebackground.png?auto=format,compress",
-				"width": 5792,
-				"height": 8192,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					},
-					"background": "transparent"
-				},
-				"credits": null,
-				"alt": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
-			"link": {
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "ExternalLink",
-					"url": "http://google.com"
-				}
-			},
-			"label": {
-				"__TYPE__": "FieldContent",
-				"value": "produce",
-				"type": "Text"
-			},
-			"variable": {
-				"__TYPE__": "FieldContent",
-				"value": "btn-secondary",
-				"type": "Select"
-			},
-			"showFilter": {
-				"__TYPE__": "BooleanContent",
-				"value": true
-			},
-			"filterPlaceholder": {
-				"__TYPE__": "FieldContent",
-				"value": "rabbit",
-				"type": "Text"
-			},
-			"backgroundColor": {
-				"__TYPE__": "FieldContent",
-				"type": "Color",
-				"value": "#F4F0E8"
-			},
-			"cards": {
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "DocumentLink",
-					"id": "our_services_cards"
-				}
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "withPhotos",
-		"primary": {
-			"photos": {
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "DocumentLink",
-					"id": "location_photos"
-				}
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
 			}
 		]
 	}

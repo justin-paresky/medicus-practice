@@ -77,6 +77,14 @@ module.exports = {
           '.btn-accent': {
             color: '#215045',
           },
+          '.link-gray': {
+            color: '#768188',
+            'font-family': 'var(--font-neue-einstellung)',
+            'text-decoration': 'none',
+            '&:hover': {
+              'text-decoration': 'underline',
+            },
+          },
         },
       },
     ],
