@@ -110,7 +110,6 @@ const theme = createTheme({
         containedSecondary: {
           color: COLORS.WHITE,
 
-          // eslint-disable-next-line @typescript-eslint/naming-convention
           '&:hover': {
             backgroundColor: COLORS.SECONDARY_DARK,
           },
