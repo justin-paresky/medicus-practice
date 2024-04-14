@@ -47,7 +47,7 @@ const PageSection = ({ slice }: PageSectionProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="flex flex-col gap-[25px] bg-cover bg-no-repeat p-[50px] pt-[50px] sm:flex-row sm:gap-[50px] sm:p-[100px]"
+      className={`${slice.variation !== 'withHeartbeat' && 'p-[50px] sm:p-[100px]'} ${slice.variation === 'withHeartbeat' && 'bg-[length:90%] bg-[center_top_30%]'} flex flex-col gap-[25px] bg-cover bg-no-repeat md:flex-row md:gap-[50px]`}
       style={{
         backgroundColor: isFilled.color(slice.primary.backgroundColor) ? slice.primary.backgroundColor : '#ffffff',
         backgroundImage: isFilled.image(slice.primary.backgroundImage)

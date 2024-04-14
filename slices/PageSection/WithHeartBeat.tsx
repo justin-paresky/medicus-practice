@@ -1,5 +1,4 @@
 import { type Content, type RichTextField, type KeyTextField, isFilled } from '@prismicio/client';
-import { PrismicNextImage } from '@prismicio/next';
 import { PrismicRichText } from '@prismicio/react';
 
 export type WithHeartBeatProps = Content.PageSectionSliceWithHeartbeat;
@@ -43,13 +42,12 @@ const TextSection = ({ title, description }: TextSectionProps) => {
 };
 
 export default function WithHeartBeat({ primary }: WithHeartBeatProps) {
-  const { title1, title2, title3, description1, description2, description3, backgroundImage } = primary;
+  const { title1, title2, title3, description1, description2, description3 } = primary;
 
   return (
-    <div className="relative mx-auto w-[100%] md:w-[70%]">
-      {isFilled.image(backgroundImage) && <PrismicNextImage className="hidden md:block" field={backgroundImage} />}
-      <div className="absolute left-0 top-0 flex h-[100%] w-[100%] flex-col justify-start gap-5 md:justify-between">
-        <div className="hidden flex-row justify-around gap-5 md:flex">
+    <div className="relative mx-auto w-[100%] pb-[25px] md:pb-[50px]">
+      <div className="flex h-[100%] w-[100%] flex-col justify-start gap-5 md:justify-between">
+        <div className="hidden h-[450px] flex-row justify-evenly gap-5 md:flex">
           <Title title={title1} />
           <Title title={title2} />
           <Title title={title3} />

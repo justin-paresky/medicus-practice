@@ -54,11 +54,15 @@ export default function WithImage({ primary, items, variation }: WithImageProps)
     <>
       {variation !== 'imageRight' && renderImage(true)}
       <div className="flex flex-grow flex-col gap-6">
-        <div className="text-[48px] font-semibold text-primary" style={{ color: descriptionColor || undefined }}>
+        <div className="text-[48px] font-semibold text-primary">
           {isFilled.richText(title) && <PrismicRichText field={title} />}
         </div>
         {renderImage()}
-        {isFilled.richText(description) && <PrismicRichText field={description} />}
+        {isFilled.richText(description) && (
+          <div style={{ color: descriptionColor || undefined }}>
+            <PrismicRichText field={description} />
+          </div>
+        )}
         {renderButtons()}
       </div>
       {variation === 'imageRight' && renderImage(true)}

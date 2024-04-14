@@ -10,6 +10,7 @@ import {
   AnyRegularField,
   ImageFieldImage,
 } from '@prismicio/client';
+import { PrismicLink } from '@prismicio/react';
 import { Menu, MenuItem, Button as MuiButton } from '@mui/material';
 import { Language, KeyboardArrowDown } from '@mui/icons-material';
 import { PrismicNextImage } from '@prismicio/next';
@@ -23,9 +24,10 @@ interface GlobalHeaderProps {
   locales?: GroupField;
   links?: GroupField;
   ctas?: GroupField;
+  homeLink?: LinkField;
 }
 
-export default function GlobalHeader({ logo, locales, links, ctas }: GlobalHeaderProps) {
+export default function GlobalHeader({ logo, locales, links, ctas, homeLink }: GlobalHeaderProps) {
   const [anchorElLocale, setAnchorElLocale] = useState<HTMLButtonElement | null>(null);
   const [selectedLocale, setSelectedLocale] = useState<Record<string, AnyRegularField> | null>(null);
 
@@ -50,7 +52,11 @@ export default function GlobalHeader({ logo, locales, links, ctas }: GlobalHeade
     <header className="fixed z-50 w-full border-b border-[#000000] bg-[#ffffff]">
       <ResponsiveContainer>
         <div className="flex w-[100%] flex-row items-center justify-between px-[50px] py-5 sm:px-[100px]">
-          {isFilled.image(logo) && <PrismicNextImage className="h-[52px] w-[278px]" field={logo} />}
+          {isFilled.image(logo) && (
+            <PrismicLink field={homeLink}>
+              <PrismicNextImage className="h-[52px] w-[278px]" field={logo} />
+            </PrismicLink>
+          )}
           <div className="flex flex-row items-center gap-7">
             {links?.length && (
               <div className="flex flex-col gap-2">

@@ -644,6 +644,17 @@ interface GlobalHeaderDocumentData {
   ctas: prismic.GroupField<Simplify<GlobalHeaderDocumentDataCtasItem>>;
 
   /**
+   * Home Link field in *Global Header*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: global_header.homeLink
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  homeLink: prismic.LinkField;
+
+  /**
    * Slice Zone field in *Global Header*
    *
    * - **Field Type**: Slice Zone
@@ -740,6 +751,17 @@ type LandingPageDocumentDataSlicesSlice = PageSectionSlice | HeroSlice;
  * Content for Landing Page documents
  */
 interface LandingPageDocumentData {
+  /**
+   * Text field in *Landing Page*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing_page.text
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  text: prismic.RichTextField;
+
   /**
    * Slice Zone field in *Landing Page*
    *
