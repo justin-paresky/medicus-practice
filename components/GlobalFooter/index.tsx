@@ -23,13 +23,18 @@ export default function GlobalFooter({ copywrite, links, footerPopup, footerPopu
   return (
     <div className="bg-[#ffffff]">
       <ResponsiveContainer>
-        <div className="relative flex flex-col items-center justify-between gap-2 px-[50px] py-3 md:flex-row md:px-[100px]">
+        <div className="mt-4 w-full border-[1px] border-gray" />
+        <div className="relative flex flex-col items-center justify-between gap-2 px-[50px] py-6 md:flex-row md:px-[100px]">
           {isFilled.keyText(copywrite) && <div className="font-sans text-sm text-gray">{copywrite}</div>}
           {isFilled.group(links) && (
             <>
               {links.map((item) => {
                 return (
-                  <PrismicLink className="text-sm text-gray" field={item.link as LinkField} key={item.label as string}>
+                  <PrismicLink
+                    className="text-sm capitalize text-gray"
+                    field={item.link as LinkField}
+                    key={item.label as string}
+                  >
                     {item.label as string}
                   </PrismicLink>
                 );

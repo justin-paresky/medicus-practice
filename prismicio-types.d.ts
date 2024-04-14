@@ -2974,6 +2974,16 @@ export interface PageSectionSliceDefaultPrimary {
   description: prismic.RichTextField;
 
   /**
+   * Description Color field in *PageSection → Primary*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.descriptionColor
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  descriptionColor: prismic.ColorField;
+
+  /**
    * Image field in *PageSection → Primary*
    *
    * - **Field Type**: Image
@@ -3174,6 +3184,16 @@ export interface PageSectionSliceImageRightPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   description: prismic.RichTextField;
+
+  /**
+   * Description Color field in *PageSection → Primary*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.descriptionColor
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  descriptionColor: prismic.ColorField;
 
   /**
    * Image field in *PageSection → Primary*
@@ -4132,6 +4152,16 @@ export interface PageSectionSliceLargeImagePrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   description: prismic.RichTextField;
+
+  /**
+   * Description Color field in *PageSection → Primary*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.descriptionColor
+   * - **Documentation**: https://prismic.io/docs/field#color
+   */
+  descriptionColor: prismic.ColorField;
 
   /**
    * Image field in *PageSection → Primary*

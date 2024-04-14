@@ -10,7 +10,7 @@ export type WithImageProps =
   | Content.PageSectionSliceLargeImage;
 
 export default function WithImage({ primary, items, variation }: WithImageProps) {
-  const { image, title, description } = primary;
+  const { image, title, description, descriptionColor } = primary;
 
   const renderButtons = () => {
     return items.length && isFilled.keyText(items[0].label) ? (
@@ -54,7 +54,7 @@ export default function WithImage({ primary, items, variation }: WithImageProps)
     <>
       {variation !== 'imageRight' && renderImage(true)}
       <div className="flex flex-grow flex-col gap-6">
-        <div className="text-[48px] font-semibold text-primary">
+        <div className="text-[48px] font-semibold text-primary" style={{ color: descriptionColor || undefined }}>
           {isFilled.richText(title) && <PrismicRichText field={title} />}
         </div>
         {renderImage()}

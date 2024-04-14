@@ -15,15 +15,14 @@ export const repositoryName = process.env.NEXT_PUBLIC_PRISMIC_ENVIRONMENT || con
  * {@link https://prismic.io/docs/route-resolver#route-resolver}
  */
 const routes: prismic.ClientConfig['routes'] = [
-  // Examples:
-  // {
-  // 	type: "homepage",
-  // 	path: "/",
-  // },
-  // {
-  // 	type: "page",
-  // 	path: "/:uid",
-  // },
+  {
+    type: 'home',
+    path: '/',
+  },
+  {
+    type: 'text_page',
+    path: '/:uid',
+  },
 ];
 
 /**

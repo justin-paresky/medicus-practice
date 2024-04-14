@@ -136,6 +136,11 @@
 				"__TYPE__": "FieldContent",
 				"value": "#6c027c",
 				"type": "Color"
+			},
+			"descriptionColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#7257d7",
+				"type": "Color"
 			}
 		},
 		"items": [
@@ -270,6 +275,11 @@
 			"titleColor": {
 				"__TYPE__": "FieldContent",
 				"value": "#111198",
+				"type": "Color"
+			},
+			"descriptionColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#da1c3b",
 				"type": "Color"
 			}
 		},
@@ -1188,6 +1198,11 @@
 			"titleColor": {
 				"__TYPE__": "FieldContent",
 				"value": "#fac5aa",
+				"type": "Color"
+			},
+			"descriptionColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#106248",
 				"type": "Color"
 			}
 		},
