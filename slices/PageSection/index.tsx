@@ -9,6 +9,7 @@ import WithCardSlider from './WithCardSlider';
 import WithGrid from './WithGrid';
 import WithPhotos from './WithPhotos';
 import WithForm from './WithForm';
+import WithText from './WithText';
 
 /**
  * Props for `PageSection`.
@@ -39,6 +40,8 @@ const PageSection = ({ slice }: PageSectionProps): JSX.Element => {
         return <WithPhotos {...slice} />;
       case 'withForm':
         return <WithForm {...slice} />;
+      case 'withText':
+        return <WithText {...slice} />;
       default:
         return null;
     }
@@ -49,10 +52,14 @@ const PageSection = ({ slice }: PageSectionProps): JSX.Element => {
       data-slice-variation={slice.variation}
       className={`${slice.variation !== 'withHeartbeat' && 'p-[50px] sm:p-[100px]'} ${slice.variation === 'withHeartbeat' && 'bg-[length:90%] bg-[center_top_30%]'} flex flex-col gap-[25px] bg-cover bg-no-repeat md:flex-row md:gap-[50px]`}
       style={{
-        backgroundColor: isFilled.color(slice.primary.backgroundColor) ? slice.primary.backgroundColor : '#ffffff',
-        backgroundImage: isFilled.image(slice.primary.backgroundImage)
-          ? `url("${slice.primary.backgroundImage.url}")`
-          : 'none',
+        backgroundColor:
+          slice.variation !== 'withText' && isFilled.color(slice.primary.backgroundColor)
+            ? slice.primary.backgroundColor
+            : '#ffffff',
+        backgroundImage:
+          slice.variation !== 'withText' && isFilled.image(slice.primary.backgroundImage)
+            ? `url("${slice.primary.backgroundImage.url}")`
+            : 'none',
       }}
     >
       {renderContent()}

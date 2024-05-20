@@ -11,23 +11,21 @@ import {
   ImageFieldImage,
 } from '@prismicio/client';
 import { PrismicLink } from '@prismicio/react';
-import { Menu, MenuItem, Button as MuiButton } from '@mui/material';
-import { Language, KeyboardArrowDown } from '@mui/icons-material';
+import { Menu, MenuItem } from '@mui/material';
+import { Language } from '@mui/icons-material';
 import { PrismicNextImage } from '@prismicio/next';
-import { v4 as uuidv4 } from 'uuid';
 
 import Button from '../Button';
 import ResponsiveContainer from '../ResponsiveContainer';
 
-interface GlobalHeaderProps {
+export interface GlobalHeaderProps {
   logo?: ImageField;
   locales?: GroupField;
-  links?: GroupField;
   ctas?: GroupField;
   homeLink?: LinkField;
 }
 
-export default function GlobalHeader({ logo, locales, links, ctas, homeLink }: GlobalHeaderProps) {
+export default function GlobalHeader({ logo, locales, ctas, homeLink }: GlobalHeaderProps) {
   const [anchorElLocale, setAnchorElLocale] = useState<HTMLButtonElement | null>(null);
   const [selectedLocale, setSelectedLocale] = useState<Record<string, AnyRegularField> | null>(null);
 
@@ -42,59 +40,31 @@ export default function GlobalHeader({ logo, locales, links, ctas, homeLink }: G
 
   const renderLocaleAvatar = () => {
     return selectedLocale ? (
-      <PrismicNextImage className="h-[32px] w-[32px] rounded-badge" field={selectedLocale.flag as ImageFieldImage} />
+      <PrismicNextImage
+        className="h-[20px] w-[20px] rounded-badge md:h-[32px] md:w-[32px]"
+        field={selectedLocale.flag as ImageFieldImage}
+      />
     ) : (
-      <Language fontSize="large" />
+      <Language className="!h-[20px] !w-[20px] rounded-badge md:!h-[32px] md:!w-[32px]" />
     );
   };
 
   return (
     <header className="fixed z-50 w-full border-b border-[#000000] bg-[#ffffff]">
       <ResponsiveContainer>
-        <div className="flex w-[100%] flex-row items-center justify-between px-[50px] py-5 sm:px-[100px]">
+        <div className="flex w-[100%] flex-row items-center justify-between px-3 py-3 lg:px-[100px] lg:py-5">
           {isFilled.image(logo) && (
             <PrismicLink field={homeLink}>
-              <PrismicNextImage className="h-[52px] w-[278px]" field={logo} />
+              <PrismicNextImage className="h-[40px] w-[220px] md:h-[52px] md:w-[278px]" field={logo} />
             </PrismicLink>
           )}
           <div className="flex flex-row items-center gap-7">
-            {links?.length && (
-              <div className="flex flex-col gap-2">
-                {links.map((item) => {
-                  const { label, link, icon } = item;
-                  return (
-                    <Button
-                      key={uuidv4()}
-                      label={label as KeyTextField}
-                      link={link as LinkField}
-                      icon={icon as ImageField}
-                      variation="link-primary"
-                    />
-                  );
-                })}
-              </div>
-            )}
             {isFilled.group(locales) && (
               <>
-                <MuiButton
-                  sx={{
-                    padding: 0,
-                    width: 60,
-                    minWidth: 0,
-                    display: 'inline-flex',
-                    gap: '8px',
-                    '&:hover': {
-                      background: 'none',
-                    },
-                  }}
-                  disableRipple
-                  disableTouchRipple
-                  disableFocusRipple
-                  color="primary"
-                  variant="text"
-                  size="small"
+                <button
+                  type="button"
+                  className="flex flex-row items-center gap-2 text-primary"
                   onClick={(event) => setAnchorElLocale(event.currentTarget)}
-                  endIcon={!selectedLocale && <KeyboardArrowDown />}
                 >
                   {renderLocaleAvatar()}
                   {selectedLocale && (
@@ -102,7 +72,7 @@ export default function GlobalHeader({ logo, locales, links, ctas, homeLink }: G
                       {selectedLocale.shortLabel as string}
                     </div>
                   )}
-                </MuiButton>
+                </button>
                 <Menu
                   open={Boolean(anchorElLocale)}
                   anchorEl={anchorElLocale}
@@ -125,7 +95,7 @@ export default function GlobalHeader({ logo, locales, links, ctas, homeLink }: G
                   const { label, link, icon } = cta;
                   return (
                     <Button
-                      variation="btn-secondary"
+                      variation="btn-primary"
                       key={label as string}
                       label={label as KeyTextField}
                       link={link as LinkField}

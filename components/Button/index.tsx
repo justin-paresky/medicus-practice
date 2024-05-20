@@ -27,7 +27,7 @@ export default function Button({
   type,
   variation = 'btn-primary',
 }: ButtonProps) {
-  if (isFilled.link(link)) {
+  if (isFilled.link(link) && link.url?.length) {
     return (
       <a
         className={`flex flex-row items-center gap-2 ${variation}`}
@@ -42,7 +42,7 @@ export default function Button({
 
   return (
     <button
-      className={`btn ${variation}`}
+      className={`btn btn-sm md:btn-md ${variation}`}
       disabled={disabled}
       name={name}
       onClick={onClick}

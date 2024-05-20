@@ -13,43 +13,23 @@
           "placeholder": ""
         }
       },
-      "links": {
-        "type": "Group",
+      "image": {
+        "type": "Image",
         "config": {
-          "label": "Links",
-          "repeat": true,
-          "fields": {
-            "link": {
-              "type": "Link",
-              "config": {
-                "label": "Link",
-                "placeholder": "",
-                "select": null
-              }
-            },
-            "label": {
-              "type": "Text",
-              "config": {
-                "label": "Label",
-                "placeholder": ""
-              }
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "footer_block": {
+              "type": "SharedSlice"
             }
           }
-        }
-      },
-      "footerPopupLink": {
-        "type": "Text",
-        "config": {
-          "label": "Footer Popup Link",
-          "placeholder": ""
-        }
-      },
-      "footerPopup": {
-        "type": "Link",
-        "config": {
-          "label": "Footer Popup",
-          "placeholder": "",
-          "select": null
         }
       }
     }

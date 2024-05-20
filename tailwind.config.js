@@ -12,7 +12,7 @@ module.exports = {
     },
     colors: {
       green: {
-        DEFAULT: '#225045',
+        DEFAULT: '#2e6759',
         light: '#215045',
         dark: '#1a3e35',
       },
@@ -42,6 +42,7 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-neue-einstellung)'],
         serif: ['var(--font-cormorant-garabond)'],
+        hertine: ['var(--font-hertine)'],
       },
     },
   },
@@ -59,23 +60,33 @@ module.exports = {
       {
         light: {
           ...require('daisyui/src/theming/themes').light,
-          primary: '#225045',
-          secondary: '#dba805',
-          accent: '#ebddb5',
+          primary: '#2e6759',
+          secondary: '#f4d890',
+          accent: '#f9f8f6',
           error: '#e72020',
           '.btn': {
-            padding: '14px 20px',
-            'border-radius': '30px',
+            padding: '16px 32px',
+            'border-radius': '5px',
             'text-transform': 'capitalize',
             'font-family': 'var(--font-neue-einstellung)',
             'font-weight': 600,
             'font-size': '1rem',
           },
+          '.btn-md': {
+            padding: '12px 28px',
+          },
+          '.btn-sm': {
+            padding: '8px 24px',
+          },
+          '.btn-xs': {
+            padding: '4px 20px',
+          },
           '.btn-secondary': {
-            'background-color': '#dba805',
+            'background-color': '#f4d890',
+            color: '#2e6759',
           },
           '.btn-accent': {
-            color: '#215045',
+            color: '#2e6759',
           },
           '.link-gray': {
             color: '#768188',

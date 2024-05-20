@@ -55,39 +55,6 @@
           }
         }
       },
-      "links": {
-        "type": "Group",
-        "config": {
-          "label": "Links",
-          "repeat": true,
-          "fields": {
-            "icon": {
-              "type": "Image",
-              "config": {
-                "label": "Icon",
-                "constraint": {},
-                "thumbnails": []
-              }
-            },
-            "link": {
-              "type": "Link",
-              "config": {
-                "label": "Link",
-                "placeholder": "",
-                "allowTargetBlank": false,
-                "select": null
-              }
-            },
-            "label": {
-              "type": "Text",
-              "config": {
-                "label": "Label",
-                "placeholder": ""
-              }
-            }
-          }
-        }
-      },
       "ctas": {
         "type": "Group",
         "config": {

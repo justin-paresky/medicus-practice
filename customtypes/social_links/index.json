@@ -2,16 +2,10 @@
   "format": "custom",
   "id": "social_links",
   "label": "Social Links",
-  "repeatable": true,
+  "repeatable": false,
   "status": true,
   "json": {
     "Main": {
-      "uid": {
-        "config": {
-          "label": "UID"
-        },
-        "type": "UID"
-      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

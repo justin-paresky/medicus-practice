@@ -1,10 +1,4 @@
-import {
-  type LinkField,
-  type RichTextField,
-  type KeyTextField,
-  type ContentRelationshipField,
-  isFilled,
-} from '@prismicio/client';
+import { type LinkField, type RichTextField, type KeyTextField, isFilled } from '@prismicio/client';
 import { PrismicLink, PrismicRichText } from '@prismicio/react';
 
 import FooterBlockSocialLinks from './FooterBlockSocialLinks';
@@ -12,7 +6,7 @@ import FooterBlockSocialLinks from './FooterBlockSocialLinks';
 interface FooterBlockItemProps {
   label?: KeyTextField;
   link?: LinkField;
-  socialLinks?: ContentRelationshipField;
+  socialLinks?: boolean;
   textBlock?: RichTextField;
 }
 
@@ -27,8 +21,8 @@ export default function FooterBlockItem({ label, link, socialLinks, textBlock }:
   if (isFilled.richText(textBlock)) {
     return <PrismicRichText field={textBlock} />;
   }
-  if (isFilled.contentRelationship(socialLinks)) {
-    return <FooterBlockSocialLinks socialLinks={socialLinks} />;
+  if (socialLinks) {
+    return <FooterBlockSocialLinks />;
   }
   return <></>;
 }

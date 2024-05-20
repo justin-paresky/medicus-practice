@@ -17,11 +17,11 @@ export const repositoryName = process.env.NEXT_PUBLIC_PRISMIC_ENVIRONMENT || con
 const routes: prismic.ClientConfig['routes'] = [
   {
     type: 'home',
-    path: '/',
+    path: '/:lang?',
   },
   {
     type: 'landing_page',
-    path: '/:uid',
+    path: '/lang?/:uid',
   },
 ];
 

@@ -2,17 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .clip-hero {
+    clip-path: circle(107% at 0 50%);
+  }
+  .clip-hero-left {
+    clip-path: circle(107% at 100% 50%);
+  }
+}
+
 #__next {
   min-height: 100%;
 }
 
 @layer base {
   h1 {
-    @apply font-semibold text-[3.5rem] leading-[120%] font-serif;
+    @apply font-semibold leading-[120%] font-serif;
+    font-size: clamp(2.5rem, 2.5vw, 4rem)
   }
 
   h2 {
-    @apply w-full text-[2.625rem] font-semibold font-serif;
+    @apply w-full text-[3rem] font-semibold font-serif;
   }
 
   h3 {

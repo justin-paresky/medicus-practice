@@ -1,22 +1,30 @@
-import GlobalFooter from '../GlobalFooter';
+import { ImageField, GroupField, LinkField, KeyTextField } from '@prismicio/client';
 
+import GlobalFooter from '../GlobalFooter';
+import headerData from '../../data/preBuild/globalHeader.json';
+import footerData from '../../data/preBuild/globalFooter.json';
+
+import { GlobalFooterDocumentData } from '@/prismicio-types';
 import GlobalHeader from '@/components/GlobalHeader';
 import ResponsiveContainer from '@/components/ResponsiveContainer';
-import { createClient } from '@/prismicio';
 
-export default async function Main({ children }: { children: React.ReactNode }) {
-  const client = createClient();
-  const header = await client.getSingle('global_header');
-  const footer = await client.getSingle('global_footer');
-  const footerPopup = await client.getSingle('footer_popup');
-
+export default function Main({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <GlobalHeader {...header.data} />
-      <div className="pt-[96px]">
+      <GlobalHeader
+        logo={headerData.logo as ImageField}
+        locales={headerData.locales as GroupField}
+        ctas={headerData.ctas as GroupField}
+        homeLink={headerData.homeLink as LinkField}
+      />
+      <div className="pt-[65px] lg:pt-[88px]">
         <ResponsiveContainer>{children}</ResponsiveContainer>
       </div>
-      <GlobalFooter {...footer.data} footerPopup={footerPopup.data} />
+      <GlobalFooter
+        slices={footerData.slices as GlobalFooterDocumentData['slices']}
+        copywrite={footerData.copywrite as KeyTextField}
+        image={footerData.image as ImageField}
+      />
     </>
   );
 }

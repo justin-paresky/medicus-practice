@@ -32,13 +32,6 @@
             "multi": "paragraph,preformatted,strong,em,hyperlink,embed,list-item,o-list-item,rtl"
           }
         },
-        "socialLinks": {
-          "type": "Link",
-          "config": {
-            "label": "Social Links",
-            "select": "document"
-          }
-        },
         "link": {
           "type": "Link",
           "config": {
@@ -53,6 +46,15 @@
           "config": {
             "label": "Label",
             "placeholder": ""
+          }
+        },
+        "socialLinks": {
+          "type": "Boolean",
+          "config": {
+            "label": "Social Links",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
           }
         }
       }

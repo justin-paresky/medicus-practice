@@ -1,25 +1,21 @@
-import { ContentRelationshipField, isFilled } from '@prismicio/client';
-
+import socialLinks from '../../data/preBuild/socialLinks.json';
 import SocialButton from '../SocialButton';
 
-import { createClient } from '@/prismicio';
+import { SocialButtonSlice } from '@/prismicio-types';
 
-interface FooterBlockSocialLinksProps {
-  socialLinks: ContentRelationshipField;
-}
-
-export default async function FooterBlockSocialLinks({ socialLinks }: FooterBlockSocialLinksProps) {
-  const client = createClient();
-
-  const socialLinkButtons =
-    isFilled.contentRelationship(socialLinks) && socialLinks.uid
-      ? await client.getByUID('social_links', socialLinks.uid)
-      : null;
-
+export default function FooterBlockSocialLinks() {
   return (
     <div className="flex flex-row gap-5">
-      {socialLinkButtons?.data.slices.map((button, idx) => {
-        return <SocialButton key={button.id} slice={{ ...button }} index={idx} context={null} slices={[]} />;
+      {socialLinks.slices.map((button, idx) => {
+        return (
+          <SocialButton
+            key={button.id}
+            slice={{ ...(button as SocialButtonSlice) }}
+            index={idx}
+            context={null}
+            slices={[]}
+          />
+        );
       })}
     </div>
   );

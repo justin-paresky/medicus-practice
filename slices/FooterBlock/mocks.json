@@ -24,11 +24,8 @@
 					[
 						"socialLinks",
 						{
-							"__TYPE__": "LinkContent",
-							"value": {
-								"__TYPE__": "DocumentLink",
-								"id": "social_links"
-							}
+							"__TYPE__": "BooleanContent",
+							"value": false
 						}
 					]
 				]
@@ -54,6 +51,13 @@
 							"type": "Text",
 							"value": "wefewfwef"
 						}
+					],
+					[
+						"socialLinks",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
+						}
 					]
 				]
 			},
@@ -77,6 +81,13 @@
 							"__TYPE__": "FieldContent",
 							"type": "Text",
 							"value": "ewfweffwwe"
+						}
+					],
+					[
+						"socialLinks",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
 						}
 					]
 				]

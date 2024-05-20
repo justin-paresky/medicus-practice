@@ -1,6 +1,136 @@
 [
 	{
 		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Focus on your patients. We handle the rest with our flexible Practice-as-a-Service solutions.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"backgroundImage": {
+				"origin": {
+					"id": "-QOUBSKHvAM",
+					"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyNDc5MjI3fDA&ixlib=rb-4.0.3&q=85",
+					"width": 4960,
+					"height": 3594
+				},
+				"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyNDc5MjI3fDA&ixlib=rb-4.0.3&q=85",
+				"width": 4960,
+				"height": 3594,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"alt": "orange fruits on blue ceramic bowl",
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"backgroundColor": {
+				"__TYPE__": "FieldContent",
+				"value": "#a5d735",
+				"type": "Color"
+			},
+			"titleColor": {
+				"__TYPE__": "FieldContent",
+				"type": "Color",
+				"value": "#FFFFFF"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Coming soon: Launch Your Dream Practice that Grows with You!\n",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"eyebrow": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Veniam officia dolor exercitation consequat. Eiusmod ea aliqua cupidatat exercitation ut id laboris incididunt velit eu voluptate. Officia officia ullamco occaecat cupidatat fugiat irure anim ut velit aliqua."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "join the waitlist"
+						}
+					],
+					[
+						"link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://twitter.com"
+							}
+						}
+					],
+					[
+						"variation",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "btn-secondary"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "book a call"
+						}
+					],
+					[
+						"variation",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "btn-accent"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
 		"variation": "heroImageLeft",
 		"primary": {
 			"title": {
@@ -51,6 +181,17 @@
 				"alt": null,
 				"__TYPE__": "ImageContent",
 				"thumbnails": {}
+			},
+			"eyebrow": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Irure aliquip irure esse."
+						}
+					}
+				]
 			}
 		},
 		"items": [
@@ -139,6 +280,17 @@
 				"alt": null,
 				"__TYPE__": "ImageContent",
 				"thumbnails": {}
+			},
+			"eyebrow": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Mollit ullamco sit officia."
+						}
+					}
+				]
 			}
 		},
 		"items": [
@@ -169,125 +321,6 @@
 							"__TYPE__": "FieldContent",
 							"value": "btn-secondary",
 							"type": "Select"
-						}
-					]
-				]
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "default",
-		"primary": {
-			"description": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Focus on your patients. We handle the rest with our flexible Practice-as-a-Service solutions.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"backgroundImage": {
-				"origin": {
-					"id": "-QOUBSKHvAM",
-					"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyNDc5MjI3fDA&ixlib=rb-4.0.3&q=85",
-					"width": 4960,
-					"height": 3594
-				},
-				"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyNDc5MjI3fDA&ixlib=rb-4.0.3&q=85",
-				"width": 4960,
-				"height": 3594,
-				"edit": {
-					"background": "transparent",
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					}
-				},
-				"credits": null,
-				"alt": "orange fruits on blue ceramic bowl",
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
-			"backgroundColor": {
-				"__TYPE__": "FieldContent",
-				"value": "#a5d735",
-				"type": "Color"
-			},
-			"titleColor": {
-				"__TYPE__": "FieldContent",
-				"type": "Color",
-				"value": "#FFFFFF"
-			},
-			"title": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading1",
-						"content": {
-							"text": "Coming soon: Launch Your Dream Practice that Grows with You!\n",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"label",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "join the waitlist"
-						}
-					],
-					[
-						"link",
-						{
-							"__TYPE__": "LinkContent",
-							"value": {
-								"__TYPE__": "ExternalLink",
-								"url": "http://twitter.com"
-							}
-						}
-					],
-					[
-						"variation",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Select",
-							"value": "btn-secondary"
-						}
-					]
-				]
-			},
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"label",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "book a call"
-						}
-					],
-					[
-						"variation",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Select",
-							"value": "btn-accent"
 						}
 					]
 				]

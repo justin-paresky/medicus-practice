@@ -209,50 +209,6 @@ export type CardSliderDocument<Lang extends string = string> = prismic.PrismicDo
   Lang
 >;
 
-type FooterPopupDocumentDataSlicesSlice = FooterBlockSlice;
-
-/**
- * Content for Footer Popup documents
- */
-interface FooterPopupDocumentData {
-  /**
-   * Logo field in *Footer Popup*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: footer_popup.logo
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  logo: prismic.ImageField<never>;
-
-  /**
-   * Slice Zone field in *Footer Popup*
-   *
-   * - **Field Type**: Slice Zone
-   * - **Placeholder**: *None*
-   * - **API ID Path**: footer_popup.slices[]
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#slices
-   */
-  slices: prismic.SliceZone<FooterPopupDocumentDataSlicesSlice>;
-}
-
-/**
- * Footer Popup document from Prismic
- *
- * - **API ID**: `footer_popup`
- * - **Repeatable**: `false`
- * - **Documentation**: https://prismic.io/docs/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type FooterPopupDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
-  Simplify<FooterPopupDocumentData>,
-  'footer_popup',
-  Lang
->;
-
 type FormDocumentDataSlicesSlice = FormFieldSlice;
 
 /**
@@ -389,30 +345,7 @@ export type FormDocument<Lang extends string = string> = prismic.PrismicDocument
   Lang
 >;
 
-/**
- * Item in *Global Footer → Links*
- */
-export interface GlobalFooterDocumentDataLinksItem {
-  /**
-   * Link field in *Global Footer → Links*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: global_footer.links[].link
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  link: prismic.LinkField;
-
-  /**
-   * Label field in *Global Footer → Links*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: global_footer.links[].label
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  label: prismic.KeyTextField;
-}
+type GlobalFooterDocumentDataSlicesSlice = FooterBlockSlice;
 
 /**
  * Content for Global Footer documents
@@ -430,37 +363,26 @@ interface GlobalFooterDocumentData {
   copywrite: prismic.KeyTextField;
 
   /**
-   * Links field in *Global Footer*
+   * Image field in *Global Footer*
    *
-   * - **Field Type**: Group
+   * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: global_footer.links[]
+   * - **API ID Path**: global_footer.image
    * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#group
+   * - **Documentation**: https://prismic.io/docs/field#image
    */
-  links: prismic.GroupField<Simplify<GlobalFooterDocumentDataLinksItem>>;
+  image: prismic.ImageField<never>;
 
   /**
-   * Footer Popup Link field in *Global Footer*
+   * Slice Zone field in *Global Footer*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Slice Zone
    * - **Placeholder**: *None*
-   * - **API ID Path**: global_footer.footerPopupLink
+   * - **API ID Path**: global_footer.slices[]
    * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **Documentation**: https://prismic.io/docs/field#slices
    */
-  footerPopupLink: prismic.KeyTextField;
-
-  /**
-   * Footer Popup field in *Global Footer*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: global_footer.footerPopup
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  footerPopup: prismic.LinkField;
+  slices: prismic.SliceZone<GlobalFooterDocumentDataSlicesSlice>;
 }
 
 /**
@@ -521,41 +443,6 @@ export interface GlobalHeaderDocumentDataLocalesItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   shortLabel: prismic.KeyTextField;
-}
-
-/**
- * Item in *Global Header → Links*
- */
-export interface GlobalHeaderDocumentDataLinksItem {
-  /**
-   * Icon field in *Global Header → Links*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: global_header.links[].icon
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  icon: prismic.ImageField<never>;
-
-  /**
-   * Link field in *Global Header → Links*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: global_header.links[].link
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  link: prismic.LinkField;
-
-  /**
-   * Label field in *Global Header → Links*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: global_header.links[].label
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  label: prismic.KeyTextField;
 }
 
 /**
@@ -620,17 +507,6 @@ interface GlobalHeaderDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   locales: prismic.GroupField<Simplify<GlobalHeaderDocumentDataLocalesItem>>;
-
-  /**
-   * Links field in *Global Header*
-   *
-   * - **Field Type**: Group
-   * - **Placeholder**: *None*
-   * - **API ID Path**: global_header.links[]
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#group
-   */
-  links: prismic.GroupField<Simplify<GlobalHeaderDocumentDataLinksItem>>;
 
   /**
    * CTAs field in *Global Header*
@@ -1022,12 +898,12 @@ interface SocialLinksDocumentData {
  * Social Links document from Prismic
  *
  * - **API ID**: `social_links`
- * - **Repeatable**: `true`
+ * - **Repeatable**: `false`
  * - **Documentation**: https://prismic.io/docs/custom-types
  *
  * @typeParam Lang - Language API ID of the document.
  */
-export type SocialLinksDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<
+export type SocialLinksDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
   Simplify<SocialLinksDocumentData>,
   'social_links',
   Lang
@@ -1348,7 +1224,6 @@ export type AllDocumentTypes =
   | ButtonDocument
   | CardGridDocument
   | CardSliderDocument
-  | FooterPopupDocument
   | FormDocument
   | GlobalFooterDocument
   | GlobalHeaderDocument
@@ -1755,16 +1630,6 @@ export interface FooterBlockSliceDefaultItem {
   textBlock: prismic.RichTextField;
 
   /**
-   * Social Links field in *FooterBlock → Items*
-   *
-   * - **Field Type**: Content Relationship
-   * - **Placeholder**: *None*
-   * - **API ID Path**: footer_block.items[].socialLinks
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  socialLinks: prismic.ContentRelationshipField;
-
-  /**
    * Link field in *FooterBlock → Items*
    *
    * - **Field Type**: Link
@@ -1783,6 +1648,17 @@ export interface FooterBlockSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   label: prismic.KeyTextField;
+
+  /**
+   * Social Links field in *FooterBlock → Items*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: footer_block.items[].socialLinks
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  socialLinks: prismic.BooleanField;
 }
 
 /**
@@ -2550,6 +2426,16 @@ export type FormFieldSlice = prismic.SharedSlice<'form_field', FormFieldSliceVar
  */
 export interface HeroSliceDefaultPrimary {
   /**
+   * Eyebrow field in *Hero → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.eyebrow
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  eyebrow: prismic.RichTextField;
+
+  /**
    * Title field in *Hero → Primary*
    *
    * - **Field Type**: Title
@@ -2655,6 +2541,16 @@ export type HeroSliceDefault = prismic.SharedSliceVariation<
  */
 export interface HeroSliceHeroImageLeftPrimary {
   /**
+   * Eyebrow field in *Hero → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.eyebrow
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  eyebrow: prismic.RichTextField;
+
+  /**
    * Title field in *Hero → Primary*
    *
    * - **Field Type**: Title
@@ -2759,6 +2655,16 @@ export type HeroSliceHeroImageLeft = prismic.SharedSliceVariation<
  * Primary content in *Hero → Primary*
  */
 export interface HeroSliceHeroImageRightPrimary {
+  /**
+   * Eyebrow field in *Hero → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.eyebrow
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  eyebrow: prismic.RichTextField;
+
   /**
    * Title field in *Hero → Primary*
    *
@@ -4354,6 +4260,54 @@ export type PageSectionSliceLargeImage = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *PageSection → Primary*
+ */
+export interface PageSectionSliceWithTextPrimary {
+  /**
+   * Title field in *PageSection → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Subtitle field in *PageSection → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.subtitle
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  subtitle: prismic.RichTextField;
+
+  /**
+   * Description field in *PageSection → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+}
+
+/**
+ * Landing Page Text variation for PageSection Slice
+ *
+ * - **API ID**: `withText`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PageSectionSliceWithText = prismic.SharedSliceVariation<
+  'withText',
+  Simplify<PageSectionSliceWithTextPrimary>,
+  never
+>;
+
+/**
  * Slice variation for *PageSection*
  */
 type PageSectionSliceVariation =
@@ -4366,7 +4320,8 @@ type PageSectionSliceVariation =
   | PageSectionSliceWithForm
   | PageSectionSliceTwoColumns
   | PageSectionSliceWithHeartbeat
-  | PageSectionSliceLargeImage;
+  | PageSectionSliceLargeImage
+  | PageSectionSliceWithText;
 
 /**
  * PageSection Shared Slice
@@ -4595,19 +4550,15 @@ declare module '@prismicio/client' {
       CardSliderDocument,
       CardSliderDocumentData,
       CardSliderDocumentDataSlicesSlice,
-      FooterPopupDocument,
-      FooterPopupDocumentData,
-      FooterPopupDocumentDataSlicesSlice,
       FormDocument,
       FormDocumentData,
       FormDocumentDataSlicesSlice,
       GlobalFooterDocument,
       GlobalFooterDocumentData,
-      GlobalFooterDocumentDataLinksItem,
+      GlobalFooterDocumentDataSlicesSlice,
       GlobalHeaderDocument,
       GlobalHeaderDocumentData,
       GlobalHeaderDocumentDataLocalesItem,
-      GlobalHeaderDocumentDataLinksItem,
       GlobalHeaderDocumentDataCtasItem,
       GlobalHeaderDocumentDataSlicesSlice,
       HomeDocument,
@@ -4694,6 +4645,7 @@ declare module '@prismicio/client' {
       PageSectionSliceWithHeartbeatPrimary,
       PageSectionSliceLargeImagePrimary,
       PageSectionSliceLargeImageItem,
+      PageSectionSliceWithTextPrimary,
       PageSectionSliceVariation,
       PageSectionSliceDefault,
       PageSectionSliceImageRight,
@@ -4705,6 +4657,7 @@ declare module '@prismicio/client' {
       PageSectionSliceTwoColumns,
       PageSectionSliceWithHeartbeat,
       PageSectionSliceLargeImage,
+      PageSectionSliceWithText,
       SocialButtonSlice,
       SocialButtonSliceDefaultPrimary,
       SocialButtonSliceVariation,

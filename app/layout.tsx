@@ -9,6 +9,17 @@ import Main from '@/components/Main';
 
 import './globals.css';
 
+const hertine = localFont({
+  src: [
+    {
+      path: './fonts/hertine/Hertine.otf',
+      weight: '500',
+    },
+  ],
+  display: 'swap',
+  variable: '--font-hertine',
+});
+
 const neueEinstellung = localFont({
   src: [
     {
@@ -92,7 +103,7 @@ export default function RootLayout({
     <html lang="en">
       <AppRouterCacheProvider>
         <ThemeProvider theme={theme}>
-          <body className={`${cormorantGaramond.variable} ${neueEinstellung.variable}`}>
+          <body className={`${cormorantGaramond.variable} ${neueEinstellung.variable} ${hertine.variable}`}>
             <Main>{children}</Main>
           </body>
         </ThemeProvider>
