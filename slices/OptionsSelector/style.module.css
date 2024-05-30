@@ -1,0 +1,48 @@
+.optionCollapse input[type=radio]:checked + div > div {
+ opacity: 1;
+}
+
+.optionCollapse > div:nth-child(2) > div {
+  opacity: 0.75;
+}
+
+.option input[type=radio]:checked + div {
+  opacity: 1;
+}
+
+.option > div:nth-child(2) {
+  opacity: 0.75;
+}
+
+.option:has(input[type=radio]:checked) + .options {
+  opacity: 1;
+}
+
+.options {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.options ul, .optionsCollapse ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.options ul li, .optionsCollapse ul li {
+  margin-bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.options ul li:last-child, .optionsCollapse ul li:last-child {
+  margin-bottom: 0;
+}
+
+.options ul li::before, .optionsCollapse ul li::before {
+  content: url(./icons/check_mark.png);
+  position: relative;
+  height: 16px;
+  width: 16px;
+}

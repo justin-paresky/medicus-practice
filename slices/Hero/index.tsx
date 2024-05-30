@@ -17,11 +17,22 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
       </div>
     ) : null;
   };
+  const renderButtonsMobile = () => {
+    return slice.items.length && isFilled.keyText(slice.items[0]?.label) ? (
+      <div className="flex flex-row justify-center gap-3">
+        <Button
+          key={slice.items[0].label}
+          {...slice.items[0]}
+          variation={slice.items[0].variation || 'btn-secondary'}
+        />
+      </div>
+    ) : null;
+  };
   return (
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="relative flex h-[400px] flex-col items-center bg-cover bg-center bg-no-repeat lg:h-[600px] xl:h-[760px]"
+      className="relative flex flex-col items-center bg-cover bg-center bg-no-repeat lg:h-[600px] xl:h-[760px]"
       style={{
         backgroundImage:
           isFilled.image(slice.primary.backgroundImage) && slice.variation === 'default'
@@ -29,22 +40,12 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
             : '',
         backgroundColor: isFilled.color(slice.primary.backgroundColor)
           ? slice.primary.backgroundColor
-          : COLORS.primary.dark,
+          : COLORS.primary.DEFAULT,
       }}
     >
-      <div className="relative h-[100%] w-[100%]">
-        {isFilled.image(slice.primary.backgroundImage) && (
-          <PrismicNextImage
-            className="absolute h-[100%] w-auto"
-            style={{
-              left: slice.variation === 'heroImageLeft' ? 0 : 'initial',
-              right: slice.variation === 'heroImageRight' ? 0 : 'initial',
-            }}
-            field={slice.primary.backgroundImage}
-          />
-        )}
+      <div className="relative flex h-[100%] w-[100%] flex-col lg:block">
         <div
-          className={`${slice.variation === 'heroImageLeft' ? 'lg:clip-hero-left lg:pl-[120px] lg:pr-[75px]' : 'lg:clip-hero lg:pl-[75px] lg:pr-[120px]'} absolute flex h-[100%] w-[100%] flex-col justify-center bg-green p-[25px] lg:w-[70%]`}
+          className={`${slice.variation === 'heroImageLeft' ? 'clip-hero-mobile lg:clip-hero-left lg:pl-[120px] lg:pr-[75px]' : 'clip-hero-mobile lg:clip-hero lg:pl-[75px] lg:pr-[120px]'} relative flex h-[100%] w-[100%] flex-col justify-center bg-green p-[25px] lg:absolute lg:z-10 lg:w-[70%]`}
           style={{
             right: slice.variation === 'heroImageLeft' ? 0 : 'initial',
             left: slice.variation === 'heroImageRight' ? 0 : 'initial',
@@ -71,10 +72,29 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                 <PrismicRichText field={slice.primary.description} />
               </div>
             )}
-            {renderButtons()}
+            <div className="hidden lg:block">{renderButtons()}</div>
+            <div className="block lg:hidden">{renderButtonsMobile()}</div>
           </div>
         </div>
+        {isFilled.image(slice.primary.backgroundImage) && (
+          <PrismicNextImage
+            className="relative w-auto lg:absolute lg:h-[100%]"
+            style={{
+              left: slice.variation === 'heroImageLeft' ? 0 : 'initial',
+              right: slice.variation === 'heroImageRight' ? 0 : 'initial',
+            }}
+            field={slice.primary.backgroundImage}
+          />
+        )}
       </div>
+      {slice.items.length && isFilled.keyText(slice.items[1]?.label) && (
+        <div
+          key={slice.items[1].label}
+          className="absolute bottom-[40px] right-[60px] flex w-full flex-row justify-end lg:hidden"
+        >
+          <Button {...slice.items[1]} variation="btn-accent" />
+        </div>
+      )}
     </section>
   );
 };

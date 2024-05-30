@@ -557,7 +557,14 @@ export type GlobalHeaderDocument<Lang extends string = string> = prismic.Prismic
   Lang
 >;
 
-type HomeDocumentDataSlicesSlice = PageSectionSlice | TableSlice | HeroSlice;
+type HomeDocumentDataSlicesSlice =
+  | PillGridSlice
+  | OptionsSelectorSlice
+  | IconGridSlice
+  | CarouselSlice
+  | PageSectionSlice
+  | TableSlice
+  | HeroSlice;
 
 /**
  * Content for Home documents
@@ -1599,6 +1606,48 @@ type CardSliceVariation = CardSliceDefault | CardSliceCardWithActions | CardSlic
  * - **Documentation**: https://prismic.io/docs/slice
  */
 export type CardSlice = prismic.SharedSlice<'card', CardSliceVariation>;
+
+/**
+ * Primary content in *Carousel → Primary*
+ */
+export interface CarouselSliceDefaultPrimary {
+  /**
+   * Slides field in *Carousel → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.primary.slides[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  slides: prismic.GroupField<Simplify<CarouselDocumentDataSlidesItem>>;
+}
+
+/**
+ * Default variation for Carousel Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CarouselSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<CarouselSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Carousel*
+ */
+type CarouselSliceVariation = CarouselSliceDefault;
+
+/**
+ * Carousel Shared Slice
+ *
+ * - **API ID**: `carousel`
+ * - **Description**: Carousel
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type CarouselSlice = prismic.SharedSlice<'carousel', CarouselSliceVariation>;
 
 /**
  * Primary content in *FooterBlock → Primary*
@@ -2781,6 +2830,48 @@ type HeroSliceVariation = HeroSliceDefault | HeroSliceHeroImageLeft | HeroSliceH
 export type HeroSlice = prismic.SharedSlice<'hero', HeroSliceVariation>;
 
 /**
+ * Primary content in *IconGrid → Primary*
+ */
+export interface IconGridSliceDefaultPrimary {
+  /**
+   * Cells field in *IconGrid → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: icon_grid.primary.cells[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  cells: prismic.GroupField<Simplify<IconGridDocumentDataCellsItem>>;
+}
+
+/**
+ * Default variation for IconGrid Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type IconGridSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<IconGridSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *IconGrid*
+ */
+type IconGridSliceVariation = IconGridSliceDefault;
+
+/**
+ * IconGrid Shared Slice
+ *
+ * - **API ID**: `icon_grid`
+ * - **Description**: IconGrid
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type IconGridSlice = prismic.SharedSlice<'icon_grid', IconGridSliceVariation>;
+
+/**
  * Primary content in *Gallery → Primary*
  */
 export interface ImageGallerySliceDefaultPrimary {
@@ -2866,6 +2957,48 @@ type ImageGallerySliceVariation = ImageGallerySliceDefault;
  * - **Documentation**: https://prismic.io/docs/slice
  */
 export type ImageGallerySlice = prismic.SharedSlice<'image_gallery', ImageGallerySliceVariation>;
+
+/**
+ * Primary content in *OptionsSelector → Primary*
+ */
+export interface OptionsSelectorSliceDefaultPrimary {
+  /**
+   * Options field in *OptionsSelector → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: options_selector.primary.options[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  options: prismic.GroupField<Simplify<OptionsSelectorDocumentDataOptionsItem>>;
+}
+
+/**
+ * Default variation for OptionsSelector Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type OptionsSelectorSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<OptionsSelectorSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *OptionsSelector*
+ */
+type OptionsSelectorSliceVariation = OptionsSelectorSliceDefault;
+
+/**
+ * OptionsSelector Shared Slice
+ *
+ * - **API ID**: `options_selector`
+ * - **Description**: OptionsSelector
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type OptionsSelectorSlice = prismic.SharedSlice<'options_selector', OptionsSelectorSliceVariation>;
 
 /**
  * Primary content in *PageSection → Primary*
@@ -3952,104 +4085,6 @@ export type PageSectionSliceTwoColumns = prismic.SharedSliceVariation<
 /**
  * Primary content in *PageSection → Primary*
  */
-export interface PageSectionSliceWithHeartbeatPrimary {
-  /**
-   * Title 1 field in *PageSection → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: page_section.primary.title1
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title1: prismic.RichTextField;
-
-  /**
-   * Description 1 field in *PageSection → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: page_section.primary.description1
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  description1: prismic.KeyTextField;
-
-  /**
-   * Title 2 field in *PageSection → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: page_section.primary.title2
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title2: prismic.RichTextField;
-
-  /**
-   * Description 2 field in *PageSection → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: page_section.primary.description2
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  description2: prismic.KeyTextField;
-
-  /**
-   * Title 3 field in *PageSection → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: page_section.primary.title3
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title3: prismic.RichTextField;
-
-  /**
-   * Description 3 field in *PageSection → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: page_section.primary.description3
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  description3: prismic.KeyTextField;
-
-  /**
-   * Background Image field in *PageSection → Primary*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: page_section.primary.backgroundImage
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  backgroundImage: prismic.ImageField<never>;
-
-  /**
-   * Background Color field in *PageSection → Primary*
-   *
-   * - **Field Type**: Color
-   * - **Placeholder**: *None*
-   * - **API ID Path**: page_section.primary.backgroundColor
-   * - **Documentation**: https://prismic.io/docs/field#color
-   */
-  backgroundColor: prismic.ColorField;
-}
-
-/**
- * With Heartbeat variation for PageSection Slice
- *
- * - **API ID**: `withHeartbeat`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type PageSectionSliceWithHeartbeat = prismic.SharedSliceVariation<
-  'withHeartbeat',
-  Simplify<PageSectionSliceWithHeartbeatPrimary>,
-  never
->;
-
-/**
- * Primary content in *PageSection → Primary*
- */
 export interface PageSectionSliceLargeImagePrimary {
   /**
    * Title field in *PageSection → Primary*
@@ -4319,7 +4354,6 @@ type PageSectionSliceVariation =
   | PageSectionSliceWithPhotos
   | PageSectionSliceWithForm
   | PageSectionSliceTwoColumns
-  | PageSectionSliceWithHeartbeat
   | PageSectionSliceLargeImage
   | PageSectionSliceWithText;
 
@@ -4331,6 +4365,48 @@ type PageSectionSliceVariation =
  * - **Documentation**: https://prismic.io/docs/slice
  */
 export type PageSectionSlice = prismic.SharedSlice<'page_section', PageSectionSliceVariation>;
+
+/**
+ * Primary content in *PillGrid → Primary*
+ */
+export interface PillGridSliceDefaultPrimary {
+  /**
+   * Pills field in *PillGrid → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: pill_grid.primary.pills[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  pills: prismic.GroupField<Simplify<PillGridDocumentDataPillsItem>>;
+}
+
+/**
+ * Default variation for PillGrid Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PillGridSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<PillGridSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *PillGrid*
+ */
+type PillGridSliceVariation = PillGridSliceDefault;
+
+/**
+ * PillGrid Shared Slice
+ *
+ * - **API ID**: `pill_grid`
+ * - **Description**: PillGrid
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PillGridSlice = prismic.SharedSlice<'pill_grid', PillGridSliceVariation>;
 
 /**
  * Primary content in *SocialButton → Primary*
@@ -4595,6 +4671,11 @@ declare module '@prismicio/client' {
       CardSliceDefault,
       CardSliceCardWithActions,
       CardSliceProfileCard,
+      CarouselSlice,
+      CarouselDocumentDataSlidesItem,
+      CarouselSliceDefaultPrimary,
+      CarouselSliceVariation,
+      CarouselSliceDefault,
       FooterBlockSlice,
       FooterBlockSliceDefaultPrimary,
       FooterBlockSliceDefaultItem,
@@ -4625,11 +4706,21 @@ declare module '@prismicio/client' {
       HeroSliceDefault,
       HeroSliceHeroImageLeft,
       HeroSliceHeroImageRight,
+      IconGridSlice,
+      IconGridDocumentDataCellsItem,
+      IconGridSliceDefaultPrimary,
+      IconGridSliceVariation,
+      IconGridSliceDefault,
       ImageGallerySlice,
       ImageGallerySliceDefaultPrimary,
       ImageGallerySliceDefaultItem,
       ImageGallerySliceVariation,
       ImageGallerySliceDefault,
+      OptionsSelectorSlice,
+      OptionsSelectorDocumentDataOptionsItem,
+      OptionsSelectorSliceDefaultPrimary,
+      OptionsSelectorSliceVariation,
+      OptionsSelectorSliceDefault,
       PageSectionSlice,
       PageSectionSliceDefaultPrimary,
       PageSectionSliceDefaultItem,
@@ -4642,7 +4733,6 @@ declare module '@prismicio/client' {
       PageSectionSliceWithPhotosPrimary,
       PageSectionSliceWithFormPrimary,
       PageSectionSliceTwoColumnsPrimary,
-      PageSectionSliceWithHeartbeatPrimary,
       PageSectionSliceLargeImagePrimary,
       PageSectionSliceLargeImageItem,
       PageSectionSliceWithTextPrimary,
@@ -4655,9 +4745,13 @@ declare module '@prismicio/client' {
       PageSectionSliceWithPhotos,
       PageSectionSliceWithForm,
       PageSectionSliceTwoColumns,
-      PageSectionSliceWithHeartbeat,
       PageSectionSliceLargeImage,
       PageSectionSliceWithText,
+      PillGridSlice,
+      PillGridDocumentDataPillsItem,
+      PillGridSliceDefaultPrimary,
+      PillGridSliceVariation,
+      PillGridSliceDefault,
       SocialButtonSlice,
       SocialButtonSliceDefaultPrimary,
       SocialButtonSliceVariation,

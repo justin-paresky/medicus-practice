@@ -1,0 +1,45 @@
+.listItems ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-image: url(./icons/Check.png);
+  font-size: 0.75rem;
+}
+
+.listItems ul li {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.active ul {
+  list-style-image: url(./icons/Check_White.png);
+  font-size: 1rem;
+}
+
+.pageButton, .mobilePageButton {
+  height: 56px;
+  width: 56px;
+  border: none;
+}
+
+.pageButton {
+  background-image: url(./icons/Arrow_Circle.png);
+}
+
+.right {
+  transform: rotate(180deg);
+}
+
+.pageButton:hover, .mobilePageButton:hover {
+  background-image: url(./icons/Arrow_Circle_Hover.png);
+  transform: rotate(-180deg);
+}
+
+.right.pageButton:hover, .right.mobilePageButton:hover {
+  background-image: url(./icons/Arrow_Circle_Hover.png);
+  transform: rotate(0deg);
+}
+
+.mobilePageButton {
+  background-image: url(./icons/Arrow_Circle_White.png);
+}

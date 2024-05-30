@@ -11,6 +11,18 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "pill_grid": {
+              "type": "SharedSlice"
+            },
+            "options_selector": {
+              "type": "SharedSlice"
+            },
+            "icon_grid": {
+              "type": "SharedSlice"
+            },
+            "carousel": {
+              "type": "SharedSlice"
+            },
             "page_section": {
               "type": "SharedSlice"
             },

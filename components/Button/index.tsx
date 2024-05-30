@@ -6,6 +6,7 @@ import { type Content, isFilled } from '@prismicio/client';
 
 interface ButtonProps {
   backgroundColor?: string | undefined | false;
+  className?: string;
   disabled?: boolean;
   icon?: Content.ButtonDocumentData['icon'];
   label: Content.ButtonDocumentData['label'];
@@ -18,6 +19,7 @@ interface ButtonProps {
 
 export default function Button({
   backgroundColor,
+  className,
   disabled,
   icon,
   label,
@@ -30,7 +32,7 @@ export default function Button({
   if (isFilled.link(link) && link.url?.length) {
     return (
       <a
-        className={`flex flex-row items-center gap-2 ${variation}`}
+        className={`flex flex-row items-center gap-2 ${variation} ${className}`}
         href={link.url}
         style={{ backgroundColor: backgroundColor || undefined, borderColor: backgroundColor || undefined }}
       >
@@ -42,7 +44,7 @@ export default function Button({
 
   return (
     <button
-      className={`btn btn-sm md:btn-md ${variation}`}
+      className={`btn btn-sm md:btn-md ${variation} ${className}`}
       disabled={disabled}
       name={name}
       onClick={onClick}

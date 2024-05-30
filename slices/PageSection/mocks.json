@@ -96,18 +96,18 @@
 			"image": {
 				"origin": {
 					"id": "main",
-					"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea",
-					"width": 3500,
-					"height": 2338
+					"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+					"width": 3168,
+					"height": 4752
 				},
-				"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?rect=0%2C7%2C3500%2C2324&w=476&h=316",
-				"width": 476,
-				"height": 316,
+				"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+				"width": 3168,
+				"height": 4752,
 				"edit": {
 					"zoom": 1,
 					"crop": {
 						"x": 0,
-						"y": 7
+						"y": 0
 					},
 					"background": "transparent"
 				},
@@ -226,18 +226,18 @@
 			"image": {
 				"origin": {
 					"id": "main",
-					"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea",
-					"width": 3500,
-					"height": 2338
+					"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+					"width": 4076,
+					"height": 2712
 				},
-				"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?rect=0%2C7%2C3500%2C2324&w=476&h=316",
-				"width": 476,
-				"height": 316,
+				"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+				"width": 4076,
+				"height": 2712,
 				"edit": {
 					"zoom": 1,
 					"crop": {
 						"x": 0,
-						"y": 7
+						"y": 0
 					},
 					"background": "transparent"
 				},
@@ -1029,118 +1029,27 @@
 	},
 	{
 		"__TYPE__": "SharedSliceContent",
-		"variation": "withHeartbeat",
+		"variation": "largeImage",
 		"primary": {
-			"title1": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading3",
-						"content": {
-							"text": "Health is Wealth",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"title2": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading3",
-						"content": {
-							"text": "Strong Roots",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"title3": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading3",
-						"content": {
-							"text": "Joint Creation",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"backgroundImage": {
+			"image": {
+				"__TYPE__": "ImageContent",
 				"origin": {
-					"id": "7WAGthfGJ9w",
-					"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyNDc5MjI3fDA&ixlib=rb-4.0.3&q=85",
-					"width": 5460,
-					"height": 3640
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+					"width": 4480,
+					"height": 4480
 				},
-				"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyNDc5MjI3fDA&ixlib=rb-4.0.3&q=85",
-				"width": 5460,
-				"height": 3640,
+				"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+				"width": 4480,
+				"height": 4480,
 				"edit": {
-					"background": "transparent",
 					"zoom": 1,
 					"crop": {
 						"x": 0,
 						"y": 0
-					}
-				},
-				"credits": null,
-				"alt": "yellow lemon fruit on white surface",
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
-			"description1": {
-				"__TYPE__": "FieldContent",
-				"type": "Text",
-				"value": "We are convinced that prevention is better than cure. That's why we create an environment for proactive maintenance and improvement of health."
-			},
-			"description2": {
-				"__TYPE__": "FieldContent",
-				"type": "Text",
-				"value": "The trust of our healthcare professionals and their patients trust in us is the foundation of success."
-			},
-			"description3": {
-				"__TYPE__": "FieldContent",
-				"type": "Text",
-				"value": "Adhere to performance principles. We foster an open and direct feedback culture and reward the outstanding performance of our employees"
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "largeImage",
-		"primary": {
-			"image": {
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-					"width": 3882,
-					"height": 2584
-				},
-				"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?rect=649%2C0%2C2584%2C2584&w=480&h=480",
-				"width": 480,
-				"height": 480,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 649,
-						"y": 0
 					},
 					"background": "transparent"
 				},
-				"credits": null,
-				"alt": null,
-				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			},
 			"link": {

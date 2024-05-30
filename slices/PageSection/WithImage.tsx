@@ -39,25 +39,17 @@ export default function WithImage({ primary, items, variation }: WithImageProps)
     ) : null;
   };
 
-  const renderImage = (isDesktop?: boolean) => {
-    return (
-      isFilled.image(image) && (
-        <PrismicNextImage
-          className={`${variation === 'largeImage' ? 'sm:h-[480px]' : `sm:h-[316px]`} h-auto w-[100%] rounded sm:w-[480px] ${isDesktop ? 'hidden sm:block' : 'block sm:hidden'}`}
-          field={image}
-        />
-      )
-    );
+  const renderImage = () => {
+    return isFilled.image(image) && <PrismicNextImage className="h-auto w-[100%]" field={image} />;
   };
 
   return (
-    <>
-      {variation !== 'imageRight' && renderImage(true)}
-      <div className="flex flex-grow flex-col gap-6">
-        <div className="text-[48px] font-semibold text-primary">
+    <div className="flex flex-col items-center gap-16 pb-12 lg:flex-row lg:pb-[100px]">
+      {variation !== 'imageRight' && renderImage()}
+      <div className="flex flex-grow flex-col gap-16 text-center lg:text-left">
+        <div className="child:text-[2rem] child:font-semibold child:text-primary lg:child:text-[3rem]">
           {isFilled.richText(title) && <PrismicRichText field={title} />}
         </div>
-        {renderImage()}
         {isFilled.richText(description) && (
           <div style={{ color: descriptionColor || undefined }}>
             <PrismicRichText field={description} />
@@ -65,7 +57,7 @@ export default function WithImage({ primary, items, variation }: WithImageProps)
         )}
         {renderButtons()}
       </div>
-      {variation === 'imageRight' && renderImage(true)}
-    </>
+      {variation === 'imageRight' && renderImage()}
+    </div>
   );
 }

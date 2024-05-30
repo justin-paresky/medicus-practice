@@ -4,11 +4,15 @@ import dynamic from 'next/dynamic';
 
 export const components = {
   card: dynamic(() => import('./Card')),
+  carousel: dynamic(() => import('./Carousel')),
   footer_block: dynamic(() => import('./FooterBlock')),
   form_field: dynamic(() => import('./FormField')),
   hero: dynamic(() => import('./Hero')),
+  icon_grid: dynamic(() => import('./IconGrid')),
   image_gallery: dynamic(() => import('./Gallery')),
+  options_selector: dynamic(() => import('./OptionsSelector')),
   page_section: dynamic(() => import('./PageSection')),
+  pill_grid: dynamic(() => import('./PillGrid')),
   social_button: dynamic(() => import('./SocialButton')),
   table: dynamic(() => import('./Table')),
 };
