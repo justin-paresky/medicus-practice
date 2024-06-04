@@ -36,7 +36,7 @@ export default function Checkbox({ id, label, ...rest }: CheckboxProps) {
           />
         </svg>
         {isFilled.richText(label) && (
-          <span className="text-[16px] text-gray">
+          <span className="text-[16px] text-gray-dark">
             <PrismicRichText field={label} />
           </span>
         )}

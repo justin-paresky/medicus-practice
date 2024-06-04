@@ -2,15 +2,15 @@
 'use client';
 
 import { PrismicNextImage } from '@prismicio/next';
-import { type Content, isFilled } from '@prismicio/client';
+import { type Content, isFilled, ImageField, KeyTextField, LinkField } from '@prismicio/client';
 
 interface ButtonProps {
   backgroundColor?: string | undefined | false;
   className?: string;
   disabled?: boolean;
-  icon?: Content.ButtonDocumentData['icon'];
-  label: Content.ButtonDocumentData['label'];
-  link?: Content.ButtonDocumentData['link'];
+  icon?: ImageField;
+  label: KeyTextField;
+  link?: LinkField;
   name?: string;
   onClick?: () => void;
   type?: 'submit' | 'reset' | 'button';
@@ -29,7 +29,7 @@ export default function Button({
   type,
   variation = 'btn-primary',
 }: ButtonProps) {
-  if (isFilled.link(link) && link.url?.length) {
+  if (isFilled.link(link) && !variation.includes('btn')) {
     return (
       <a
         className={`flex flex-row items-center gap-2 ${variation} ${className}`}

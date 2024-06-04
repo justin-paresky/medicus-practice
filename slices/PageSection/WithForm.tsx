@@ -1,40 +1,30 @@
+'use client';
+
 import { type Content, isFilled } from '@prismicio/client';
 import { PrismicRichText } from '@prismicio/react';
 
-import Form from '@/components/Form';
-import { createClient } from '@/prismicio';
+import FORMS from '@/app/forms';
 
 export type WithFormProps = Content.PageSectionSliceWithForm;
 
-export default async function WithForm({ primary }: WithFormProps) {
-  const { title, description, titleColor, descriptionColor } = primary;
-  const client = createClient();
-
-  const form =
-    isFilled.contentRelationship(primary.form) && primary.form.uid
-      ? await client.getByUID('form', primary.form.uid)
-      : null;
-
-  const confirmationModal =
-    isFilled.contentRelationship(form?.data.confirmationModal) && form.data.confirmationModal.uid
-      ? await client.getByUID('modal', form.data.confirmationModal.uid)
-      : null;
+export default function WithForm({ primary }: WithFormProps) {
+  const { title, description, formId } = primary;
 
   return (
-    <div className="grid grid-cols-1 grid-rows-2 gap-[50px] md:grid-cols-2 md:grid-rows-1 md:gap-[100px]">
-      <div className="left">
+    <div className="flex h-full w-full flex-col items-center justify-center pb-12 text-center lg:pb-[100px]">
+      <div className="flex max-w-[600px] flex-col gap-8">
         {isFilled.richText(title) && (
-          <div style={{ color: (titleColor as string) || undefined }}>
+          <div className="child:font-serif child:text-[3.5rem] child:font-semibold child:text-primary">
             <PrismicRichText field={title} />
           </div>
         )}
         {isFilled.richText(description) && (
-          <div style={{ color: (descriptionColor as string) || undefined }}>
+          <div className="child:font-sans child:text-[1rem] child:text-primary">
             <PrismicRichText field={description} />
           </div>
         )}
+        {isFilled.keyText(formId) && FORMS[formId as keyof typeof FORMS]()}
       </div>
-      <div className="right">{form && <Form {...form.data} id={form.uid} modal={confirmationModal?.data} />}</div>
     </div>
   );
 }

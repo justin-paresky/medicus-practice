@@ -13,7 +13,7 @@ interface FooterBlockItemProps {
 export default function FooterBlockItem({ label, link, socialLinks, textBlock }: FooterBlockItemProps) {
   if (isFilled.keyText(label)) {
     return (
-      <div className="child:text-gray">
+      <div className="child:link-gray">
         <PrismicLink field={link}>{label}</PrismicLink>
       </div>
     );

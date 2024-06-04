@@ -1,0 +1,36 @@
+.card {
+  @apply top-[112px] md:top-[192px];
+
+  background-image:
+    linear-gradient(180deg, #f4f4f4 2rem, #F0A4A4 calc(2rem), #F0A4A4 calc(2rem + 2px), transparent 1px),
+    repeating-linear-gradient(0deg, transparent, transparent 1.5rem, #DDD 1px, #DDD calc(1.5rem + 1px));
+  background-color: #f4f4f4;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.25);
+  max-width: 500px;
+  margin: auto;
+}
+
+.card ul li {
+  @apply text-sm text-[#2f3735] font-sans relative pb-4 ml-8;
+}
+
+.card ul li:last-child {
+  @apply pb-0;
+}
+
+.card ul li::before {
+  @apply absolute top-1 left-[-32px] h-[18px] w-[18px] border-[1px] border-primary box-content;
+
+  content: '';
+}
+
+.skip {
+  @apply bg-contain top-[112px] md:top-[192px] sticky text-gray-dark text-sm font-sans align-bottom;
+
+  width: 65px;
+  height: 53px;
+  text-align: end;
+  background: url("./icons/pointer.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

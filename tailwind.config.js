@@ -48,7 +48,8 @@ module.exports = {
         DEFAULT: '#f18e79',
       },
       gray: {
-        DEFAULT: '#768188',
+        DEFAULT: '#f9f8f6',
+        dark: '#768188',
         light: '#dee1e3',
       },
       red: {
@@ -103,6 +104,9 @@ module.exports = {
           '.btn-xs': {
             padding: '4px 20px',
           },
+          '.btn-primary': {
+            color: '#ffffff',
+          },
           '.btn-secondary': {
             'background-color': '#f4d890',
             color: '#2e6759',
@@ -117,6 +121,18 @@ module.exports = {
             '&:hover': {
               'background-color': '#cde6da',
               'border-color': '#cde6da',
+            },
+          },
+          '.link-primary': {
+            color: '#2e6759',
+            background: 'none',
+            border: 'none',
+            'box-shadow': 'none',
+            'text-transform': 'capitalize',
+            'text-decoration': 'underline',
+            'font-family': 'var(--font-neue-einstellung)',
+            '&:hover': {
+              background: 'none',
             },
           },
           '.link-gray': {

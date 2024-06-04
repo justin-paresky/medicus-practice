@@ -11,6 +11,18 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "comparison_table": {
+              "type": "SharedSlice"
+            },
+            "note_cards": {
+              "type": "SharedSlice"
+            },
+            "photo_carousel": {
+              "type": "SharedSlice"
+            },
+            "image_gallery": {
+              "type": "SharedSlice"
+            },
             "pill_grid": {
               "type": "SharedSlice"
             },

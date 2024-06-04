@@ -802,14 +802,11 @@
             "placeholder": ""
           }
         },
-        "form": {
-          "type": "Link",
+        "formId": {
+          "type": "Text",
           "config": {
-            "label": "Form",
-            "select": "document",
-            "customtypes": [
-              "form"
-            ]
+            "label": "Form ID",
+            "placeholder": ""
           }
         }
       },

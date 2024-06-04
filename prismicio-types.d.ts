@@ -558,6 +558,10 @@ export type GlobalHeaderDocument<Lang extends string = string> = prismic.Prismic
 >;
 
 type HomeDocumentDataSlicesSlice =
+  | ComparisonTableSlice
+  | NoteCardsSlice
+  | PhotoCarouselSlice
+  | ImageGallerySlice
   | PillGridSlice
   | OptionsSelectorSlice
   | IconGridSlice
@@ -1648,6 +1652,78 @@ type CarouselSliceVariation = CarouselSliceDefault;
  * - **Documentation**: https://prismic.io/docs/slice
  */
 export type CarouselSlice = prismic.SharedSlice<'carousel', CarouselSliceVariation>;
+
+/**
+ * Primary content in *ComparisonTable → Primary*
+ */
+export interface ComparisonTableSliceDefaultPrimary {
+  /**
+   * Title field in *ComparisonTable → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: comparison_table.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Subtitle field in *ComparisonTable → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: comparison_table.primary.subtitle
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  subtitle: prismic.RichTextField;
+
+  /**
+   * Description field in *ComparisonTable → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: comparison_table.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Columns field in *ComparisonTable → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: comparison_table.primary.columns[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  columns: prismic.GroupField<Simplify<ComparisonTableDocumentDataColumnsItem>>;
+}
+
+/**
+ * Default variation for ComparisonTable Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ComparisonTableSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<ComparisonTableSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *ComparisonTable*
+ */
+type ComparisonTableSliceVariation = ComparisonTableSliceDefault;
+
+/**
+ * ComparisonTable Shared Slice
+ *
+ * - **API ID**: `comparison_table`
+ * - **Description**: ComparisonTable
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ComparisonTableSlice = prismic.SharedSlice<'comparison_table', ComparisonTableSliceVariation>;
 
 /**
  * Primary content in *FooterBlock → Primary*
@@ -2959,6 +3035,78 @@ type ImageGallerySliceVariation = ImageGallerySliceDefault;
 export type ImageGallerySlice = prismic.SharedSlice<'image_gallery', ImageGallerySliceVariation>;
 
 /**
+ * Primary content in *NoteCards → Primary*
+ */
+export interface NoteCardsSliceDefaultPrimary {
+  /**
+   * Title field in *NoteCards → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: note_cards.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.TitleField;
+
+  /**
+   * Subtitle field in *NoteCards → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: note_cards.primary.subtitle
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  subtitle: prismic.RichTextField;
+
+  /**
+   * Description field in *NoteCards → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: note_cards.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Cards field in *NoteCards → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: note_cards.primary.cards[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  cards: prismic.GroupField<Simplify<NoteCardsDocumentDataCardsItem>>;
+}
+
+/**
+ * Default variation for NoteCards Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type NoteCardsSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<NoteCardsSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *NoteCards*
+ */
+type NoteCardsSliceVariation = NoteCardsSliceDefault;
+
+/**
+ * NoteCards Shared Slice
+ *
+ * - **API ID**: `note_cards`
+ * - **Description**: NoteCards
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type NoteCardsSlice = prismic.SharedSlice<'note_cards', NoteCardsSliceVariation>;
+
+/**
  * Primary content in *OptionsSelector → Primary*
  */
 export interface OptionsSelectorSliceDefaultPrimary {
@@ -3981,14 +4129,14 @@ export interface PageSectionSliceWithFormPrimary {
   backgroundColor: prismic.ColorField;
 
   /**
-   * Form field in *PageSection → Primary*
+   * Form ID field in *PageSection → Primary*
    *
-   * - **Field Type**: Content Relationship
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: page_section.primary.form
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   * - **API ID Path**: page_section.primary.formId
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  form: prismic.ContentRelationshipField<'form'>;
+  formId: prismic.KeyTextField;
 }
 
 /**
@@ -4367,6 +4515,48 @@ type PageSectionSliceVariation =
 export type PageSectionSlice = prismic.SharedSlice<'page_section', PageSectionSliceVariation>;
 
 /**
+ * Primary content in *PhotoCarousel → Primary*
+ */
+export interface PhotoCarouselSliceDefaultPrimary {
+  /**
+   * Photos field in *PhotoCarousel → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: photo_carousel.primary.tabs[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  tabs: prismic.GroupField<Simplify<PhotoCarouselDocumentDataTabsItem>>;
+}
+
+/**
+ * Default variation for PhotoCarousel Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PhotoCarouselSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<PhotoCarouselSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *PhotoCarousel*
+ */
+type PhotoCarouselSliceVariation = PhotoCarouselSliceDefault;
+
+/**
+ * PhotoCarousel Shared Slice
+ *
+ * - **API ID**: `photo_carousel`
+ * - **Description**: PhotoCarousel
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PhotoCarouselSlice = prismic.SharedSlice<'photo_carousel', PhotoCarouselSliceVariation>;
+
+/**
  * Primary content in *PillGrid → Primary*
  */
 export interface PillGridSliceDefaultPrimary {
@@ -4676,6 +4866,11 @@ declare module '@prismicio/client' {
       CarouselSliceDefaultPrimary,
       CarouselSliceVariation,
       CarouselSliceDefault,
+      ComparisonTableSlice,
+      ComparisonTableDocumentDataColumnsItem,
+      ComparisonTableSliceDefaultPrimary,
+      ComparisonTableSliceVariation,
+      ComparisonTableSliceDefault,
       FooterBlockSlice,
       FooterBlockSliceDefaultPrimary,
       FooterBlockSliceDefaultItem,
@@ -4716,6 +4911,11 @@ declare module '@prismicio/client' {
       ImageGallerySliceDefaultItem,
       ImageGallerySliceVariation,
       ImageGallerySliceDefault,
+      NoteCardsSlice,
+      NoteCardsDocumentDataCardsItem,
+      NoteCardsSliceDefaultPrimary,
+      NoteCardsSliceVariation,
+      NoteCardsSliceDefault,
       OptionsSelectorSlice,
       OptionsSelectorDocumentDataOptionsItem,
       OptionsSelectorSliceDefaultPrimary,
@@ -4747,6 +4947,11 @@ declare module '@prismicio/client' {
       PageSectionSliceTwoColumns,
       PageSectionSliceLargeImage,
       PageSectionSliceWithText,
+      PhotoCarouselSlice,
+      PhotoCarouselDocumentDataTabsItem,
+      PhotoCarouselSliceDefaultPrimary,
+      PhotoCarouselSliceVariation,
+      PhotoCarouselSliceDefault,
       PillGridSlice,
       PillGridDocumentDataPillsItem,
       PillGridSliceDefaultPrimary,

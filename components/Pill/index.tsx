@@ -10,7 +10,7 @@ interface PillProps {
 
 export default function Pill({ icon, title, description }: PillProps) {
   return (
-    <div className="bg-blue flex flex-col items-center rounded-[200px] py-[64px] text-center">
+    <div className="flex flex-col items-center rounded-[200px] bg-blue py-[64px] text-center">
       <div className="flex flex-col items-center gap-4 px-[4] text-center lg:px-[3.3rem]">
         {isFilled.image(icon) && <PrismicNextImage field={icon} />}
         {isFilled.richText(title) && (

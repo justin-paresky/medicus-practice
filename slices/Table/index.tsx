@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import { v4 as uuidv4 } from 'uuid';
+import clsx from 'clsx';
 import { type Content, isFilled } from '@prismicio/client';
 import { SliceComponentProps, PrismicRichText } from '@prismicio/react';
 
@@ -25,7 +26,10 @@ const Table = ({ slice }: TableProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="flex flex-col gap-[25px] bg-cover bg-no-repeat p-[50px] sm:flex-row sm:gap-[50px] sm:p-[100px]"
+      className={clsx(
+        'flex flex-col gap-[25px] overflow-x-auto bg-cover bg-no-repeat px-5 py-12 md:flex-row md:gap-[50px] lg:px-[100px] lg:py-[100px]',
+        css.tableContainer
+      )}
     >
       <div className="flex w-[100%] flex-col gap-5">
         {isFilled.richText(title) && (
@@ -45,16 +49,16 @@ const Table = ({ slice }: TableProps): JSX.Element => {
               <th>
                 <PrismicRichText field={items[0].col1} />
               </th>
-              <th>
+              <th className="bg-gray">
                 <PrismicRichText field={items[0].col2} />
               </th>
-              <th>
+              <th className="bg-gray">
                 <PrismicRichText field={items[0].col3} />
               </th>
-              <th>
+              <th className="bg-gray">
                 <PrismicRichText field={items[0].col4} />
               </th>
-              <th className="bg-accent">
+              <th className="bg-gray">
                 <PrismicRichText field={items[0].col5} />
               </th>
             </tr>
@@ -63,19 +67,19 @@ const Table = ({ slice }: TableProps): JSX.Element => {
             {items.slice(1, items.length).map((item) => {
               return (
                 <tr key={uuidv4()}>
-                  <td>
+                  <td className="bg-gray">
                     <PrismicRichText field={item.col1} />
                   </td>
-                  <td>
+                  <td className="bg-primary">
                     <PrismicRichText field={item.col2} />
                   </td>
-                  <td>
+                  <td className="bg-gray">
                     <PrismicRichText field={item.col3} />
                   </td>
-                  <td>
+                  <td className="bg-gray">
                     <PrismicRichText field={item.col4} />
                   </td>
-                  <td className="bg-accent">
+                  <td className="bg-gray">
                     <PrismicRichText field={item.col5} />
                   </td>
                 </tr>

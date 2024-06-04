@@ -1,0 +1,74 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Smoke"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ea nulla officia nulla ea exercitation laborum incididunt aliqua deserunt tempor fugiat ex dolor elit. Non culpa mollit et et mollit sit fugiat nisi sint Lorem eiusmod ullamco laboris."
+						}
+					}
+				]
+			},
+			"cards": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "felt",
+									"type": "Text"
+								}
+							],
+							[
+								"steps",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Dolor dolor culpa eiusmod proident est. Consequat nostrud consequat reprehenderit sunt. Ex aute est reprehenderit."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading4",
+						"content": {
+							"text": "Valuable"
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

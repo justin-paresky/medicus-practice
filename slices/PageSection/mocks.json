@@ -922,13 +922,6 @@
 					}
 				]
 			},
-			"form": {
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "DocumentLink",
-					"id": "newsletter_form"
-				}
-			},
 			"titleColor": {
 				"__TYPE__": "FieldContent",
 				"type": "Color",
@@ -938,6 +931,11 @@
 				"__TYPE__": "FieldContent",
 				"value": "#59a773",
 				"type": "Color"
+			},
+			"formId": {
+				"__TYPE__": "FieldContent",
+				"value": "flag",
+				"type": "Text"
 			}
 		},
 		"items": [
@@ -1032,7 +1030,6 @@
 		"variation": "largeImage",
 		"primary": {
 			"image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
@@ -1050,6 +1047,9 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			},
 			"link": {
