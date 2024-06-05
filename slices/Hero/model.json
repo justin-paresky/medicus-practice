@@ -92,6 +92,15 @@
               "link-accent"
             ]
           }
+        },
+        "sticky": {
+          "type": "Boolean",
+          "config": {
+            "label": "Sticky",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       }
     },
@@ -186,6 +195,15 @@
               "link-accent"
             ]
           }
+        },
+        "sticky": {
+          "type": "Boolean",
+          "config": {
+            "label": "Sticky",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       }
     },
@@ -279,6 +297,15 @@
               "link-secondary",
               "link-accent"
             ]
+          }
+        },
+        "sticky": {
+          "type": "Boolean",
+          "config": {
+            "label": "Sticky",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
           }
         }
       }

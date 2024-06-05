@@ -575,6 +575,72 @@ type HomeDocumentDataSlicesSlice =
  */
 interface HomeDocumentData {
   /**
+   * Primary CTA Label field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.primaryCtaLabel
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  primaryCtaLabel: prismic.KeyTextField;
+
+  /**
+   * Primary CTA Link field in *Home*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.primaryCtaLink
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  primaryCtaLink: prismic.LinkField;
+
+  /**
+   * Primary CTA Icon field in *Home*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.primaryCtaIcon
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  primaryCtaIcon: prismic.ImageField<never>;
+
+  /**
+   * Secondary CTA Label field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.secondaryCtaLabel
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  secondaryCtaLabel: prismic.KeyTextField;
+
+  /**
+   * Secondary CTA Link field in *Home*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.secondaryCtaLink
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  secondaryCtaLink: prismic.LinkField;
+
+  /**
+   * Secondary CTA Icon field in *Home*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.secondaryCtaIcon
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  secondaryCtaIcon: prismic.ImageField<never>;
+
+  /**
    * Slice Zone field in *Home*
    *
    * - **Field Type**: Slice Zone
@@ -2646,6 +2712,17 @@ export interface HeroSliceDefaultItem {
   variation: prismic.SelectField<
     'btn-primary' | 'btn-secondary' | 'btn-accent' | 'link-primary' | 'link-secondary' | 'link-accent'
   >;
+
+  /**
+   * Sticky field in *Hero → Items*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: hero.items[].sticky
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  sticky: prismic.BooleanField;
 }
 
 /**
@@ -2761,6 +2838,17 @@ export interface HeroSliceHeroImageLeftItem {
   variation: prismic.SelectField<
     'btn-primary' | 'btn-secondary' | 'btn-accent' | 'link-primary' | 'link-secondary' | 'link-accent'
   >;
+
+  /**
+   * Sticky field in *Hero → Items*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: hero.items[].sticky
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  sticky: prismic.BooleanField;
 }
 
 /**
@@ -2876,6 +2964,17 @@ export interface HeroSliceHeroImageRightItem {
   variation: prismic.SelectField<
     'btn-primary' | 'btn-secondary' | 'btn-accent' | 'link-primary' | 'link-secondary' | 'link-accent'
   >;
+
+  /**
+   * Sticky field in *Hero → Items*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: hero.items[].sticky
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  sticky: prismic.BooleanField;
 }
 
 /**

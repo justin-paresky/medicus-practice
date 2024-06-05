@@ -69,6 +69,7 @@ module.exports = {
     require('daisyui'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
+    require('tailwind-hamburgers'),
     function ({ addVariant }) {
       addVariant('child', '& > *');
       addVariant('child-hover', '& > *:hover');
@@ -83,7 +84,7 @@ module.exports = {
           secondary: '#f4d890',
           accent: '#e9f5ef',
           error: '#e72020',
-          '.btn': {
+          '.btn:not(.btn-circle)': {
             padding: '16px 32px',
             'border-radius': '5px',
             'text-transform': 'capitalize',
@@ -95,15 +96,6 @@ module.exports = {
               'border-color': '#215045',
             },
           },
-          '.btn-md': {
-            padding: '12px 28px',
-          },
-          '.btn-sm': {
-            padding: '8px 24px',
-          },
-          '.btn-xs': {
-            padding: '4px 20px',
-          },
           '.btn-primary': {
             color: '#ffffff',
           },
@@ -111,16 +103,16 @@ module.exports = {
             'background-color': '#f4d890',
             color: '#2e6759',
             '&:hover': {
-              'background-color': '#e4c677',
-              'border-color': '#e4c677',
+              'background-color': '#e4c677 !important',
+              'border-color': '#e4c677 !important',
             },
           },
           '.btn-accent': {
             'background-color': '#E9F5EF',
             color: '#2e6759',
             '&:hover': {
-              'background-color': '#cde6da',
-              'border-color': '#cde6da',
+              'background-color': '#cde6da !important',
+              'border-color': '#cde6da !important',
             },
           },
           '.link-primary': {

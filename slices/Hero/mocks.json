@@ -103,6 +103,13 @@
 							"type": "Select",
 							"value": "btn-secondary"
 						}
+					],
+					[
+						"sticky",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
+						}
 					]
 				]
 			},
@@ -123,6 +130,13 @@
 							"__TYPE__": "FieldContent",
 							"type": "Select",
 							"value": "btn-accent"
+						}
+					],
+					[
+						"sticky",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
 						}
 					]
 				]
@@ -223,6 +237,13 @@
 							"value": "link-secondary",
 							"type": "Select"
 						}
+					],
+					[
+						"sticky",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": true
+						}
 					]
 				]
 			}
@@ -321,6 +342,13 @@
 							"__TYPE__": "FieldContent",
 							"value": "btn-secondary",
 							"type": "Select"
+						}
+					],
+					[
+						"sticky",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
 						}
 					]
 				]

@@ -44,7 +44,7 @@ export default function Button({
 
   return (
     <button
-      className={`btn btn-sm md:btn-md ${variation} ${className}`}
+      className={`btn ${variation} ${className}`}
       disabled={disabled}
       name={name}
       onClick={onClick}

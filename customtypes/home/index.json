@@ -6,6 +6,53 @@
   "status": true,
   "json": {
     "Main": {
+      "primaryCtaLabel": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA Label",
+          "placeholder": ""
+        }
+      },
+      "primaryCtaLink": {
+        "type": "Link",
+        "config": {
+          "label": "Primary CTA Link",
+          "placeholder": "",
+          "allowTargetBlank": false,
+          "select": null
+        }
+      },
+      "primaryCtaIcon": {
+        "type": "Image",
+        "config": {
+          "label": "Primary CTA Icon",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "secondaryCtaLabel": {
+        "type": "Text",
+        "config": {
+          "label": "Secondary CTA Label",
+          "placeholder": ""
+        }
+      },
+      "secondaryCtaLink": {
+        "type": "Link",
+        "config": {
+          "label": "Secondary CTA Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "secondaryCtaIcon": {
+        "type": "Image",
+        "config": {
+          "label": "Secondary CTA Icon",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

@@ -1,0 +1,4 @@
+.dropdownCustom:not(.dropdown-open) .dropdown-content {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}

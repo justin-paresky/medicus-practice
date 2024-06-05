@@ -1,6 +1,8 @@
+/* eslint-disable @shopify/jsx-no-hardcoded-content */
 'use client';
 
 import { useState } from 'react';
+import clsx from 'clsx';
 import {
   isFilled,
   ImageField,
@@ -18,6 +20,8 @@ import { PrismicNextImage } from '@prismicio/next';
 import Button from '../Button';
 import ResponsiveContainer from '../ResponsiveContainer';
 
+import css from './style.module.css';
+
 export interface GlobalHeaderProps {
   logo?: ImageField;
   locales?: GroupField;
@@ -28,6 +32,7 @@ export interface GlobalHeaderProps {
 export default function GlobalHeader({ logo, locales, ctas, homeLink }: GlobalHeaderProps) {
   const [anchorElLocale, setAnchorElLocale] = useState<HTMLButtonElement | null>(null);
   const [selectedLocale, setSelectedLocale] = useState<Record<string, AnyRegularField> | null>(null);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const handleCloseLocale = () => {
     setAnchorElLocale(null);
@@ -90,7 +95,7 @@ export default function GlobalHeader({ logo, locales, ctas, homeLink }: GlobalHe
               </>
             )}
             {isFilled.group(ctas) && (
-              <>
+              <div className="hidden md:block">
                 {ctas.map((cta) => {
                   const { label, link, icon } = cta;
                   return (
@@ -103,8 +108,23 @@ export default function GlobalHeader({ logo, locales, ctas, homeLink }: GlobalHe
                     />
                   );
                 })}
-              </>
+              </div>
             )}
+            <div
+              className={`dropdown dropdown-end block md:hidden ${css.dropdownCustom} ${menuOpen && 'dropdown-open'}`}
+            >
+              <button
+                type="button"
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label="open close menu"
+                className={clsx('tham tham-e-squeeze tham-w-6', menuOpen && 'tham-active')}
+              >
+                <div className="tham-box">
+                  <div className="tham-inner bg-primary" />
+                </div>
+              </button>
+              <div className="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 shadow">Test</div>
+            </div>
           </div>
         </div>
       </ResponsiveContainer>
