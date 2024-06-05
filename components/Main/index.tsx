@@ -40,7 +40,6 @@ export default async function Main({ children }: { children: React.ReactNode }) 
       )}
       <GlobalHeader
         logo={headerData.logo as ImageField}
-        locales={headerData.locales as GroupField}
         ctas={headerData.ctas as GroupField}
         homeLink={headerData.homeLink as LinkField}
       />

@@ -32,12 +32,11 @@ declare global {
 
 export interface GlobalHeaderProps {
   logo?: ImageField;
-  locales?: GroupField;
   ctas?: GroupField;
   homeLink?: LinkField;
 }
 
-export default function GlobalHeader({ logo, locales, ctas, homeLink }: GlobalHeaderProps) {
+export default function GlobalHeader({ logo, ctas, homeLink }: GlobalHeaderProps) {
   const [anchorElLocale, setAnchorElLocale] = useState<HTMLButtonElement | null>(null);
   const [selectedLocale, setSelectedLocale] = useState<Record<string, AnyRegularField> | null>(null);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -79,36 +78,7 @@ export default function GlobalHeader({ logo, locales, ctas, homeLink }: GlobalHe
             </PrismicLink>
           )}
           <div className="flex flex-row items-center gap-7">
-            {isFilled.group(locales) && (
-              <>
-                <button
-                  type="button"
-                  className="flex flex-row items-center gap-2 text-primary"
-                  onClick={(event) => setAnchorElLocale(event.currentTarget)}
-                >
-                  {renderLocaleAvatar()}
-                  {selectedLocale && (
-                    <div className="font-sans font-semibold uppercase text-primary">
-                      {selectedLocale.shortLabel as string}
-                    </div>
-                  )}
-                </button>
-                <Menu
-                  open={Boolean(anchorElLocale)}
-                  anchorEl={anchorElLocale}
-                  onClose={handleCloseLocale}
-                  disableScrollLock
-                >
-                  {locales.map((locale) => {
-                    return (
-                      <MenuItem onClick={() => handleLocaleClick(locale)} key={locale.key as string}>
-                        {locale.label as string}
-                      </MenuItem>
-                    );
-                  })}
-                </Menu>
-              </>
-            )}
+            <div id="global-header-language-container" />
             {isFilled.group(ctas) && (
               <div className="hidden md:block">
                 {ctas.map((cta) => {
