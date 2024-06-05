@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable @shopify/jsx-no-hardcoded-content */
 'use client';
 
@@ -22,6 +23,12 @@ import Button from '../Button';
 import ResponsiveContainer from '../ResponsiveContainer';
 
 import css from './style.module.css';
+
+declare global {
+  interface Window {
+    Weglot: any;
+  }
+}
 
 export interface GlobalHeaderProps {
   logo?: ImageField;
@@ -61,7 +68,7 @@ export default function GlobalHeader({ logo, locales, ctas, homeLink }: GlobalHe
         strategy="afterInteractive"
         src="https://cdn.weglot.com/weglot.min.js"
         onLoad={() => {
-          Weglot.initialize({ api_key: 'wg_7bfdd08e6499182187bcb3e6908a64564' });
+          window.Weglot.initialize({ api_key: 'wg_7bfdd08e6499182187bcb3e6908a64564', cache: true });
         }}
       />
       <ResponsiveContainer>
