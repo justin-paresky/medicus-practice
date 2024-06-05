@@ -2,6 +2,7 @@
 'use client';
 
 import { useState } from 'react';
+import Script from 'next/script';
 import clsx from 'clsx';
 import {
   isFilled,
@@ -56,6 +57,13 @@ export default function GlobalHeader({ logo, locales, ctas, homeLink }: GlobalHe
 
   return (
     <header className="fixed z-50 w-full border-b border-[#000000] bg-[#ffffff]">
+      <Script
+        strategy="afterInteractive"
+        src="https://cdn.weglot.com/weglot.min.js"
+        onLoad={() => {
+          Weglot.initialize({ api_key: 'wg_7bfdd08e6499182187bcb3e6908a64564' });
+        }}
+      />
       <ResponsiveContainer>
         <div className="flex w-[100%] flex-row items-center justify-between px-3 py-3 lg:px-[100px] lg:py-5">
           {isFilled.image(logo) && (
