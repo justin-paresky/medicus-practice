@@ -2,6 +2,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import localFont from 'next/font/local';
 import { ThemeProvider } from '@mui/material/styles';
 import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 
 import theme from './theme';
 
@@ -110,6 +111,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script
+        id="Cookiebot"
+        src="https://consent.cookiebot.com/uc.js"
+        data-cbid="2e0bfb75-7e25-4231-b18d-0d977ad48c81"
+        data-blockingmode="auto"
+      />
       <AppRouterCacheProvider>
         <ThemeProvider theme={theme}>
           <body
