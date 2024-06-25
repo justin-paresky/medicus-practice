@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 export const components = {
   card: dynamic(() => import('./Card')),
   carousel: dynamic(() => import('./Carousel')),
+  column_text: dynamic(() => import('./ColumnText')),
   comparison_table: dynamic(() => import('./ComparisonTable')),
   footer_block: dynamic(() => import('./FooterBlock')),
   form_field: dynamic(() => import('./FormField')),

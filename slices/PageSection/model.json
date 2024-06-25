@@ -1077,6 +1077,132 @@
             "allowTargetBlank": true,
             "multi": "paragraph,preformatted,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,heading3"
           }
+        },
+        "backgroundImage": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "imagePosition": {
+          "type": "Select",
+          "config": {
+            "label": "Image Position",
+            "placeholder": "",
+            "options": [
+              "top",
+              "right",
+              "bottom",
+              "left"
+            ]
+          }
+        },
+        "imageRounded": {
+          "type": "Boolean",
+          "config": {
+            "label": "Image Rounded",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "withDivider",
+      "name": "WithDivider",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading5"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl,heading3"
+          }
+        },
+        "divider": {
+          "type": "Image",
+          "config": {
+            "label": "Divider",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "dividerPosition": {
+          "type": "Select",
+          "config": {
+            "label": "Divider Position",
+            "placeholder": "",
+            "options": [
+              "top",
+              "bottom"
+            ],
+            "default_value": "top"
+          }
+        },
+        "buttons": {
+          "type": "Group",
+          "config": {
+            "label": "Buttons",
+            "repeat": true,
+            "fields": {
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "placeholder": "",
+                  "select": null
+                }
+              },
+              "label": {
+                "type": "Text",
+                "config": {
+                  "label": "Label",
+                  "placeholder": ""
+                }
+              },
+              "variation": {
+                "type": "Select",
+                "config": {
+                  "label": "Variation",
+                  "placeholder": "",
+                  "options": [
+                    "btn-primary",
+                    "btn-secondary",
+                    "btn-accent",
+                    "link-primary",
+                    "link-secondary",
+                    "link-accent"
+                  ]
+                }
+              }
+            }
+          }
         }
       },
       "items": {}

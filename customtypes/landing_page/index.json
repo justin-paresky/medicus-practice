@@ -26,6 +26,9 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "column_text": {
+              "type": "SharedSlice"
+            },
             "page_section": {
               "type": "SharedSlice"
             },

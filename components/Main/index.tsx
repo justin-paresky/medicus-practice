@@ -19,6 +19,19 @@ export default async function Main({ children }: { children: React.ReactNode }) 
   } = page;
   return (
     <>
+      <GlobalHeader
+        logo={headerData.logo as ImageField}
+        ctas={headerData.ctas as GroupField}
+        homeLink={headerData.homeLink as LinkField}
+      />
+      <div className="pt-[3.5rem] lg:pt-[88px]">
+        <ResponsiveContainer>{children}</ResponsiveContainer>
+      </div>
+      <GlobalFooter
+        slices={footerData.slices as GlobalFooterDocumentData['slices']}
+        copywrite={footerData.copywrite as KeyTextField}
+        image={footerData.image as ImageField}
+      />
       {(isFilled.keyText(secondaryCtaLabel) ||
         isFilled.image(secondaryCtaIcon) ||
         isFilled.keyText(primaryCtaLabel) ||
@@ -38,19 +51,6 @@ export default async function Main({ children }: { children: React.ReactNode }) 
           )}
         </FloatingButtons>
       )}
-      <GlobalHeader
-        logo={headerData.logo as ImageField}
-        ctas={headerData.ctas as GroupField}
-        homeLink={headerData.homeLink as LinkField}
-      />
-      <div className="pt-[65px] lg:pt-[88px]">
-        <ResponsiveContainer>{children}</ResponsiveContainer>
-      </div>
-      <GlobalFooter
-        slices={footerData.slices as GlobalFooterDocumentData['slices']}
-        copywrite={footerData.copywrite as KeyTextField}
-        image={footerData.image as ImageField}
-      />
     </>
   );
 }

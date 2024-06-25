@@ -18,7 +18,8 @@ const COLORS = {
     DEFAULT: '#f18e79',
   },
   gray: {
-    DEFAULT: '#768188',
+    DEFAULT: '#f9f8f6',
+    dark: '#768188',
     light: '#dee1e3',
   },
 };

@@ -698,7 +698,7 @@ export type HomeDocument<Lang extends string = string> = prismic.PrismicDocument
   Lang
 >;
 
-type LandingPageDocumentDataSlicesSlice = PageSectionSlice | HeroSlice;
+type LandingPageDocumentDataSlicesSlice = ColumnTextSlice | PageSectionSlice | HeroSlice;
 
 /**
  * Content for Landing Page documents
@@ -1720,6 +1720,58 @@ type CarouselSliceVariation = CarouselSliceDefault;
 export type CarouselSlice = prismic.SharedSlice<'carousel', CarouselSliceVariation>;
 
 /**
+ * Primary content in *ColumnText → Primary*
+ */
+export interface ColumnTextSliceDefaultPrimary {
+  /**
+   * Columns field in *ColumnText → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: column_text.primary.columns[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  columns: prismic.GroupField<Simplify<ColumnTextDocumentDataColumnsItem>>;
+
+  /**
+   * Number Of Columns field in *ColumnText → Primary*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: column_text.primary.numberOfColumns
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  numberOfColumns: prismic.NumberField;
+}
+
+/**
+ * Default variation for ColumnText Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ColumnTextSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<ColumnTextSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *ColumnText*
+ */
+type ColumnTextSliceVariation = ColumnTextSliceDefault;
+
+/**
+ * ColumnText Shared Slice
+ *
+ * - **API ID**: `column_text`
+ * - **Description**: ColumnText
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ColumnTextSlice = prismic.SharedSlice<'column_text', ColumnTextSliceVariation>;
+
+/**
  * Primary content in *ComparisonTable → Primary*
  */
 export interface ComparisonTableSliceDefaultPrimary {
@@ -2647,6 +2699,16 @@ export interface HeroSliceDefaultPrimary {
   description: prismic.RichTextField;
 
   /**
+   * Sub-Description field in *Hero → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.subDescription
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  subDescription: prismic.RichTextField;
+
+  /**
    * Background Image field in *Hero → Primary*
    *
    * - **Field Type**: Image
@@ -2667,14 +2729,26 @@ export interface HeroSliceDefaultPrimary {
   backgroundColor: prismic.ColorField;
 
   /**
-   * Title Color field in *Hero → Primary*
+   * Text Align field in *Hero → Primary*
    *
-   * - **Field Type**: Color
+   * - **Field Type**: Select
    * - **Placeholder**: *None*
-   * - **API ID Path**: hero.primary.titleColor
-   * - **Documentation**: https://prismic.io/docs/field#color
+   * - **Default Value**: center
+   * - **API ID Path**: hero.primary.textAlign
+   * - **Documentation**: https://prismic.io/docs/field#select
    */
-  titleColor: prismic.ColorField;
+  textAlign: prismic.SelectField<'center' | 'left' | 'right', 'filled'>;
+
+  /**
+   * Container Color field in *Hero → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: primary
+   * - **API ID Path**: hero.primary.containerColor
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  containerColor: prismic.SelectField<'primary' | 'secondary' | 'accent' | 'gray', 'filled'>;
 }
 
 /**
@@ -2773,6 +2847,16 @@ export interface HeroSliceHeroImageLeftPrimary {
   description: prismic.RichTextField;
 
   /**
+   * Sub-Description field in *Hero → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.subDescription
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  subDescription: prismic.RichTextField;
+
+  /**
    * Background Image field in *Hero → Primary*
    *
    * - **Field Type**: Image
@@ -2793,14 +2877,25 @@ export interface HeroSliceHeroImageLeftPrimary {
   backgroundColor: prismic.ColorField;
 
   /**
-   * Title Color field in *Hero → Primary*
+   * Text Align field in *Hero → Primary*
    *
-   * - **Field Type**: Color
+   * - **Field Type**: Select
    * - **Placeholder**: *None*
-   * - **API ID Path**: hero.primary.titleColor
-   * - **Documentation**: https://prismic.io/docs/field#color
+   * - **Default Value**: center
+   * - **API ID Path**: hero.primary.textAlign
+   * - **Documentation**: https://prismic.io/docs/field#select
    */
-  titleColor: prismic.ColorField;
+  textAlign: prismic.SelectField<'center' | 'left' | 'right', 'filled'>;
+
+  /**
+   * Container Color field in *Hero → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.containerColor
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  containerColor: prismic.SelectField<'primary' | 'secondary' | 'accent' | 'gray'>;
 }
 
 /**
@@ -2899,6 +2994,16 @@ export interface HeroSliceHeroImageRightPrimary {
   description: prismic.RichTextField;
 
   /**
+   * Sub-Description field in *Hero → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.subDescription
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  subDescription: prismic.RichTextField;
+
+  /**
    * Background Image field in *Hero → Primary*
    *
    * - **Field Type**: Image
@@ -2919,14 +3024,25 @@ export interface HeroSliceHeroImageRightPrimary {
   backgroundColor: prismic.ColorField;
 
   /**
-   * Title Color field in *Hero → Primary*
+   * Text Align field in *Hero → Primary*
    *
-   * - **Field Type**: Color
+   * - **Field Type**: Select
    * - **Placeholder**: *None*
-   * - **API ID Path**: hero.primary.titleColor
-   * - **Documentation**: https://prismic.io/docs/field#color
+   * - **Default Value**: center
+   * - **API ID Path**: hero.primary.textAlign
+   * - **Documentation**: https://prismic.io/docs/field#select
    */
-  titleColor: prismic.ColorField;
+  textAlign: prismic.SelectField<'center' | 'left' | 'right', 'filled'>;
+
+  /**
+   * Container Color field in *Hero → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.containerColor
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  containerColor: prismic.SelectField<'primary' | 'secondary' | 'accent' | 'gray'>;
 }
 
 /**
@@ -4574,6 +4690,47 @@ export interface PageSectionSliceWithTextPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   description: prismic.RichTextField;
+
+  /**
+   * Background Image field in *PageSection → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.backgroundImage
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  backgroundImage: prismic.ImageField<never>;
+
+  /**
+   * Image field in *PageSection → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Image Position field in *PageSection → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.imagePosition
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  imagePosition: prismic.SelectField<'top' | 'right' | 'bottom' | 'left'>;
+
+  /**
+   * Image Rounded field in *PageSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: page_section.primary.imageRounded
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  imageRounded: prismic.BooleanField;
 }
 
 /**
@@ -4590,6 +4747,75 @@ export type PageSectionSliceWithText = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *PageSection → Primary*
+ */
+export interface PageSectionSliceWithDividerPrimary {
+  /**
+   * Title field in *PageSection → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.TitleField;
+
+  /**
+   * Description field in *PageSection → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Divider field in *PageSection → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.divider
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  divider: prismic.ImageField<never>;
+
+  /**
+   * Divider Position field in *PageSection → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: top
+   * - **API ID Path**: page_section.primary.dividerPosition
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  dividerPosition: prismic.SelectField<'top' | 'bottom', 'filled'>;
+
+  /**
+   * Buttons field in *PageSection → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.buttons[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  buttons: prismic.GroupField<Simplify<PageSectionDocumentDataButtonsItem>>;
+}
+
+/**
+ * WithDivider variation for PageSection Slice
+ *
+ * - **API ID**: `withDivider`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PageSectionSliceWithDivider = prismic.SharedSliceVariation<
+  'withDivider',
+  Simplify<PageSectionSliceWithDividerPrimary>,
+  never
+>;
+
+/**
  * Slice variation for *PageSection*
  */
 type PageSectionSliceVariation =
@@ -4602,7 +4828,8 @@ type PageSectionSliceVariation =
   | PageSectionSliceWithForm
   | PageSectionSliceTwoColumns
   | PageSectionSliceLargeImage
-  | PageSectionSliceWithText;
+  | PageSectionSliceWithText
+  | PageSectionSliceWithDivider;
 
 /**
  * PageSection Shared Slice
@@ -4965,6 +5192,11 @@ declare module '@prismicio/client' {
       CarouselSliceDefaultPrimary,
       CarouselSliceVariation,
       CarouselSliceDefault,
+      ColumnTextSlice,
+      ColumnTextDocumentDataColumnsItem,
+      ColumnTextSliceDefaultPrimary,
+      ColumnTextSliceVariation,
+      ColumnTextSliceDefault,
       ComparisonTableSlice,
       ComparisonTableDocumentDataColumnsItem,
       ComparisonTableSliceDefaultPrimary,
@@ -5035,6 +5267,8 @@ declare module '@prismicio/client' {
       PageSectionSliceLargeImagePrimary,
       PageSectionSliceLargeImageItem,
       PageSectionSliceWithTextPrimary,
+      PageSectionDocumentDataButtonsItem,
+      PageSectionSliceWithDividerPrimary,
       PageSectionSliceVariation,
       PageSectionSliceDefault,
       PageSectionSliceImageRight,
@@ -5046,6 +5280,7 @@ declare module '@prismicio/client' {
       PageSectionSliceTwoColumns,
       PageSectionSliceLargeImage,
       PageSectionSliceWithText,
+      PageSectionSliceWithDivider,
       PhotoCarouselSlice,
       PhotoCarouselDocumentDataTabsItem,
       PhotoCarouselSliceDefaultPrimary,

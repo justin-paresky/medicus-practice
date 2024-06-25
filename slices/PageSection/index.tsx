@@ -9,6 +9,7 @@ import WithGrid from './WithGrid';
 import WithPhotos from './WithPhotos';
 import WithForm from './WithForm';
 import WithText from './WithText';
+import WithDivider from './WithDivider';
 
 /**
  * Props for `PageSection`.
@@ -39,22 +40,29 @@ const PageSection = ({ slice }: PageSectionProps): JSX.Element => {
         return <WithForm {...slice} />;
       case 'withText':
         return <WithText {...slice} />;
+      case 'withDivider':
+        return <WithDivider {...slice} />;
       default:
         return null;
     }
   };
+
+  const paddingY = slice.variation === 'withDivider' ? 'pt-4' : 'p-12 lg:pt-[100px]';
+
   return (
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="flex flex-col gap-[25px] bg-cover bg-no-repeat px-5 pt-12 md:flex-row md:gap-[50px] lg:px-[100px] lg:pt-[100px]"
+      className={`flex flex-col gap-[25px] bg-cover bg-no-repeat px-5 md:flex-row md:gap-[50px] lg:px-[100px] ${paddingY}`}
       style={{
         backgroundColor:
-          slice.variation !== 'withText' && isFilled.color(slice.primary.backgroundColor)
+          slice.variation !== 'withText' &&
+          slice.variation !== 'withDivider' &&
+          isFilled.color(slice.primary.backgroundColor)
             ? slice.primary.backgroundColor
             : '#ffffff',
         backgroundImage:
-          slice.variation !== 'withText' && isFilled.image(slice.primary.backgroundImage)
+          slice.variation !== 'withDivider' && isFilled.image(slice.primary.backgroundImage)
             ? `url("${slice.primary.backgroundImage.url}")`
             : 'none',
       }}

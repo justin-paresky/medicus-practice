@@ -4,10 +4,10 @@
 
 @layer utilities {
   .clip-hero {
-    clip-path: circle(107% at 0 50%);
+    clip-path: circle(100% at 0 50%);
   }
   .clip-hero-left {
-    clip-path: circle(107% at 100% 50%);
+    clip-path: circle(100% at 100% 50%);
   }
   .clip-hero-small {
     clip-path: circle(98% at 0 50%);
@@ -56,11 +56,11 @@
   }
 
   h3 {
-    @apply text-2xl lg:text-[3rem];
+    @apply text-2xl lg:text-5xl;
   }
 
   h4 {
-    @apply text-[2.5rem]
+    @apply text-[2.5rem] leading-[1]
   }
 
   h5 {

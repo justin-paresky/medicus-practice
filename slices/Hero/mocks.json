@@ -44,21 +44,14 @@
 				"value": "#a5d735",
 				"type": "Color"
 			},
-			"titleColor": {
-				"__TYPE__": "FieldContent",
-				"type": "Color",
-				"value": "#FFFFFF"
-			},
 			"title": {
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
 						"type": "heading1",
 						"content": {
-							"text": "Coming soon: Launch Your Dream Practice that Grows with You!\n",
-							"spans": []
-						},
-						"direction": "ltr"
+							"text": "Discover"
+						}
 					}
 				]
 			},
@@ -69,6 +62,27 @@
 						"type": "paragraph",
 						"content": {
 							"text": "Veniam officia dolor exercitation consequat. Eiusmod ea aliqua cupidatat exercitation ut id laboris incididunt velit eu voluptate. Officia officia ullamco occaecat cupidatat fugiat irure anim ut velit aliqua."
+						}
+					}
+				]
+			},
+			"textAlign": {
+				"__TYPE__": "FieldContent",
+				"value": "left",
+				"type": "Select"
+			},
+			"containerColor": {
+				"__TYPE__": "FieldContent",
+				"value": "primary",
+				"type": "Select"
+			},
+			"subDescription": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Adipisicing esse adipisicing aliquip. Nisi sunt ipsum ea proident ea culpa. Proident eiusmod nisi laboris reprehenderit laboris ea id tempor cillum pariatur nisi labore id aliquip exercitation."
 						}
 					}
 				]
@@ -153,10 +167,8 @@
 					{
 						"type": "heading1",
 						"content": {
-							"text": "Specialization",
-							"spans": []
-						},
-						"direction": "ltr"
+							"text": "Graph"
+						}
 					}
 				]
 			},
@@ -203,6 +215,27 @@
 						"type": "paragraph",
 						"content": {
 							"text": "Irure aliquip irure esse."
+						}
+					}
+				]
+			},
+			"textAlign": {
+				"__TYPE__": "FieldContent",
+				"value": "center",
+				"type": "Select"
+			},
+			"containerColor": {
+				"__TYPE__": "FieldContent",
+				"value": "gray",
+				"type": "Select"
+			},
+			"subDescription": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Mollit sit occaecat et et incididunt et labore irure aliquip. Amet id mollit tempor consectetur tempor consectetur commodo sunt elit enim amet ad consequat ipsum."
 						}
 					}
 				]
@@ -259,10 +292,8 @@
 					{
 						"type": "heading1",
 						"content": {
-							"text": "Medicus Practice Vienna",
-							"spans": []
-						},
-						"direction": "ltr"
+							"text": "Swung"
+						}
 					}
 				]
 			},
@@ -282,18 +313,18 @@
 			"backgroundImage": {
 				"origin": {
 					"id": "main",
-					"url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055",
-					"width": 3277,
-					"height": 4092
+					"url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a",
+					"width": 3024,
+					"height": 3778
 				},
-				"url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?rect=0%2C69%2C3277%2C3954&w=610&h=736",
-				"width": 610,
-				"height": 736,
+				"url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a",
+				"width": 3024,
+				"height": 3778,
 				"edit": {
 					"zoom": 1,
 					"crop": {
 						"x": 0,
-						"y": 69
+						"y": 0
 					},
 					"background": "transparent"
 				},
@@ -309,6 +340,27 @@
 						"type": "paragraph",
 						"content": {
 							"text": "Mollit ullamco sit officia."
+						}
+					}
+				]
+			},
+			"textAlign": {
+				"__TYPE__": "FieldContent",
+				"value": "center",
+				"type": "Select"
+			},
+			"containerColor": {
+				"__TYPE__": "FieldContent",
+				"value": "accent",
+				"type": "Select"
+			},
+			"subDescription": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Deserunt pariatur excepteur eu."
 						}
 					}
 				]
