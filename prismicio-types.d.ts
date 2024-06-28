@@ -826,6 +826,96 @@ export type ModalDocument<Lang extends string = string> = prismic.PrismicDocumen
   Lang
 >;
 
+/**
+ * Item in *NavMenu → CTAs*
+ */
+export interface NavMenuDocumentDataCtasItem {
+  /**
+   * Icon field in *NavMenu → CTAs*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: nav_menu.ctas[].icon
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  icon: prismic.ImageField<never>;
+
+  /**
+   * Link field in *NavMenu → CTAs*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: nav_menu.ctas[].link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  link: prismic.LinkField;
+
+  /**
+   * Label field in *NavMenu → CTAs*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: nav_menu.ctas[].label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  label: prismic.KeyTextField;
+}
+
+type NavMenuDocumentDataSlicesSlice = FooterBlockSlice;
+
+/**
+ * Content for NavMenu documents
+ */
+interface NavMenuDocumentData {
+  /**
+   * Logo field in *NavMenu*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: nav_menu.logo
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  logo: prismic.ImageField<never>;
+
+  /**
+   * CTAs field in *NavMenu*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: nav_menu.ctas[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  ctas: prismic.GroupField<Simplify<NavMenuDocumentDataCtasItem>>;
+
+  /**
+   * Slice Zone field in *NavMenu*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: nav_menu.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<NavMenuDocumentDataSlicesSlice>;
+}
+
+/**
+ * NavMenu document from Prismic
+ *
+ * - **API ID**: `nav_menu`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type NavMenuDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
+  Simplify<NavMenuDocumentData>,
+  'nav_menu',
+  Lang
+>;
+
 type PhotosDocumentDataSlicesSlice = ImageGallerySlice;
 
 /**
@@ -1307,6 +1397,7 @@ export type AllDocumentTypes =
   | HomeDocument
   | LandingPageDocument
   | ModalDocument
+  | NavMenuDocument
   | PhotosDocument
   | SocialLinksDocument
   | SpecializationPageDocument
@@ -5210,6 +5301,10 @@ declare module '@prismicio/client' {
       LandingPageDocumentDataSlicesSlice,
       ModalDocument,
       ModalDocumentData,
+      NavMenuDocument,
+      NavMenuDocumentData,
+      NavMenuDocumentDataCtasItem,
+      NavMenuDocumentDataSlicesSlice,
       PhotosDocument,
       PhotosDocumentData,
       PhotosDocumentDataSlicesSlice,

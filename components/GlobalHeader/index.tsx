@@ -2,7 +2,6 @@
 /* eslint-disable no-unused-vars */
 'use client';
 
-import { useState } from 'react';
 import Script from 'next/script';
 import clsx from 'clsx';
 import { isFilled, ImageField, KeyTextField, LinkField, GroupField } from '@prismicio/client';
@@ -10,10 +9,14 @@ import { PrismicLink } from '@prismicio/react';
 import { PrismicNextImage } from '@prismicio/next';
 import { v4 as uuidv4 } from 'uuid';
 
+import navMenu from '../../data/preBuild/navMenu.json';
 import Button from '../Button';
 import ResponsiveContainer from '../ResponsiveContainer';
 
 import css from './style.module.css';
+
+import { FooterBlockSlice } from '@/prismicio-types';
+import FooterBlock from '@/slices/FooterBlock';
 
 declare global {
   interface Window {
@@ -28,8 +31,6 @@ export interface GlobalHeaderProps {
 }
 
 export default function GlobalHeader({ logo, ctas, homeLink }: GlobalHeaderProps) {
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
-
   return (
     <header className="fixed z-50 w-full border-b border-[#000000] bg-white">
       <Script
@@ -64,20 +65,52 @@ export default function GlobalHeader({ logo, ctas, homeLink }: GlobalHeaderProps
                 })}
               </div>
             )}
-            <div
-              className={`dropdown dropdown-end block md:hidden ${css.dropdownCustom} ${menuOpen && 'dropdown-open'}`}
+            <label
+              htmlFor="mobile-menu"
+              className={clsx('relative z-[2147483647] cursor-pointer px-3 py-6 md:hidden', css.menuButton)}
             >
-              <button
-                type="button"
-                onClick={() => setMenuOpen(!menuOpen)}
-                aria-label="open close menu"
-                className={clsx('tham tham-e-squeeze tham-w-6', menuOpen && 'tham-active')}
-              >
+              <input
+                aria-label="mobile menu"
+                className="peer hidden"
+                type="checkbox"
+                id="mobile-menu"
+                name="mobile-menu"
+              />
+              <div className="tham tham-e-squeeze tham-w-6 relative z-[2147483647] peer-checked:tham-active peer-checked:fixed peer-checked:right-[24px] peer-checked:top-[21px] peer-checked:[&>div>div]:bg-white">
                 <div className="tham-box">
                   <div className="tham-inner bg-primary" />
                 </div>
-              </button>
-            </div>
+              </div>
+              <div className="fixed right-0 top-0 z-40 h-full w-full translate-y-[-100%] overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-y-[0%]">
+                <div className="float-right h-full w-full bg-primary px-4 pb-4 pt-[6px] shadow-2xl">
+                  <div className="relative flex h-full flex-col justify-between">
+                    <div className="flex flex-col gap-6">
+                      {isFilled.image(navMenu.logo) && <PrismicNextImage className="w-[220px]" field={navMenu.logo} />}
+                      <div id="weglot-mobile-container" />
+                      {navMenu.slices.map((slice, idx) => (
+                        <FooterBlock
+                          key={uuidv4()}
+                          slice={slice as FooterBlockSlice}
+                          index={idx}
+                          slices={[]}
+                          context={null}
+                        />
+                      ))}
+                    </div>
+                    {navMenu.ctas.length > 0 && (
+                      <div className="flex flex-row flex-wrap">
+                        {navMenu.ctas.map((cta) => {
+                          const { link, label, icon } = cta;
+                          return (
+                            <Button key={uuidv4()} variation="btn-secondary" link={link} label={label} icon={icon} />
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </label>
           </div>
         </div>
       </ResponsiveContainer>

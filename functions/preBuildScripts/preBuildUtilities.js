@@ -43,10 +43,12 @@ module.exports.preBuildDevelopment = async () => {
   const header = await client.getSingle('global_header');
   const footer = await client.getSingle('global_footer');
   const socialLinks = await client.getSingle('social_links');
+  const navMenu = await client.getSingle('nav_menu');
 
   fs.writeFileSync('./data/preBuild/globalHeader.json', JSON.stringify(header.data));
   fs.writeFileSync('./data/preBuild/globalFooter.json', JSON.stringify(footer.data));
   fs.writeFileSync('./data/preBuild/socialLinks.json', JSON.stringify(socialLinks.data));
+  fs.writeFileSync('./data/preBuild/navMenu.json', JSON.stringify(navMenu.data));
 };
 
 module.exports.preBuildProduction = async () => {
@@ -54,8 +56,10 @@ module.exports.preBuildProduction = async () => {
   const header = await client.getSingle('global_header');
   const footer = await client.getSingle('global_footer');
   const socialLinks = await client.getSingle('social_links');
+  const navMenu = await client.getSingle('nav_menu');
 
   fs.writeFileSync('./data/preBuild/globalHeader.json', JSON.stringify(header.data));
   fs.writeFileSync('./data/preBuild/globalFooter.json', JSON.stringify(footer.data));
   fs.writeFileSync('./data/preBuild/socialLinks.json', JSON.stringify(socialLinks.data));
+  fs.writeFileSync('./data/preBuild/navMenu.json', JSON.stringify(navMenu.data));
 };

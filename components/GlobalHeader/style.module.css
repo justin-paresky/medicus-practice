@@ -1,4 +1,3 @@
-.dropdownCustom:not(.dropdown-open) .dropdown-content {
-  visibility: hidden !important;
-  opacity: 0 !important;
+.menuButton:has(input:checked) .tham .tham-box .tham-inner {
+  background-color: red;
 }
