@@ -21,22 +21,22 @@ const OptionsSelector = ({ slice }: OptionsSelectorProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className={clsx('relative mx-4 mt-12 lg:mx-0 lg:mt-[100px]', css.optionsContainer)}
+      className={clsx('relative mx-4 lg:mx-0', css.optionsContainer)}
     >
       <div className="clip-hero-small xl:clip-hero absolute left-0 top-0 hidden h-[100%] w-[50%] bg-primary lg:block xl:w-[55%]" />
-      <div className="absolute right-0 z-[-1] hidden h-[100%] w-[calc(50%_+_150px)] bg-[#F9F8F6] lg:block" />
+      <div className="absolute right-0 z-[-1] hidden h-[100%] w-[calc(50%_+_150px)] bg-gray lg:block" />
       <div className="join join-vertical w-full border border-primary lg:hidden">
         {options.map((option, idx) => {
           const { icon, label, items } = option;
 
           return (
-            <div key={label} className={clsx('collapse join-item collapse-plus', css.optionCollapse)}>
+            <div key={label as string} className={clsx('collapse join-item collapse-plus', css.optionCollapse)}>
               <input defaultChecked={idx === 0} aria-labelledby={label} type="radio" name="options-selector-collapse" />
-              <div className="collapse-title flex cursor-pointer flex-row items-center gap-5 bg-primary font-serif text-[20px] font-semibold text-[#ffffff]">
-                {isFilled.image(icon) && <PrismicNextImage field={icon} className="child:text-[#ffffff]" />}
+              <div className="text-white collapse-title flex cursor-pointer flex-row items-center gap-5 bg-primary font-serif text-[20px] font-semibold">
+                {isFilled.image(icon) && <PrismicNextImage field={icon} className="child:text-white" />}
                 {isFilled.keyText(label) && <div id={label}>{label}</div>}
               </div>
-              <div className={clsx('collapse-content bg-[#F9F8F6]', css.optionsCollapse)}>
+              <div className={clsx('collapse-content bg-gray', css.optionsCollapse)}>
                 <div className="pb-2 pt-6">{items && <PrismicRichText field={items} />}</div>
               </div>
             </div>
@@ -49,7 +49,7 @@ const OptionsSelector = ({ slice }: OptionsSelectorProps): JSX.Element => {
             const { icon, label, items } = option;
 
             return (
-              <React.Fragment key={label}>
+              <React.Fragment key={label as string}>
                 <div className={clsx('relative bg-primary px-4 py-8 lg:bg-transparent lg:px-0 lg:py-0', css.option)}>
                   <input
                     defaultChecked={idx === 0}
@@ -58,8 +58,8 @@ const OptionsSelector = ({ slice }: OptionsSelectorProps): JSX.Element => {
                     name="options-selector"
                     className="absolute z-10 col-start-1 row-start-1 h-[100%] w-[100%] cursor-pointer appearance-none opacity-0"
                   />
-                  <div className="flex flex-row items-center gap-5 border-b-[1px] border-[#ffffff] py-4 font-serif text-[20px] font-semibold text-[#ffffff] xl:text-[28px]">
-                    {isFilled.image(icon) && <PrismicNextImage field={icon} className="child:text-[#ffffff]" />}
+                  <div className="border-white text-white flex flex-row items-center gap-5 border-b-[1px] py-4 font-serif text-[20px] font-semibold xl:text-[28px]">
+                    {isFilled.image(icon) && <PrismicNextImage field={icon} className="child:text-white" />}
                     {isFilled.keyText(label) && <div id={label}>{label}</div>}
                   </div>
                 </div>

@@ -54,7 +54,7 @@ const Card = ({ slice }: CardProps) => {
 
   return (
     <div
-      className={`flex flex-col justify-between overflow-hidden rounded bg-[#ffffff] px-6 py-[34px] ${slice.primary.elevated && 'shadow-md'}`}
+      className={`bg-white flex flex-col justify-between overflow-hidden rounded px-6 py-[34px] ${slice.primary.elevated && 'shadow-md'}`}
       style={{ backgroundColor: slice.primary.backgroundColor as string }}
     >
       <div className="text-primary">

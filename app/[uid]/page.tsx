@@ -4,7 +4,6 @@ import { isFilled } from '@prismicio/client';
 import { PrismicRichText, SliceZone } from '@prismicio/react';
 
 import { components } from '@/slices';
-import ResponsiveContainer from '@/components/ResponsiveContainer';
 import { createClient } from '@/prismicio';
 
 interface Params {
@@ -16,12 +15,14 @@ export default async function Page({ params }: { params: Params }) {
   const page = await client.getByUID('landing_page', params.uid).catch(() => notFound());
 
   return (
-    <ResponsiveContainer>
-      <div className="px-[50px] md:px-[100px]">
-        {isFilled.richText(page.data.text) && <PrismicRichText field={page.data.text} />}
-      </div>
+    <>
+      {isFilled.richText(page.data.text) && (
+        <div className="px-[50px] md:px-[100px]">
+          <PrismicRichText field={page.data.text} />
+        </div>
+      )}
       <SliceZone slices={page.data.slices} components={components} />
-    </ResponsiveContainer>
+    </>
   );
 }
 

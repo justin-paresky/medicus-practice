@@ -27,7 +27,7 @@ const Table = ({ slice }: TableProps): JSX.Element => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       className={clsx(
-        'flex flex-col gap-[25px] overflow-x-auto bg-cover bg-no-repeat px-5 py-12 md:flex-row md:gap-[50px] lg:px-[100px] lg:py-[100px]',
+        'flex flex-col gap-[25px] overflow-x-auto bg-cover bg-no-repeat px-5 md:flex-row md:gap-[50px] lg:px-[100px]',
         css.tableContainer
       )}
     >

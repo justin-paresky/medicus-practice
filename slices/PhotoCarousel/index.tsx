@@ -40,7 +40,7 @@ const PhotoCarousel = ({ slice }: PhotoCarouselProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="flex flex-col items-center"
+      className="mt-[-64px] flex flex-col items-center"
     >
       <Tabs
         onClick={handleTabClick}

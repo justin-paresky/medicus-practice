@@ -13,7 +13,7 @@ export default function WithText({ primary }: WithTextProps) {
   const containerClassname =
     isImage && imageX
       ? 'grid grid-cols-1 gap-8 lg:grid-cols-2 relative'
-      : 'w-full items-center text-center flex flex-col gap-8 relative pb-8';
+      : 'w-full items-center text-center flex flex-col gap-8 relative';
 
   return (
     <div className="flex flex-col gap-8 text-center">

@@ -4816,6 +4816,54 @@ export type PageSectionSliceWithDivider = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *PageSection → Primary*
+ */
+export interface PageSectionSliceWithHeartBeatPrimary {
+  /**
+   * Title field in *PageSection → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * Background Image field in *PageSection → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.backgroundImage
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  backgroundImage: prismic.ImageField<never>;
+
+  /**
+   * Heartbeats field in *PageSection → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: page_section.primary.heartbeats[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  heartbeats: prismic.GroupField<Simplify<PageSectionDocumentDataHeartbeatsItem>>;
+}
+
+/**
+ * WithHeartBeat variation for PageSection Slice
+ *
+ * - **API ID**: `withHeartBeat`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PageSectionSliceWithHeartBeat = prismic.SharedSliceVariation<
+  'withHeartBeat',
+  Simplify<PageSectionSliceWithHeartBeatPrimary>,
+  never
+>;
+
+/**
  * Slice variation for *PageSection*
  */
 type PageSectionSliceVariation =
@@ -4829,7 +4877,8 @@ type PageSectionSliceVariation =
   | PageSectionSliceTwoColumns
   | PageSectionSliceLargeImage
   | PageSectionSliceWithText
-  | PageSectionSliceWithDivider;
+  | PageSectionSliceWithDivider
+  | PageSectionSliceWithHeartBeat;
 
 /**
  * PageSection Shared Slice
@@ -5269,6 +5318,8 @@ declare module '@prismicio/client' {
       PageSectionSliceWithTextPrimary,
       PageSectionDocumentDataButtonsItem,
       PageSectionSliceWithDividerPrimary,
+      PageSectionDocumentDataHeartbeatsItem,
+      PageSectionSliceWithHeartBeatPrimary,
       PageSectionSliceVariation,
       PageSectionSliceDefault,
       PageSectionSliceImageRight,
@@ -5281,6 +5332,7 @@ declare module '@prismicio/client' {
       PageSectionSliceLargeImage,
       PageSectionSliceWithText,
       PageSectionSliceWithDivider,
+      PageSectionSliceWithHeartBeat,
       PhotoCarouselSlice,
       PhotoCarouselDocumentDataTabsItem,
       PhotoCarouselSliceDefaultPrimary,

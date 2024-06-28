@@ -16,7 +16,7 @@ const IconGrid = ({ slice }: IconGridProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="flex flex-row justify-around px-5 pt-12 lg:px-[100px] lg:pt-[100px]"
+      className="flex flex-row justify-around px-5 lg:px-[100px]"
     >
       <div className="flex flex-row gap-12">
         {cells.map((cell) => {

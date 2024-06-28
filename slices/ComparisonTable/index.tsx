@@ -18,7 +18,7 @@ const ComparisonTable = ({ slice }: ComparisonTableProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="flex flex-col gap-16 bg-blue px-5 py-12 lg:px-[80px] lg:py-[96px]"
+      className="flex flex-col gap-16 bg-blue px-5 lg:px-[80px]"
     >
       <div className="flex flex-col gap-2 text-center child:text-primary md:text-left">
         {isFilled.richText(title) && (

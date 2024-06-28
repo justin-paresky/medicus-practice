@@ -17,7 +17,7 @@ const FooterBlock = ({ slice }: FooterBlockProps): JSX.Element => {
   return (
     <div className="flex flex-col">
       {isFilled.richText(primary.title) && (
-        <div className="mb-6 font-serif font-semibold capitalize text-primary">
+        <div className="text-white mb-6 font-serif font-semibold capitalize">
           <PrismicRichText field={primary.title} />
         </div>
       )}

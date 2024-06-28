@@ -73,7 +73,7 @@ const ImageGallery = ({ slice }: ImageGalleryProps): JSX.Element => {
                     </a>
                   </div>
                 )}
-                <div className="absolute bottom-0 left-0 right-0 w-[100%] bg-[#000000] bg-opacity-70 p-2 child:truncate child:text-xs child:text-[#ffffff] md:hidden">
+                <div className="child:text-white absolute bottom-0 left-0 right-0 w-[100%] bg-[#000000] bg-opacity-70 p-2 child:truncate child:text-xs md:hidden">
                   {renderInfo(photo)}
                 </div>
               </div>

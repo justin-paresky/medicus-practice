@@ -27,13 +27,10 @@ export default function FloatingButtons({ children, offset = 0 }: FloatingButton
   }, [ref, offset]);
 
   return (
-    <div className="absolute left-0 top-0 h-full w-full">
+    <div className="fixed right-0  top-[calc(100vh_-_80px)] h-[100px] w-full">
       <div
         ref={ref}
-        className={clsx(
-          'sticky top-[calc(100vh_-_80px)] z-[-1] opacity-0 transition-opacity duration-500 ease-in-out',
-          scrolled && css.scrolled
-        )}
+        className={clsx('px-5 opacity-0 transition-opacity duration-500 ease-in-out', scrolled && css.scrolled)}
       >
         <ResponsiveContainer>
           <div className="flex w-full flex-row justify-end gap-2">{children}</div>

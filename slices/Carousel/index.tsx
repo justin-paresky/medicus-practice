@@ -55,7 +55,7 @@ export default function Carousel({ slice }: CarouselProps) {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="relative px-5 pt-12 lg:px-[100px] lg:pt-[100px]"
+      className="relative px-5 lg:px-[100px]"
     >
       <div
         className="relative block gap-0 px-4 md:grid md:gap-4 md:px-0"
@@ -74,7 +74,7 @@ export default function Carousel({ slice }: CarouselProps) {
               return (
                 <div
                   key={uuidv4()}
-                  className={`flex-grow ${isCurrentSlide ? 'bg-primary text-[#ffffff]' : 'my-20 hidden bg-accent text-primary md:flex'} flex flex-col justify-start gap-8 p-8`}
+                  className={`flex-grow ${isCurrentSlide ? 'text-white bg-primary' : 'my-20 hidden bg-accent text-primary md:flex'} flex flex-col justify-start gap-8 p-8`}
                 >
                   {isFilled.image(icon) && (
                     <PrismicNextImage

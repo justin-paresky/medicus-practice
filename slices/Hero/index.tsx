@@ -96,21 +96,21 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           )}
           {isFilled.richText(title) && (
             <div
-              className={`max-w-full child:text-[2.5rem] lg:max-w-[560px] lg:child:text-[4rem] ${containerColor === 'accent' || containerColor === 'gray' ? 'child:text-primary' : 'child:text-[#ffffff]'}`}
+              className={`max-w-full child:text-[2.5rem] lg:max-w-[560px] lg:child:text-[4rem] ${containerColor === 'accent' || containerColor === 'gray' ? 'child:text-primary' : 'child:text-white'}`}
             >
               <PrismicRichText field={title} />
             </div>
           )}
           {isFilled.richText(description) && (
             <div
-              className={`w-[100%] text-[20px] font-semibold child:text-[1.125rem] ${containerColor === 'accent' || containerColor === 'gray' ? 'child:text-primary' : 'child:text-[#ffffff]'}`}
+              className={`w-[100%] text-[20px] font-semibold child:text-[1.125rem] ${containerColor === 'accent' || containerColor === 'gray' ? 'child:text-primary' : 'child:text-white'}`}
             >
               <PrismicRichText field={description} />
             </div>
           )}
           {isFilled.richText(subDescription) && (
             <div
-              className={`w-[100%] text-[20px] font-semibold child:text-[1.125rem] ${containerColor === 'accent' || containerColor === 'gray' ? 'child:text-primary' : 'child:text-[#ffffff]'}`}
+              className={`w-[100%] text-[20px] font-semibold child:text-[1.125rem] ${containerColor === 'accent' || containerColor === 'gray' ? 'child:text-primary' : 'child:text-white'}`}
             >
               <PrismicRichText field={subDescription} />
             </div>
@@ -120,7 +120,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
         </div>
       </div>
       <div
-        className="relative right-0 z-[-1] block h-[512px] w-full bg-[#F9F8F6] bg-cover bg-center bg-no-repeat lg:absolute lg:block lg:h-[100%] lg:w-[calc(50%_+_150px)]"
+        className="relative right-0 z-[-1] block h-[512px] w-full bg-gray bg-cover bg-center bg-no-repeat lg:absolute lg:block lg:h-[100%] lg:w-[calc(50%_+_150px)]"
         style={{
           backgroundImage: isFilled.image(backgroundImage) ? `url("${backgroundImage.url}")` : undefined,
         }}

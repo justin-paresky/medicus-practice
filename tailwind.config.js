@@ -56,6 +56,9 @@ module.exports = {
         DEFAULT: '#e72020',
         light: '#ffe3e8',
       },
+      white: {
+        DEFAULT: '#ffffff',
+      },
     },
     extend: {
       fontFamily: {
@@ -129,6 +132,14 @@ module.exports = {
           },
           '.link-gray': {
             color: '#768188',
+            'font-family': 'var(--font-neue-einstellung)',
+            'text-decoration': 'none',
+            '&:hover': {
+              'text-decoration': 'underline',
+            },
+          },
+          '.link-white': {
+            color: '#ffffff',
             'font-family': 'var(--font-neue-einstellung)',
             'text-decoration': 'none',
             '&:hover': {

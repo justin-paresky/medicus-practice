@@ -32,7 +32,7 @@ const NoteCards = ({ slice }: NoteCardsProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="mb-[96px] grid grid-cols-1 grid-rows-1 px-5 pt-12 md:grid-cols-12 md:grid-rows-1 lg:px-[100px] lg:pt-[100px]"
+      className="mb-[96px] grid grid-cols-1 grid-rows-1 px-5 md:grid-cols-12 md:grid-rows-1 lg:px-[100px]"
     >
       <div className="flex flex-col gap-6 pb-12 text-center child:text-primary md:col-span-5 md:pb-0 md:pr-6 md:text-left">
         <div className="relative top-0 flex flex-col gap-6 md:sticky md:top-[192px]">

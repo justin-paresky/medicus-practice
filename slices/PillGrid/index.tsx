@@ -17,7 +17,7 @@ const PillGrid = ({ slice }: PillGridProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="grid grid-cols-2 grid-rows-2 gap-4 bg-cover bg-no-repeat px-5 py-12 lg:grid-cols-4 lg:grid-rows-1 lg:px-[50px] lg:py-[100px]"
+      className="grid grid-cols-2 grid-rows-2 gap-4 bg-cover bg-no-repeat px-5 lg:grid-cols-4 lg:grid-rows-1 lg:px-[50px]"
     >
       {slice.primary.pills.map((pill) => {
         return <Pill key={uuidv4()} {...pill} />;

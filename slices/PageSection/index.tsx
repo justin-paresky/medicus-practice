@@ -10,6 +10,9 @@ import WithPhotos from './WithPhotos';
 import WithForm from './WithForm';
 import WithText from './WithText';
 import WithDivider from './WithDivider';
+import WithHeartBeat from './WithHeartBeat';
+
+import PageSectionContainer from '@/components/PageSectionContainer';
 
 /**
  * Props for `PageSection`.
@@ -42,33 +45,37 @@ const PageSection = ({ slice }: PageSectionProps): JSX.Element => {
         return <WithText {...slice} />;
       case 'withDivider':
         return <WithDivider {...slice} />;
+      case 'withHeartBeat':
+        return <WithHeartBeat {...slice} />;
       default:
         return null;
     }
   };
 
-  const paddingY = slice.variation === 'withDivider' ? 'pt-4' : 'p-12 lg:pt-[100px]';
+  const backgroundColor =
+    slice.variation !== 'withText' &&
+    slice.variation !== 'withDivider' &&
+    slice.variation !== 'withHeartBeat' &&
+    isFilled.color(slice.primary.backgroundColor)
+      ? slice.primary.backgroundColor
+      : undefined;
+
+  const backgroundImage =
+    slice.variation !== 'withDivider' &&
+    slice.variation !== 'withHeartBeat' &&
+    isFilled.image(slice.primary.backgroundImage)
+      ? `url("${slice.primary.backgroundImage.url}")`
+      : undefined;
 
   return (
-    <section
+    <PageSectionContainer
+      backgroundColor={backgroundColor}
+      backgroundImage={backgroundImage}
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className={`flex flex-col gap-[25px] bg-cover bg-no-repeat px-5 md:flex-row md:gap-[50px] lg:px-[100px] ${paddingY}`}
-      style={{
-        backgroundColor:
-          slice.variation !== 'withText' &&
-          slice.variation !== 'withDivider' &&
-          isFilled.color(slice.primary.backgroundColor)
-            ? slice.primary.backgroundColor
-            : '#ffffff',
-        backgroundImage:
-          slice.variation !== 'withDivider' && isFilled.image(slice.primary.backgroundImage)
-            ? `url("${slice.primary.backgroundImage.url}")`
-            : 'none',
-      }}
     >
       {renderContent()}
-    </section>
+    </PageSectionContainer>
   );
 };
 

@@ -11,11 +11,7 @@ export default async function Page() {
     data: { slices },
   } = page;
 
-  return (
-    <div className="relative">
-      <SliceZone slices={slices} components={components} />
-    </div>
-  );
+  return <SliceZone slices={slices} components={components} />;
 }
 
 export async function generateMetadata(): Promise<Metadata> {

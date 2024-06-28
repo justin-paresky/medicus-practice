@@ -25,7 +25,7 @@ const ColumnText = ({ slice }: ColumnTextProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="grid grid-cols-1 grid-rows-[var(--columnsSmall)] gap-[72px] py-4 md:grid-cols-[var(--columnsMedium)] md:grid-rows-2 lg:grid-cols-[var(--columnsLarge)] lg:grid-rows-1"
+      className="grid grid-cols-1 grid-rows-[var(--columnsSmall)] gap-[72px] md:grid-cols-[var(--columnsMedium)] md:grid-rows-2 lg:grid-cols-[var(--columnsLarge)] lg:grid-rows-1"
       style={
         {
           '--columnsLarge': `repeat(${numberOfColumns}, minmax(0, 1fr))`,
@@ -38,7 +38,7 @@ const ColumnText = ({ slice }: ColumnTextProps): JSX.Element => {
         const { icon, title, description } = column;
 
         return (
-          <div key={title} className="flex flex-col items-center gap-4 text-center text-primary">
+          <div key={title as string} className="flex flex-col items-center gap-4 text-center text-primary">
             {isFilled.image(icon) && <PrismicNextImage field={icon} />}
             {isFilled.richText(title) && <PrismicRichText field={title} />}
             {isFilled.richText(description) && <PrismicRichText field={description} />}

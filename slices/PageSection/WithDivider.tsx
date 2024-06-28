@@ -12,7 +12,7 @@ export default function WithDivider({ primary }: WithDividerProps) {
   return (
     <div className="flex flex-col items-center gap-8 text-center">
       <div
-        className={`${isFilled.image(divider) && dividerPosition && dividerPosition === 'top' ? 'order-1' : 'order-[-1]'} flex flex-col gap-8`}
+        className={`${isFilled.image(divider) && dividerPosition === 'top' ? 'order-1' : 'order-[-1]'} flex flex-col gap-8`}
       >
         {isFilled.richText(title) && (
           <div className="text-primary">
@@ -29,7 +29,7 @@ export default function WithDivider({ primary }: WithDividerProps) {
             {buttons.map((button) => {
               const { link, label, variation } = button;
 
-              return <Button key={label} link={link} label={label} variation={variation} />;
+              return <Button key={label as string} link={link} label={label} variation={variation} />;
             })}
           </div>
         )}

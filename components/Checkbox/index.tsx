@@ -19,7 +19,7 @@ export default function Checkbox({ id, label, ...rest }: CheckboxProps) {
         <input
           aria-labelledby={id}
           type="checkbox"
-          className="peer relative h-4 w-4 shrink-0 cursor-pointer appearance-none rounded-[3px] border-[1px] border-gray bg-[#ffffff] focus:outline-none disabled:border-gray-light"
+          className="bg-white peer relative h-4 w-4 shrink-0 cursor-pointer appearance-none rounded-[3px] border-[1px] border-gray focus:outline-none disabled:border-gray-light"
           {...rest}
         />
         <svg
