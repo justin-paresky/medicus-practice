@@ -1,6 +1,7 @@
 import { Content, isFilled } from '@prismicio/client';
 import { PrismicNextImage } from '@prismicio/next';
 import { PrismicRichText, SliceComponentProps } from '@prismicio/react';
+import { v4 as uuidv4 } from 'uuid';
 
 /**
  * Props for `ColumnText`.
@@ -36,9 +37,8 @@ const ColumnText = ({ slice }: ColumnTextProps): JSX.Element => {
     >
       {columns.map((column) => {
         const { icon, title, description } = column;
-
         return (
-          <div key={title as string} className="flex flex-col items-center gap-4 text-center text-primary">
+          <div key={uuidv4()} className="flex flex-col items-center gap-4 text-center text-primary">
             {isFilled.image(icon) && <PrismicNextImage field={icon} />}
             {isFilled.richText(title) && <PrismicRichText field={title} />}
             {isFilled.richText(description) && <PrismicRichText field={description} />}

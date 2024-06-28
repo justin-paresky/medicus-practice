@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 import socialLinks from '../../data/preBuild/socialLinks.json';
 import SocialButton from '../SocialButton';
 
@@ -9,7 +11,7 @@ export default function FooterBlockSocialLinks() {
       {socialLinks.slices.map((button, idx) => {
         return (
           <SocialButton
-            key={button.id}
+            key={uuidv4()}
             slice={{ ...(button as SocialButtonSlice) }}
             index={idx}
             context={null}

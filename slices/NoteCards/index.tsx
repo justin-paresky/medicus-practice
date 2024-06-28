@@ -3,6 +3,7 @@
 
 import { Content, isFilled } from '@prismicio/client';
 import { PrismicRichText, SliceComponentProps } from '@prismicio/react';
+import { v4 as uuidv4 } from 'uuid';
 
 import css from './style.module.css';
 
@@ -63,7 +64,7 @@ const NoteCards = ({ slice }: NoteCardsProps): JSX.Element => {
             const rotateDeg = positiveOrNegative ? rotateVar : -rotateVar;
             return (
               <div
-                key={title}
+                key={uuidv4()}
                 className={css.card}
                 style={{
                   transform: `rotate(${rotateDeg}deg)`,

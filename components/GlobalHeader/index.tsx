@@ -8,6 +8,7 @@ import clsx from 'clsx';
 import { isFilled, ImageField, KeyTextField, LinkField, GroupField } from '@prismicio/client';
 import { PrismicLink } from '@prismicio/react';
 import { PrismicNextImage } from '@prismicio/next';
+import { v4 as uuidv4 } from 'uuid';
 
 import Button from '../Button';
 import ResponsiveContainer from '../ResponsiveContainer';
@@ -54,7 +55,7 @@ export default function GlobalHeader({ logo, ctas, homeLink }: GlobalHeaderProps
                   return (
                     <Button
                       variation="btn-primary"
-                      key={label as string}
+                      key={uuidv4()}
                       label={label as KeyTextField}
                       link={link as LinkField}
                       icon={icon as ImageField}

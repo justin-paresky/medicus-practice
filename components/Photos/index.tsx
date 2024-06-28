@@ -4,6 +4,7 @@ import { useState } from 'react';
 import uniq from 'lodash/uniq';
 import { isFilled } from '@prismicio/client';
 import { PrismicRichText } from '@prismicio/react';
+import { v4 as uuidv4 } from 'uuid';
 
 import Button from '../Button';
 
@@ -79,7 +80,7 @@ export default function Photos({
             )}
             {categories.map((category) => {
               return (
-                <option key={category} value={category}>
+                <option key={uuidv4()} value={category}>
                   {category}
                 </option>
               );

@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import { Content, isFilled } from '@prismicio/client';
 import { SliceComponentProps, PrismicRichText } from '@prismicio/react';
 import { PrismicNextImage } from '@prismicio/next';
+import { v4 as uuidv4 } from 'uuid';
 
 import css from './style.module.css';
 
@@ -30,9 +31,9 @@ const OptionsSelector = ({ slice }: OptionsSelectorProps): JSX.Element => {
           const { icon, label, items } = option;
 
           return (
-            <div key={label as string} className={clsx('collapse join-item collapse-plus', css.optionCollapse)}>
+            <div key={uuidv4()} className={clsx('collapse join-item collapse-plus', css.optionCollapse)}>
               <input defaultChecked={idx === 0} aria-labelledby={label} type="radio" name="options-selector-collapse" />
-              <div className="text-white collapse-title flex cursor-pointer flex-row items-center gap-5 bg-primary font-serif text-[20px] font-semibold">
+              <div className="collapse-title flex cursor-pointer flex-row items-center gap-5 bg-primary font-serif text-[20px] font-semibold text-white">
                 {isFilled.image(icon) && <PrismicNextImage field={icon} className="child:text-white" />}
                 {isFilled.keyText(label) && <div id={label}>{label}</div>}
               </div>
@@ -49,7 +50,7 @@ const OptionsSelector = ({ slice }: OptionsSelectorProps): JSX.Element => {
             const { icon, label, items } = option;
 
             return (
-              <React.Fragment key={label as string}>
+              <React.Fragment key={uuidv4()}>
                 <div className={clsx('relative bg-primary px-4 py-8 lg:bg-transparent lg:px-0 lg:py-0', css.option)}>
                   <input
                     defaultChecked={idx === 0}
@@ -58,7 +59,7 @@ const OptionsSelector = ({ slice }: OptionsSelectorProps): JSX.Element => {
                     name="options-selector"
                     className="absolute z-10 col-start-1 row-start-1 h-[100%] w-[100%] cursor-pointer appearance-none opacity-0"
                   />
-                  <div className="border-white text-white flex flex-row items-center gap-5 border-b-[1px] py-4 font-serif text-[20px] font-semibold xl:text-[28px]">
+                  <div className="flex flex-row items-center gap-5 border-b-[1px] border-white py-4 font-serif text-[20px] font-semibold text-white xl:text-[28px]">
                     {isFilled.image(icon) && <PrismicNextImage field={icon} className="child:text-white" />}
                     {isFilled.keyText(label) && <div id={label}>{label}</div>}
                   </div>

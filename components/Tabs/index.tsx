@@ -1,4 +1,7 @@
 /* eslint-disable no-unused-vars */
+
+import { v4 as uuidv4 } from 'uuid';
+
 export interface TabProps {
   title: string;
   id: string;
@@ -19,7 +22,7 @@ export default function Tabs({ onClick, selectedTab, tabs }: TabsProps) {
           return (
             <button
               className={`rounded-t-[8px] px-[22.5px] py-[8.5px] font-sans text-[0.625rem] text-sm font-semibold uppercase md:px-12 md:py-4 md:text-[1rem] ${selectedTab.id === id ? 'bg-primary text-white' : 'bg-white text-primary'}`}
-              key={id}
+              key={uuidv4()}
               onClick={() => onClick(tab)}
               type="button"
               aria-label={title}

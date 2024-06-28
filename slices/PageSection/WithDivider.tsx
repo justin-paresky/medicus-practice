@@ -1,6 +1,7 @@
 import { type Content, isFilled } from '@prismicio/client';
 import { PrismicNextImage } from '@prismicio/next';
 import { PrismicRichText } from '@prismicio/react';
+import { v4 as uuidv4 } from 'uuid';
 
 import Button from '@/components/Button';
 
@@ -29,7 +30,7 @@ export default function WithDivider({ primary }: WithDividerProps) {
             {buttons.map((button) => {
               const { link, label, variation } = button;
 
-              return <Button key={label as string} link={link} label={label} variation={variation} />;
+              return <Button key={uuidv4()} link={link} label={label} variation={variation} />;
             })}
           </div>
         )}

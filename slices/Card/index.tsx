@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { SliceComponentProps, PrismicRichText } from '@prismicio/react';
 import { PrismicNextImage } from '@prismicio/next';
 import { type Content, isFilled } from '@prismicio/client';
+import { v4 as uuidv4 } from 'uuid';
 
 import Button from '@/components/Button';
 
@@ -45,7 +46,7 @@ const Card = ({ slice }: CardProps) => {
         )}
         {slice.items.map((button) => {
           if (button.label) {
-            return <Button key={button.label} {...button} variation="btn-accent" />;
+            return <Button key={uuidv4()} {...button} variation="btn-accent" />;
           }
         })}
       </div>
@@ -54,7 +55,7 @@ const Card = ({ slice }: CardProps) => {
 
   return (
     <div
-      className={`bg-white flex flex-col justify-between overflow-hidden rounded px-6 py-[34px] ${slice.primary.elevated && 'shadow-md'}`}
+      className={`flex flex-col justify-between overflow-hidden rounded bg-white px-6 py-[34px] ${slice.primary.elevated && 'shadow-md'}`}
       style={{ backgroundColor: slice.primary.backgroundColor as string }}
     >
       <div className="text-primary">

@@ -1,6 +1,7 @@
-import { type Content, isFilled, asText } from '@prismicio/client';
+import { type Content, isFilled } from '@prismicio/client';
 import { PrismicNextImage } from '@prismicio/next';
 import { PrismicRichText } from '@prismicio/react';
+import { v4 as uuidv4 } from 'uuid';
 
 export type WithListProps = Content.PageSectionSliceWithList;
 
@@ -18,7 +19,7 @@ export default function WithList({ primary, items }: WithListProps) {
         <div className="text-primary">
           {items.map((item) => {
             return (
-              <div key={asText(item.label)} className="flex flex-row">
+              <div key={uuidv4()} className="flex flex-row">
                 {isFilled.image(item.icon) && (
                   <PrismicNextImage className="mr-1 mt-2 h-[16px] w-[18px]" field={item.icon} />
                 )}

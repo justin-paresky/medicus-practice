@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import clsx from 'clsx';
+import { v4 as uuidv4 } from 'uuid';
 
 import css from './style.module.css';
 
@@ -71,7 +72,7 @@ export default function CardSlider({
             slices.map((card, idx) => {
               return (
                 <div
-                  key={card.id}
+                  key={uuidv4()}
                   className={css.cardContainer}
                   style={{ width: cardContainerWidth, marginRight: idx === slices.length - 1 ? 0 : gutterWidth }}
                 >

@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { type Content, isFilled } from '@prismicio/client';
 import { PrismicRichText, SliceComponentProps } from '@prismicio/react';
 import { PrismicNextImage } from '@prismicio/next';
+import { v4 as uuidv4 } from 'uuid';
 
 import { ImageGallerySliceDefaultItem } from '../../prismicio-types';
 
@@ -54,7 +55,7 @@ const ImageGallery = ({ slice }: ImageGalleryProps): JSX.Element => {
           return (
             isFilled.image(photo.image) && (
               <div
-                key={photo.image.id}
+                key={uuidv4()}
                 className={`${idx === 0 ? 'col-span-4 row-span-4 h-[100%]' : 'col-span-1 row-span-1'} carousel-item relative w-full cursor-pointer rounded shadow-lg`}
               >
                 <PrismicNextImage
@@ -73,7 +74,7 @@ const ImageGallery = ({ slice }: ImageGalleryProps): JSX.Element => {
                     </a>
                   </div>
                 )}
-                <div className="child:text-white absolute bottom-0 left-0 right-0 w-[100%] bg-[#000000] bg-opacity-70 p-2 child:truncate child:text-xs md:hidden">
+                <div className="absolute bottom-0 left-0 right-0 w-[100%] bg-[#000000] bg-opacity-70 p-2 child:truncate child:text-xs child:text-white md:hidden">
                   {renderInfo(photo)}
                 </div>
               </div>

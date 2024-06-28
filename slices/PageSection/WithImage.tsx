@@ -1,6 +1,7 @@
 import { type Content, isFilled } from '@prismicio/client';
 import { PrismicNextImage } from '@prismicio/next';
 import { PrismicRichText } from '@prismicio/react';
+import { v4 as uuidv4 } from 'uuid';
 
 import Button from '@/components/Button';
 
@@ -18,7 +19,7 @@ export default function WithImage({ primary, items, variation }: WithImageProps)
         {items.map((button) => {
           const hasCaption = isFilled.richText(button.buttonCaption);
           return (
-            <div key={button.label} className={`${hasCaption && 'flex w-[100%] flex-row items-start justify-between'}`}>
+            <div key={uuidv4()} className={`${hasCaption && 'flex w-[100%] flex-row items-start justify-between'}`}>
               {isFilled.richText(button.buttonCaption) && (
                 <div
                   style={{ color: isFilled.color(button.captionColor) ? (button.captionColor as string) : 'inherit' }}

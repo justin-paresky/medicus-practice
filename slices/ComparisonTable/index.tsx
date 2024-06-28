@@ -1,6 +1,7 @@
 import { Content, isFilled } from '@prismicio/client';
 import { PrismicNextImage } from '@prismicio/next';
 import { PrismicRichText, SliceComponentProps } from '@prismicio/react';
+import { v4 as uuidv4 } from 'uuid';
 
 /**
  * Props for `ComparisonTable`.
@@ -44,7 +45,7 @@ const ComparisonTable = ({ slice }: ComparisonTableProps): JSX.Element => {
             const { number, title, icon, description } = column;
             return (
               <div
-                key={number}
+                key={uuidv4()}
                 className="md:items-left flex flex-col items-center justify-between border-l-0 border-t-[1px] border-primary px-8 py-6 text-center text-primary md:border-l-[1px] md:border-t-0 md:text-left"
               >
                 <div className="flex w-full flex-col gap-2 pb-[56px] md:pb-[150px]">

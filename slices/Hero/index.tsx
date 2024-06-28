@@ -1,5 +1,6 @@
 import { type Content, isFilled } from '@prismicio/client';
 import { PrismicRichText, SliceComponentProps } from '@prismicio/react';
+import { v4 as uuidv4 } from 'uuid';
 
 import COLORS from '@/constants/colors';
 import Button from '@/components/Button';
@@ -22,7 +23,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
     return items.length && isFilled.keyText(items[0]?.label) ? (
       <div className="flex flex-row justify-center gap-3">
         {items.map((button) => {
-          return <Button key={button.label} {...button} variation={button.variation || 'btn-secondary'} />;
+          return <Button key={uuidv4()} {...button} variation={button.variation || 'btn-secondary'} />;
         })}
       </div>
     ) : null;
@@ -30,7 +31,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
   const renderButtonsMobile = () => {
     return items.length && isFilled.keyText(items[0]?.label) ? (
       <div className="flex flex-row justify-center gap-3">
-        <Button key={items[0].label} {...items[0]} variation={items[0].variation || 'btn-secondary'} />
+        <Button {...items[0]} variation={items[0].variation || 'btn-secondary'} />
       </div>
     ) : null;
   };

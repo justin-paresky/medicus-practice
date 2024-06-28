@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-vars */
+import { v4 as uuidv4 } from 'uuid';
+
 import Card from '@/slices/Card';
 import { type CardGridDocumentData } from '@/prismicio-types';
 
@@ -21,7 +23,7 @@ export default function CardGrid({ slices, colNumber }: CardGridDocumentData) {
   return (
     <div className={`mt-6 grid gap-5 sm:grid-cols-1 lg:grid-cols-2 ${ColNumber[colNumber || 'Three']}`}>
       {slices.map((card) => {
-        return <Card key={card.id} slice={{ ...card }} index={0} slices={[]} context={{}} />;
+        return <Card key={uuidv4()} slice={{ ...card }} index={0} slices={[]} context={{}} />;
       })}
     </div>
   );
