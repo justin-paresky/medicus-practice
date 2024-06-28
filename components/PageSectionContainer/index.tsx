@@ -12,7 +12,7 @@ export default function PageSectionContainer({
 }: PageSectionContainerProps) {
   return (
     <section
-      className={`bg-white flex flex-col gap-[25px] bg-cover bg-no-repeat px-5 md:flex-row md:gap-[50px] lg:px-[100px] ${backgroundColor || backgroundImage ? 'py-12 lg:py-[100px]' : ''}`}
+      className={`flex flex-col gap-[25px] bg-white bg-cover bg-no-repeat px-5 md:flex-row md:gap-[50px] lg:px-[100px] ${backgroundColor || backgroundImage ? 'py-12 lg:py-[100px]' : ''}`}
       style={{ backgroundColor, backgroundImage }}
       {...rest}
     >

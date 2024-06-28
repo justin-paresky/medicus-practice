@@ -30,7 +30,7 @@ export default function GlobalHeader({ logo, ctas, homeLink }: GlobalHeaderProps
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
-    <header className="bg-white fixed z-50 w-full border-b border-[#000000]">
+    <header className="fixed z-50 w-full border-b border-[#000000] bg-white">
       <Script
         strategy="afterInteractive"
         src="https://cdn.weglot.com/weglot.min.js"

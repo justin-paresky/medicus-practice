@@ -18,7 +18,7 @@ export default function Tabs({ onClick, selectedTab, tabs }: TabsProps) {
           const { id, title } = tab;
           return (
             <button
-              className={`rounded-t-[8px] px-[22.5px] py-[8.5px] font-sans text-[0.625rem] text-sm font-semibold uppercase md:px-12 md:py-4 md:text-[1rem] ${selectedTab.id === id ? 'text-white bg-primary' : 'bg-white text-primary'}`}
+              className={`rounded-t-[8px] px-[22.5px] py-[8.5px] font-sans text-[0.625rem] text-sm font-semibold uppercase md:px-12 md:py-4 md:text-[1rem] ${selectedTab.id === id ? 'bg-primary text-white' : 'bg-white text-primary'}`}
               key={id}
               onClick={() => onClick(tab)}
               type="button"

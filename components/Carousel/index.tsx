@@ -73,7 +73,7 @@ export default function Carousel({ children, currentSlide: _currentSlide, onSele
           </div>
         </>
       )}
-      <div className="bg-white flex flex-col pt-6">
+      <div className="flex flex-col bg-white pt-6">
         <div className="mt-[50px] flex flex-row justify-center gap-3">
           {Children.toArray(children).map((_, idx) => {
             return (
