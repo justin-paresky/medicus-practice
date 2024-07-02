@@ -1781,6 +1781,17 @@ export interface CarouselSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   slides: prismic.GroupField<Simplify<CarouselDocumentDataSlidesItem>>;
+
+  /**
+   * Full Width field in *Carousel → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: carousel.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -1833,6 +1844,17 @@ export interface ColumnTextSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#number
    */
   numberOfColumns: prismic.NumberField;
+
+  /**
+   * Full Width field in *ColumnText → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: column_text.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -1905,6 +1927,17 @@ export interface ComparisonTableSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   columns: prismic.GroupField<Simplify<ComparisonTableDocumentDataColumnsItem>>;
+
+  /**
+   * Full Width field in *ComparisonTable → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: comparison_table.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -2840,6 +2873,17 @@ export interface HeroSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#select
    */
   containerColor: prismic.SelectField<'primary' | 'secondary' | 'accent' | 'gray', 'filled'>;
+
+  /**
+   * Full Width field in *Hero → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: hero.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -2987,6 +3031,17 @@ export interface HeroSliceHeroImageLeftPrimary {
    * - **Documentation**: https://prismic.io/docs/field#select
    */
   containerColor: prismic.SelectField<'primary' | 'secondary' | 'accent' | 'gray'>;
+
+  /**
+   * Full Width field in *Hero → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: hero.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -3134,6 +3189,17 @@ export interface HeroSliceHeroImageRightPrimary {
    * - **Documentation**: https://prismic.io/docs/field#select
    */
   containerColor: prismic.SelectField<'primary' | 'secondary' | 'accent' | 'gray'>;
+
+  /**
+   * Full Width field in *Hero → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: hero.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -3224,6 +3290,17 @@ export interface IconGridSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   cells: prismic.GroupField<Simplify<IconGridDocumentDataCellsItem>>;
+
+  /**
+   * Full Width field in *IconGrid → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: icon_grid.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -3266,6 +3343,17 @@ export interface ImageGallerySliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   title: prismic.RichTextField;
+
+  /**
+   * Full Width field in *Gallery → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: image_gallery.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -3383,6 +3471,17 @@ export interface NoteCardsSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   cards: prismic.GroupField<Simplify<NoteCardsDocumentDataCardsItem>>;
+
+  /**
+   * Full Width field in *NoteCards → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: note_cards.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -3425,6 +3524,17 @@ export interface OptionsSelectorSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   options: prismic.GroupField<Simplify<OptionsSelectorDocumentDataOptionsItem>>;
+
+  /**
+   * Full Width field in *OptionsSelector → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: options_selector.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -3582,6 +3692,17 @@ export interface PageSectionSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   filterPlaceholder: prismic.KeyTextField;
+
+  /**
+   * Full Width field in *PageSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: page_section.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -3794,6 +3915,17 @@ export interface PageSectionSliceImageRightPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   filterPlaceholder: prismic.KeyTextField;
+
+  /**
+   * Full Width field in *PageSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: page_section.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -3996,6 +4128,17 @@ export interface PageSectionSliceWithListPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   filterPlaceholder: prismic.KeyTextField;
+
+  /**
+   * Full Width field in *PageSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: page_section.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -4164,6 +4307,17 @@ export interface PageSectionSliceWithGridPrimary {
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
   cards: prismic.ContentRelationshipField<'card_grid'>;
+
+  /**
+   * Full Width field in *PageSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: page_section.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -4307,6 +4461,17 @@ export interface PageSectionSliceWithCardSliderPrimary {
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
   slider: prismic.ContentRelationshipField<'card_slider'>;
+
+  /**
+   * Full Width field in *PageSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: page_section.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -4355,6 +4520,17 @@ export interface PageSectionSliceWithPhotosPrimary {
    * - **Documentation**: https://prismic.io/docs/field#color
    */
   backgroundColor: prismic.ColorField;
+
+  /**
+   * Full Width field in *PageSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: page_section.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -4443,6 +4619,17 @@ export interface PageSectionSliceWithFormPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   formId: prismic.KeyTextField;
+
+  /**
+   * Full Width field in *PageSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: page_section.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -4521,6 +4708,17 @@ export interface PageSectionSliceTwoColumnsPrimary {
    * - **Documentation**: https://prismic.io/docs/field#color
    */
   backgroundColor: prismic.ColorField;
+
+  /**
+   * Full Width field in *PageSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: page_section.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -4664,6 +4862,17 @@ export interface PageSectionSliceLargeImagePrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   filterPlaceholder: prismic.KeyTextField;
+
+  /**
+   * Full Width field in *PageSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: page_section.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -4822,6 +5031,17 @@ export interface PageSectionSliceWithTextPrimary {
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
   imageRounded: prismic.BooleanField;
+
+  /**
+   * Full Width field in *PageSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: page_section.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -4891,6 +5111,17 @@ export interface PageSectionSliceWithDividerPrimary {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   buttons: prismic.GroupField<Simplify<PageSectionDocumentDataButtonsItem>>;
+
+  /**
+   * Full Width field in *PageSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: page_section.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -4939,6 +5170,17 @@ export interface PageSectionSliceWithHeartBeatPrimary {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   heartbeats: prismic.GroupField<Simplify<PageSectionDocumentDataHeartbeatsItem>>;
+
+  /**
+   * Full Width field in *PageSection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: page_section.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -4993,6 +5235,17 @@ export interface PhotoCarouselSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   tabs: prismic.GroupField<Simplify<PhotoCarouselDocumentDataTabsItem>>;
+
+  /**
+   * Full Width field in *PhotoCarousel → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: photo_carousel.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -5035,6 +5288,17 @@ export interface PillGridSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   pills: prismic.GroupField<Simplify<PillGridDocumentDataPillsItem>>;
+
+  /**
+   * Full Width field in *PillGrid → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: pill_grid.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**
@@ -5183,6 +5447,17 @@ export interface TableSliceDefaultPrimary {
     'btn-secondary' | 'btn-primary' | 'btn-accent' | 'link-primary' | 'link-secondary' | 'link-accent',
     'filled'
   >;
+
+  /**
+   * Full Width field in *Table → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: table.primary.fullWidth
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  fullWidth: prismic.BooleanField;
 }
 
 /**

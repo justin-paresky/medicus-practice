@@ -14,7 +14,7 @@ export default function Pill({ icon, title, description }: PillProps) {
       <div className="flex flex-col items-center gap-4 px-[4] text-center lg:px-[3.3rem]">
         {isFilled.image(icon) && <PrismicNextImage field={icon} />}
         {isFilled.richText(title) && (
-          <div className="child:font-serif child:text-[1.25rem] child:font-bold child:text-primary lg:child:line-clamp-2 lg:child:text-[2rem]">
+          <div className="child:font-serif child:text-xl child:font-bold child:text-primary lg:child:line-clamp-2 lg:child:text-[2rem]">
             <PrismicRichText field={title} />
           </div>
         )}

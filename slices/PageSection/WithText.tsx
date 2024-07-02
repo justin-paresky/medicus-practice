@@ -16,23 +16,21 @@ export default function WithText({ primary }: WithTextProps) {
       : 'w-full items-center text-center flex flex-col gap-8 relative';
 
   return (
-    <div className="flex flex-col gap-8 text-center">
+    <div className="flex w-full flex-col gap-8 text-center">
       <div className={containerClassname}>
         <div
-          className={`${imagePosition && (imagePosition === 'left' || imagePosition === 'top') ? 'order-1' : 'order-[-1]'} flex flex-col gap-8`}
+          className={`${imagePosition && (imagePosition === 'left' || imagePosition === 'top') ? 'order-1' : 'order-[-1]'} flex flex-col items-center gap-8`}
         >
-          {isFilled.richText(title) && (
-            <div className="text-primary">
-              <PrismicRichText field={title} />
-            </div>
-          )}
-          {isFilled.richText(subtitle) && (
-            <div className="text-primary child:font-hertine child:text-[3rem] child:font-medium child:leading-[5rem]">
-              <PrismicRichText field={subtitle} />
-            </div>
-          )}
-          {isFilled.richText(subtitle) && (
-            <div className="text-primary">
+          <div className="flex flex-col gap-2">
+            {isFilled.richText(title) && <PrismicRichText field={title} />}
+            {isFilled.richText(subtitle) && (
+              <div className="child:font-hertine">
+                <PrismicRichText field={subtitle} />
+              </div>
+            )}
+          </div>
+          {isFilled.richText(description) && (
+            <div className="max-w-[720px] text-primary">
               <PrismicRichText field={description} />
             </div>
           )}

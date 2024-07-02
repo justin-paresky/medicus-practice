@@ -27,7 +27,7 @@ export default function FloatingButtons({ children, offset = 0 }: FloatingButton
   }, [ref, offset]);
 
   return (
-    <div className="fixed right-0  top-[calc(100vh_-_80px)] h-[100px] w-full">
+    <div className="fixed right-0  top-[calc(100vh_-_80px)] h-24 w-full">
       <div
         ref={ref}
         className={clsx('px-5 opacity-0 transition-opacity duration-500 ease-in-out', scrolled && css.scrolled)}

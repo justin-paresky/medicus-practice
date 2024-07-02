@@ -57,8 +57,8 @@ export default function Form({
   const renderConfirmationContent = () => {
     return modal?.description || modal?.title ? (
       <DialogContent>
-        <div className="p-[50px] text-center md:p-[100px]">
-          <h2 className="font-serif text-primary">{modal.title as string}</h2>
+        <div className="p-ps text-center">
+          <h2>{modal.title as string}</h2>
           <PrismicRichText field={modal.description} />
         </div>
       </DialogContent>

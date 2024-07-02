@@ -58,7 +58,7 @@ export default function Photos({
       <div className="flex flex-row justify-between">
         {isFilled.richText(title) && (
           <>
-            <div className="flex-grow text-primary">
+            <div className="flex-grow">
               <PrismicRichText field={title} />
             </div>
             {isFilled.keyText(label) && <Button label={label} variation={variation} link={link} />}
@@ -96,6 +96,7 @@ export default function Photos({
           variation: 'default',
           primary: {
             title: [],
+            fullWidth: false,
           },
           version: '',
           items: filteredPhotos,

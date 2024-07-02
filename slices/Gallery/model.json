@@ -20,6 +20,15 @@
             "allowTargetBlank": true,
             "multi": "heading2,heading3,heading4,heading5,heading6,strong,em"
           }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {

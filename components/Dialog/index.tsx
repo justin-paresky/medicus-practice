@@ -28,8 +28,8 @@ export default function Dialog({ image, title, description }: DialogProps) {
   const renderConfirmationContent = () => {
     return description || title ? (
       <DialogContent>
-        <div className="p-[50px] text-center md:p-[100px]">
-          <h2 className="font-serif text-primary">{title as string}</h2>
+        <div className="p-ps text-center">
+          <h2>{title as string}</h2>
           <PrismicRichText field={description} />
         </div>
       </DialogContent>

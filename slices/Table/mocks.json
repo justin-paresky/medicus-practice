@@ -45,6 +45,10 @@
 				"__TYPE__": "FieldContent",
 				"type": "Select",
 				"value": "btn-secondary"
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": [
@@ -177,7 +181,6 @@
 								{
 									"type": "image",
 									"data": {
-										"__TYPE__": "ImageContent",
 										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
 										"alt": "sliced orange fruit on white surface",
 										"origin": {
@@ -195,7 +198,9 @@
 												"x": 0,
 												"y": 0
 											}
-										}
+										},
+										"credits": null,
+										"__TYPE__": "ImageContent"
 									}
 								}
 							]
@@ -209,7 +214,6 @@
 								{
 									"type": "image",
 									"data": {
-										"__TYPE__": "ImageContent",
 										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
 										"alt": "sliced orange fruit on white surface",
 										"origin": {
@@ -227,7 +231,9 @@
 												"x": 0,
 												"y": 0
 											}
-										}
+										},
+										"credits": null,
+										"__TYPE__": "ImageContent"
 									}
 								}
 							]
@@ -262,7 +268,6 @@
 								{
 									"type": "image",
 									"data": {
-										"__TYPE__": "ImageContent",
 										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
 										"alt": "sliced orange fruit on white surface",
 										"origin": {
@@ -280,7 +285,9 @@
 												"x": 0,
 												"y": 0
 											}
-										}
+										},
+										"credits": null,
+										"__TYPE__": "ImageContent"
 									}
 								}
 							]
@@ -294,7 +301,6 @@
 								{
 									"type": "image",
 									"data": {
-										"__TYPE__": "ImageContent",
 										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
 										"alt": "sliced orange fruit on white surface",
 										"origin": {
@@ -312,7 +318,9 @@
 												"x": 0,
 												"y": 0
 											}
-										}
+										},
+										"credits": null,
+										"__TYPE__": "ImageContent"
 									}
 								}
 							]
@@ -347,7 +355,6 @@
 								{
 									"type": "image",
 									"data": {
-										"__TYPE__": "ImageContent",
 										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
 										"alt": "sliced orange fruit on white surface",
 										"origin": {
@@ -365,7 +372,9 @@
 												"x": 0,
 												"y": 0
 											}
-										}
+										},
+										"credits": null,
+										"__TYPE__": "ImageContent"
 									}
 								}
 							]
@@ -379,7 +388,6 @@
 								{
 									"type": "image",
 									"data": {
-										"__TYPE__": "ImageContent",
 										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
 										"alt": "sliced orange fruit on white surface",
 										"origin": {
@@ -397,7 +405,9 @@
 												"x": 0,
 												"y": 0
 											}
-										}
+										},
+										"credits": null,
+										"__TYPE__": "ImageContent"
 									}
 								}
 							]
@@ -432,7 +442,6 @@
 								{
 									"type": "image",
 									"data": {
-										"__TYPE__": "ImageContent",
 										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
 										"alt": "sliced orange fruit on white surface",
 										"origin": {
@@ -450,7 +459,9 @@
 												"x": 0,
 												"y": 0
 											}
-										}
+										},
+										"credits": null,
+										"__TYPE__": "ImageContent"
 									}
 								}
 							]
@@ -464,7 +475,6 @@
 								{
 									"type": "image",
 									"data": {
-										"__TYPE__": "ImageContent",
 										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
 										"alt": "sliced orange fruit on white surface",
 										"origin": {
@@ -482,7 +492,9 @@
 												"x": 0,
 												"y": 0
 											}
-										}
+										},
+										"credits": null,
+										"__TYPE__": "ImageContent"
 									}
 								}
 							]
@@ -517,7 +529,6 @@
 								{
 									"type": "image",
 									"data": {
-										"__TYPE__": "ImageContent",
 										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
 										"alt": "sliced orange fruit on white surface",
 										"origin": {
@@ -535,7 +546,9 @@
 												"x": 0,
 												"y": 0
 											}
-										}
+										},
+										"credits": null,
+										"__TYPE__": "ImageContent"
 									}
 								}
 							]
@@ -549,7 +562,6 @@
 								{
 									"type": "image",
 									"data": {
-										"__TYPE__": "ImageContent",
 										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
 										"alt": "sliced orange fruit on white surface",
 										"origin": {
@@ -567,7 +579,9 @@
 												"x": 0,
 												"y": 0
 											}
-										}
+										},
+										"credits": null,
+										"__TYPE__": "ImageContent"
 									}
 								}
 							]
@@ -602,7 +616,6 @@
 								{
 									"type": "image",
 									"data": {
-										"__TYPE__": "ImageContent",
 										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
 										"alt": "sliced orange fruit on white surface",
 										"origin": {
@@ -620,7 +633,9 @@
 												"x": 0,
 												"y": 0
 											}
-										}
+										},
+										"credits": null,
+										"__TYPE__": "ImageContent"
 									}
 								}
 							]
@@ -634,7 +649,6 @@
 								{
 									"type": "image",
 									"data": {
-										"__TYPE__": "ImageContent",
 										"url": "https://images.unsplash.com/photo-1590004828948-09db7606e5ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTI5MTMzODJ8MA&ixlib=rb-4.0.3&q=85",
 										"alt": "sliced orange fruit on white surface",
 										"origin": {
@@ -652,7 +666,9 @@
 												"x": 0,
 												"y": 0
 											}
-										}
+										},
+										"credits": null,
+										"__TYPE__": "ImageContent"
 									}
 								}
 							]

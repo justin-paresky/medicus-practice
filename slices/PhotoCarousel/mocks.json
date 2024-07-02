@@ -86,6 +86,10 @@
 						]
 					}
 				]
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": false
 			}
 		},
 		"items": []

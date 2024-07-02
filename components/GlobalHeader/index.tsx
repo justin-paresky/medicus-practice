@@ -41,7 +41,7 @@ export default function GlobalHeader({ logo, ctas, homeLink }: GlobalHeaderProps
         }}
       />
       <ResponsiveContainer>
-        <div className="flex h-[3.5rem] w-[100%] flex-row items-center justify-between px-3 lg:h-[88px] lg:px-[100px]">
+        <div className="flex h-[3.5rem] w-[100%] flex-row items-center justify-between px-3 lg:h-[88px] lg:px-24">
           {isFilled.image(logo) && (
             <PrismicLink field={homeLink}>
               <PrismicNextImage className="h-[40px] w-[220px] md:h-[52px] md:w-[278px]" field={logo} />
@@ -85,7 +85,9 @@ export default function GlobalHeader({ logo, ctas, homeLink }: GlobalHeaderProps
                 <div className="float-right h-full w-full bg-primary px-4 pb-4 pt-[6px] shadow-2xl">
                   <div className="relative flex h-full flex-col justify-between">
                     <div className="flex flex-col gap-6">
-                      {isFilled.image(navMenu.logo) && <PrismicNextImage className="w-[220px]" field={navMenu.logo} />}
+                      {isFilled.image(navMenu.logo) && (
+                        <PrismicNextImage className="ml-[-3px] w-[220px]" field={navMenu.logo} />
+                      )}
                       <div id="weglot-mobile-container" />
                       {navMenu.slices.map((slice, idx) => (
                         <FooterBlock
@@ -96,17 +98,17 @@ export default function GlobalHeader({ logo, ctas, homeLink }: GlobalHeaderProps
                           context={null}
                         />
                       ))}
+                      {navMenu.ctas.length > 0 && (
+                        <div className="flex flex-row flex-wrap">
+                          {navMenu.ctas.map((cta) => {
+                            const { link, label, icon } = cta;
+                            return (
+                              <Button key={uuidv4()} variation="btn-secondary" link={link} label={label} icon={icon} />
+                            );
+                          })}
+                        </div>
+                      )}
                     </div>
-                    {navMenu.ctas.length > 0 && (
-                      <div className="flex flex-row flex-wrap">
-                        {navMenu.ctas.map((cta) => {
-                          const { link, label, icon } = cta;
-                          return (
-                            <Button key={uuidv4()} variation="btn-secondary" link={link} label={label} icon={icon} />
-                          );
-                        })}
-                      </div>
-                    )}
                   </div>
                 </div>
               </div>

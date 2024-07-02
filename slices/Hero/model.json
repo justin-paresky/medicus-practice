@@ -89,6 +89,15 @@
             ],
             "default_value": "primary"
           }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {
@@ -220,6 +229,15 @@
               "gray"
             ]
           }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {
@@ -350,6 +368,15 @@
               "accent",
               "gray"
             ]
+          }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
           }
         }
       },

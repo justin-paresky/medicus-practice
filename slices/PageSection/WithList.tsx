@@ -9,11 +9,7 @@ export default function WithList({ primary, items }: WithListProps) {
   const { title, description } = primary;
   return (
     <div className="flex flex-col gap-6">
-      {isFilled.richText(title) && (
-        <div className="text-primary">
-          <PrismicRichText field={title} />
-        </div>
-      )}
+      {isFilled.richText(title) && <PrismicRichText field={title} />}
       {isFilled.richText(description) && <PrismicRichText field={description} />}
       {items.length && isFilled.richText(items[0].label) && (
         <div className="text-primary">

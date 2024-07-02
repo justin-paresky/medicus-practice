@@ -1,5 +1,22 @@
-export default function ResponsiveContainer({ children }: { children: React.ReactNode }) {
+import clsx from 'clsx';
+
+export default function ResponsiveContainer({
+  className,
+  children,
+  fullWidth = false,
+  style,
+}: {
+  className?: string;
+  children: React.ReactNode;
+  fullWidth?: boolean;
+  style?: React.CSSProperties;
+}) {
   return (
-    <div className="mx-auto flex max-w-[100%] flex-col justify-start gap-6 md:max-w-[1440px] md:gap-16">{children}</div>
+    <div
+      style={style}
+      className={clsx(`mx-auto max-w-full ${fullWidth ? 'md:max-w-full' : 'md:max-w-[1440px]'}`, className)}
+    >
+      {children}
+    </div>
   );
 }

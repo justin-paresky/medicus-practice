@@ -18,7 +18,7 @@ export default async function WithGrid({ primary }: WithGridProps) {
   return (
     <div className="flex w-[100%] flex-col gap-5">
       {isFilled.richText(title) && (
-        <div style={{ color: (titleColor as string) || undefined }} className="text-primary">
+        <div style={{ color: (titleColor as string) || undefined }}>
           <PrismicRichText field={title} />
         </div>
       )}

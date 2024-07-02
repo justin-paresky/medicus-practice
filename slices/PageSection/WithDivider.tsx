@@ -15,11 +15,7 @@ export default function WithDivider({ primary }: WithDividerProps) {
       <div
         className={`${isFilled.image(divider) && dividerPosition === 'top' ? 'order-1' : 'order-[-1]'} flex flex-col gap-8`}
       >
-        {isFilled.richText(title) && (
-          <div className="text-primary">
-            <PrismicRichText field={title} />
-          </div>
-        )}
+        {isFilled.richText(title) && <PrismicRichText field={title} />}
         {isFilled.richText(description) && (
           <div className="text-primary">
             <PrismicRichText field={description} />

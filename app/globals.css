@@ -32,6 +32,9 @@
     z-index: 1;
     clip-path: ellipse(50% 50% at 50% 0%);
   }
+  .p-ps {
+    @apply py-12 px-4 lg:px-24 lg:py-24
+  }
 }
 
 #__next {
@@ -44,39 +47,80 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold font-serif;
+    @apply font-semibold font-serif text-primary;
+  } 
+
+  h1.font-hertine,
+  h2.font-hertine,
+  h3.font-hertine,
+  h4.font-hertine,
+  h5.font-hertine,
+  h6.font-hertine,
+  .font-hertine h1,
+  .font-hertine h2,
+  .font-hertine h3,
+  .font-hertine h4,
+  .font-hertine h5,
+  .font-hertine h6,
+  .child\:font-hertine h1,
+  .child\:font-hertine h2,
+  .child\:font-hertine h3,
+  .child\:font-hertine h4,
+  .child\:font-hertine h5,
+  .child\:font-hertine h6 {
+    @apply font-thin;
   }
 
   h1 {
-    @apply leading-[120%] text-[2.5rem] lg:text-[4rem];
+    @apply leading-normal text-[2.5rem] lg:text-[4rem] lg:leading-[4.875rem];
+  }
+
+  h1.font-hertine, .child\:font-hertine h1 {
+    @apply leading-normal text-[2rem] lg:text-[3.5rem] lg:leading-[6.313rem];
   }
 
   h2 {
-    @apply w-full text-[2rem] lg:text-[3.5rem];
+    @apply leading-normal text-[2rem] lg:text-[3.5rem] lg:leading-[4.25rem];
+  }
+
+  h2.font-hertine, .child\:font-hertine h2 {
+    @apply leading-normal text-[1.5rem] lg:text-[3rem] lg:leading-[5.375rem];
   }
 
   h3 {
-    @apply text-2xl lg:text-5xl;
+    @apply leading-normal text-[1.5rem] lg:text-[3rem] lg:leading-[3.625rem];
+  }
+
+  h3.font-hertine, .child\:font-hertine h3 {
+    @apply leading-normal text-[1rem] lg:text-[2.5rem] lg:leading-[4.5rem];
   }
 
   h4 {
-    @apply text-[2.5rem] leading-[1]
+    @apply leading-normal text-[1.5rem] lg:text-[2.5rem] lg:leading-[3rem];
+  }
+
+  h4.font-hertine, .child\:font-hertine h4 {
+    @apply leading-normal text-[1rem] lg:text-[2rem] lg:leading-[3.625rem];
   }
 
   h5 {
-    @apply text-[2rem]
+    @apply leading-normal text-[1.5rem] lg:text-[2rem] lg:leading-[2.438rem];
+  }
+
+  h5.font-hertine, .child\:font-hertine h5 {
+    @apply leading-normal text-[1rem] lg:text-[1.5rem] lg:leading-[2.688rem];
   }
 
   h6 {
-    @apply text-[1.75rem]
+    @apply leading-normal text-[1.5rem] lg:text-[1.75rem] lg:leading-[2.125rem];
   }
 
-  h6 {
-    @apply text-lg font-normal font-sans text-primary;
+  h6.font-hertine, .child\:font-hertine h6 {
+    @apply leading-normal text-[1rem] lg:text-[1rem] lg:leading-[1.813rem];
   }
 
   p {
-    @apply text-[1.25rem] font-normal font-sans leading-[150%];
+    @apply text-lg font-normal font-sans leading-[150%];
   }
 
   a {

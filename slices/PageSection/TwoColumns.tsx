@@ -8,11 +8,7 @@ export default function TwoColumns({ primary }: TwoColumnsProps) {
 
   return (
     <div className="flex flex-col gap-6">
-      {isFilled.richText(title) && (
-        <div className="text-primary">
-          <PrismicRichText field={title} />
-        </div>
-      )}
+      {isFilled.richText(title) && <PrismicRichText field={title} />}
       <div className="flex flex-col gap-5 sm:flex-row sm:gap-[120px]">
         {isFilled.richText(column1) && (
           <div className="basis-[100%]">

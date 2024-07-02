@@ -19,7 +19,7 @@
 }
 
 .table td, .table th {
-  @apply p-4 border-primary box-border font-sans child:text-[1rem] text-primary border-[1px];
+  @apply p-4 border-primary box-border font-sans child:text-[1rem] child:text-primary border-[1px];
 }
 
 .table td:not(:nth-child(1)) p {
@@ -27,7 +27,7 @@
 }
 
 .table td:not(:nth-child(1)), .table th:not(:nth-child(1)) {
-  @apply min-w-[100px] md:min-w-[150px] max-w-[100px] md:max-w-[150px]
+  @apply min-w-24 md:min-w-[150px] max-w-24 md:max-w-[150px]
 }
 
 .table td:first-child, .table th:first-child {

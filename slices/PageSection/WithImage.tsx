@@ -48,9 +48,7 @@ export default function WithImage({ primary, items, variation }: WithImageProps)
     <div className="flex flex-col items-center gap-16 lg:flex-row">
       {variation !== 'imageRight' && renderImage()}
       <div className="flex flex-grow flex-col gap-16 text-center lg:text-left">
-        <div className="child:text-[2rem] child:font-semibold child:text-primary lg:child:text-[3rem]">
-          {isFilled.richText(title) && <PrismicRichText field={title} />}
-        </div>
+        {isFilled.richText(title) && <PrismicRichText field={title} />}
         {isFilled.richText(description) && (
           <div style={{ color: descriptionColor || undefined }}>
             <PrismicRichText field={description} />

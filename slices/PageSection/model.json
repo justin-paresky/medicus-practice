@@ -116,6 +116,15 @@
             "label": "Filter Placeholder",
             "placeholder": ""
           }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
         }
       },
       "items": {
@@ -287,6 +296,15 @@
             "label": "Filter Placeholder",
             "placeholder": ""
           }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {
@@ -451,6 +469,15 @@
             "label": "Filter Placeholder",
             "placeholder": ""
           }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {
@@ -588,6 +615,15 @@
               "card_grid"
             ]
           }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {}
@@ -707,6 +743,15 @@
               "card_slider"
             ]
           }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {}
@@ -742,6 +787,15 @@
           "config": {
             "label": "Background Color",
             "placeholder": ""
+          }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
           }
         }
       },
@@ -808,6 +862,15 @@
             "label": "Form ID",
             "placeholder": ""
           }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {}
@@ -867,6 +930,15 @@
           "config": {
             "label": "Background Color",
             "placeholder": ""
+          }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
           }
         }
       },
@@ -983,6 +1055,15 @@
           "config": {
             "label": "Filter Placeholder",
             "placeholder": ""
+          }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
           }
         }
       },
@@ -1115,6 +1196,15 @@
             "placeholder_true": "true",
             "placeholder_false": "false"
           }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {}
@@ -1203,6 +1293,15 @@
               }
             }
           }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {}
@@ -1221,7 +1320,7 @@
             "label": "Title",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "heading2,heading3,heading4,heading5,heading6,strong,em"
+            "single": "heading3,heading4,heading5,heading6,strong,heading2"
           }
         },
         "backgroundImage": {
@@ -1244,7 +1343,7 @@
                   "label": "Title",
                   "placeholder": "",
                   "allowTargetBlank": true,
-                  "single": "heading3"
+                  "single": "heading6"
                 }
               },
               "description": {
@@ -1257,6 +1356,15 @@
                 }
               }
             }
+          }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
           }
         }
       },

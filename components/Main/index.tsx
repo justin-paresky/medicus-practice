@@ -9,7 +9,6 @@ import Button from '../Button';
 import { createClient } from '@/prismicio';
 import { GlobalFooterDocumentData } from '@/prismicio-types';
 import GlobalHeader from '@/components/GlobalHeader';
-import ResponsiveContainer from '@/components/ResponsiveContainer';
 
 export default async function Main({ children }: { children: React.ReactNode }) {
   const client = createClient();
@@ -24,8 +23,8 @@ export default async function Main({ children }: { children: React.ReactNode }) 
         ctas={headerData.ctas as GroupField}
         homeLink={headerData.homeLink as LinkField}
       />
-      <div className="pt-[3.5rem] lg:pt-[88px]">
-        <ResponsiveContainer>{children}</ResponsiveContainer>
+      <div className="flex flex-col justify-start gap-6 pt-[3.5rem] child:w-full md:gap-16 lg:pt-[88px]">
+        {children}
       </div>
       <GlobalFooter
         slices={footerData.slices as GlobalFooterDocumentData['slices']}

@@ -141,6 +141,10 @@
 				"__TYPE__": "FieldContent",
 				"value": "#7257d7",
 				"type": "Color"
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": false
 			}
 		},
 		"items": [
@@ -281,6 +285,10 @@
 				"__TYPE__": "FieldContent",
 				"value": "#da1c3b",
 				"type": "Color"
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": false
 			}
 		},
 		"items": [
@@ -390,6 +398,10 @@
 				"__TYPE__": "FieldContent",
 				"value": "#30d410",
 				"type": "Color"
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": false
 			}
 		},
 		"items": [
@@ -773,6 +785,10 @@
 					"__TYPE__": "DocumentLink",
 					"id": "our_services_cards"
 				}
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": [
@@ -841,6 +857,10 @@
 				"__TYPE__": "FieldContent",
 				"type": "Color",
 				"value": "#FBF4E0"
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": [
@@ -860,6 +880,10 @@
 					"__TYPE__": "DocumentLink",
 					"id": "location_photos"
 				}
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": false
 			}
 		},
 		"items": [
@@ -936,6 +960,10 @@
 				"__TYPE__": "FieldContent",
 				"value": "flag",
 				"type": "Text"
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": [
@@ -1016,6 +1044,10 @@
 				"__TYPE__": "FieldContent",
 				"value": "#ba7d87",
 				"type": "Color"
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": [
@@ -1113,6 +1145,10 @@
 				"__TYPE__": "FieldContent",
 				"value": "#106248",
 				"type": "Color"
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": [
@@ -1272,6 +1308,10 @@
 			"imageRounded": {
 				"__TYPE__": "BooleanContent",
 				"value": false
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": false
 			}
 		},
 		"items": [
@@ -1370,6 +1410,10 @@
 						]
 					}
 				]
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": [
@@ -1387,9 +1431,9 @@
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
-						"type": "heading2",
+						"type": "heading3",
 						"content": {
-							"text": "Religious"
+							"text": "Judge"
 						}
 					}
 				]
@@ -1429,9 +1473,9 @@
 									"__TYPE__": "StructuredTextContent",
 									"value": [
 										{
-											"type": "heading3",
+											"type": "heading6",
 											"content": {
-												"text": "Anywhere"
+												"text": "Citizen"
 											}
 										}
 									]
@@ -1454,6 +1498,10 @@
 						]
 					}
 				]
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": false
 			}
 		},
 		"items": [

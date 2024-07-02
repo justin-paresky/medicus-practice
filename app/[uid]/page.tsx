@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { isFilled } from '@prismicio/client';
-import { PrismicRichText, SliceZone } from '@prismicio/react';
+import { SliceZone } from '@prismicio/react';
 
 import { components } from '@/slices';
 import { createClient } from '@/prismicio';
@@ -16,11 +15,6 @@ export default async function Page({ params }: { params: Params }) {
 
   return (
     <>
-      {isFilled.richText(page.data.text) && (
-        <div className="px-[50px] md:px-[100px]">
-          <PrismicRichText field={page.data.text} />
-        </div>
-      )}
       <SliceZone slices={page.data.slices} components={components} />
     </>
   );

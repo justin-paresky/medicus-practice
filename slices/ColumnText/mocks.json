@@ -71,6 +71,10 @@
 				"__TYPE__": "FieldContent",
 				"value": "55",
 				"type": "Number"
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": []

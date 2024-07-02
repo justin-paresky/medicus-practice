@@ -86,6 +86,10 @@
 						}
 					}
 				]
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": false
 			}
 		},
 		"items": [
@@ -239,6 +243,10 @@
 						}
 					}
 				]
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": false
 			}
 		},
 		"items": [
@@ -364,6 +372,10 @@
 						}
 					}
 				]
+			},
+			"fullWidth": {
+				"__TYPE__": "BooleanContent",
+				"value": false
 			}
 		},
 		"items": [

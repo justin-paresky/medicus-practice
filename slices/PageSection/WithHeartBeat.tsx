@@ -10,13 +10,7 @@ interface TextSectionProps {
 }
 
 const Title = ({ title }: { title: RichTextField }) => {
-  return (
-    isFilled.richText(title) && (
-      <div className="child:font-serif child:text-2xl child:font-semibold child:text-primary">
-        <PrismicRichText field={title} />
-      </div>
-    )
-  );
+  return isFilled.richText(title) && <PrismicRichText field={title} />;
 };
 
 const Description = ({ description }: { description: RichTextField }) => {
@@ -32,11 +26,7 @@ const Description = ({ description }: { description: RichTextField }) => {
 const TextSection = ({ title, description }: TextSectionProps) => {
   return (
     <div className="flex flex-col items-center justify-between">
-      {isFilled.richText(title) && (
-        <div className="child:font-serif child:text-2xl child:font-semibold child:text-primary">
-          <PrismicRichText field={title} />
-        </div>
-      )}
+      {isFilled.richText(title) && <PrismicRichText field={title} />}
       {isFilled.richText(description) && (
         <div className="max-w-[275px] text-center child:font-sans child:text-sm child:font-normal child:text-primary">
           <PrismicRichText field={description} />
@@ -59,7 +49,7 @@ export default function WithHeartBeat({ primary }: WithHeartBeatProps) {
       }
     >
       <div className="flex h-[100%] w-[100%] flex-col justify-start gap-8 text-center md:justify-between">
-        <div className="child:font-hertine child:text-2xl child:font-thin child:text-primary lg:child:text-6xl">
+        <div className="child:font-hertine">
           <PrismicRichText field={title} />
         </div>
         <div className="hidden h-[450px] flex-row justify-evenly gap-5 md:flex">

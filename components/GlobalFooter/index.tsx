@@ -11,7 +11,7 @@ export default function GlobalFooter({ copywrite, image, slices }: GlobalFooterD
   return (
     <div className="bg-primary">
       <ResponsiveContainer>
-        <div className="relative flex flex-col justify-between gap-8 px-[40px] py-[50px] lg:flex-row lg:px-[80px] lg:py-[100px]">
+        <div className="p-ps relative flex flex-col justify-between gap-8 lg:flex-row">
           <div className="flex flex-col justify-between font-sans text-sm text-white">
             {isFilled.image(image) && <PrismicNextImage field={image} className="max-w-[380px]" />}
             {isFilled.keyText(copywrite) && copywrite}

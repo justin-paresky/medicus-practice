@@ -18,7 +18,7 @@
             "label": "Title",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "heading3,heading4,heading5,heading6"
+            "single": "heading2"
           }
         },
         "subtitle": {
@@ -62,6 +62,15 @@
                 }
               }
             }
+          }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
           }
         }
       },

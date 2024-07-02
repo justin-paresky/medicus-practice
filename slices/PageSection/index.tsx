@@ -23,8 +23,13 @@ export type PageSectionProps = SliceComponentProps<Content.PageSectionSlice>;
  * Component for "PageSection" Slices.
  */
 const PageSection = ({ slice }: PageSectionProps): JSX.Element => {
+  const {
+    variation,
+    slice_type,
+    primary: { fullWidth },
+  } = slice;
   const renderContent = () => {
-    switch (slice.variation) {
+    switch (variation) {
       case 'default':
       case 'imageRight':
       case 'largeImage':
@@ -53,17 +58,15 @@ const PageSection = ({ slice }: PageSectionProps): JSX.Element => {
   };
 
   const backgroundColor =
-    slice.variation !== 'withText' &&
-    slice.variation !== 'withDivider' &&
-    slice.variation !== 'withHeartBeat' &&
+    variation !== 'withText' &&
+    variation !== 'withDivider' &&
+    variation !== 'withHeartBeat' &&
     isFilled.color(slice.primary.backgroundColor)
       ? slice.primary.backgroundColor
       : undefined;
 
   const backgroundImage =
-    slice.variation !== 'withDivider' &&
-    slice.variation !== 'withHeartBeat' &&
-    isFilled.image(slice.primary.backgroundImage)
+    variation !== 'withDivider' && variation !== 'withHeartBeat' && isFilled.image(slice.primary.backgroundImage)
       ? `url("${slice.primary.backgroundImage.url}")`
       : undefined;
 
@@ -71,8 +74,9 @@ const PageSection = ({ slice }: PageSectionProps): JSX.Element => {
     <PageSectionContainer
       backgroundColor={backgroundColor}
       backgroundImage={backgroundImage}
-      data-slice-type={slice.slice_type}
-      data-slice-variation={slice.variation}
+      data-slice-type={slice_type}
+      data-slice-variation={variation}
+      fullWidth={fullWidth}
     >
       {renderContent()}
     </PageSectionContainer>

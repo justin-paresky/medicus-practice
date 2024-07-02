@@ -60,6 +60,15 @@
             ],
             "default_value": "btn-secondary"
           }
+        },
+        "fullWidth": {
+          "type": "Boolean",
+          "config": {
+            "label": "Full Width",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {

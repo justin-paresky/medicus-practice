@@ -9,6 +9,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Button from '@/components/Button';
 import Carousel from '@/components/Carousel';
 import Tabs, { TabProps } from '@/components/Tabs';
+import ResponsiveContainer from '@/components/ResponsiveContainer';
 
 /**
  * Props for `PhotoCarousel`.
@@ -19,7 +20,12 @@ export type PhotoCarouselProps = SliceComponentProps<Content.PhotoCarouselSlice>
  * Component for "PhotoCarousel" Slices.
  */
 const PhotoCarousel = ({ slice }: PhotoCarouselProps): JSX.Element => {
-  const tabs = uniqBy(slice.primary.tabs, 'tabId');
+  const {
+    primary: { tabs: _tabs, fullWidth },
+    slice_type,
+    variation,
+  } = slice;
+  const tabs = uniqBy(_tabs, 'tabId');
 
   const [selectedTab, setSelectedTab] = useState<TabProps>({
     title: tabs[0].tabTitle,
@@ -37,46 +43,44 @@ const PhotoCarousel = ({ slice }: PhotoCarouselProps): JSX.Element => {
   };
 
   return (
-    <section
-      data-slice-type={slice.slice_type}
-      data-slice-variation={slice.variation}
-      className="mt-[-64px] flex flex-col items-center"
-    >
-      <Tabs
-        onClick={handleTabClick}
-        selectedTab={selectedTab}
-        tabs={tabs.map((tab) => ({ id: tab.tabId as string, title: tab.tabTitle as string }))}
-      />
-      <Carousel currentSlide={selectedPhoto} onSelect={(idx) => setSelectedPhoto(idx)}>
-        {selectedPhotos.map((photo) => {
-          return (
-            <div
-              key={uuidv4()}
-              className="h-full min-h-[480px] w-full bg-cover bg-center bg-no-repeat"
-              style={{
-                backgroundImage: `url("${photo.image.url}")`,
-              }}
-            />
-          );
-        })}
-      </Carousel>
-      <div className="flex flex-col items-center justify-center pt-6 text-center">
-        {isFilled.richText(selectedPhotoData.description) && (
-          <div className="w-[50%] child:text-primary">
-            <PrismicRichText field={selectedPhotos[selectedPhoto].description} />
-          </div>
-        )}
-        {isFilled.link(selectedPhotoData.linkUrl) && isFilled.keyText(selectedPhotoData.linkLabel) && (
-          <div className="pt-6">
-            <Button
-              className="kt-6"
-              label={selectedPhotoData.linkLabel}
-              link={selectedPhotoData.linkUrl}
-              variation="link-primary"
-            />
-          </div>
-        )}
-      </div>
+    <section data-slice-type={slice_type} data-slice-variation={variation}>
+      <ResponsiveContainer fullWidth={fullWidth} className="mt-[-24px] flex flex-col items-center lg:mt-[-64px]">
+        <Tabs
+          onClick={handleTabClick}
+          selectedTab={selectedTab}
+          tabs={tabs.map((tab) => ({ id: tab.tabId as string, title: tab.tabTitle as string }))}
+        />
+        <Carousel currentSlide={selectedPhoto} onSelect={(idx) => setSelectedPhoto(idx)}>
+          {selectedPhotos.map((photo) => {
+            return (
+              <div
+                key={uuidv4()}
+                className="h-full min-h-[480px] w-full bg-cover bg-center bg-no-repeat"
+                style={{
+                  backgroundImage: `url("${photo.image.url}")`,
+                }}
+              />
+            );
+          })}
+        </Carousel>
+        <div className="flex flex-col items-center justify-center pt-6 text-center">
+          {isFilled.richText(selectedPhotoData.description) && (
+            <div className="w-[50%] child:text-primary">
+              <PrismicRichText field={selectedPhotos[selectedPhoto].description} />
+            </div>
+          )}
+          {isFilled.link(selectedPhotoData.linkUrl) && isFilled.keyText(selectedPhotoData.linkLabel) && (
+            <div className="pt-6">
+              <Button
+                className="kt-6"
+                label={selectedPhotoData.linkLabel}
+                link={selectedPhotoData.linkUrl}
+                variation="link-primary"
+              />
+            </div>
+          )}
+        </div>
+      </ResponsiveContainer>
     </section>
   );
 };
