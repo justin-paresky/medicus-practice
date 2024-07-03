@@ -23,7 +23,7 @@ const PillGrid = ({ slice }: PillGridProps): JSX.Element => {
     <section data-slice-type={slice_type} data-slice-variation={variation}>
       <ResponsiveContainer
         fullWidth={fullWidth}
-        className="grid grid-cols-2 grid-rows-2 gap-4 bg-cover bg-no-repeat px-5 lg:grid-cols-4 lg:grid-rows-1 lg:px-[50px]"
+        className="grid grid-cols-1 gap-4 bg-cover bg-no-repeat px-5 lg:grid-cols-2 lg:grid-rows-2 lg:px-[50px] xl:grid-cols-4 xl:grid-rows-1"
       >
         {pills.map((pill) => {
           return <Pill key={uuidv4()} {...pill} />;

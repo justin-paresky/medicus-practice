@@ -7,21 +7,22 @@ import FooterBlockItem from './FooterBlockItem';
 /**
  * Props for `FooterBlock`.
  */
-export type FooterBlockProps = SliceComponentProps<Content.FooterBlockSlice>;
+export type FooterBlockProps = SliceComponentProps<Content.FooterBlockSlice> & { isFirst?: boolean };
 
 /**
  * Component for "FooterBlock" Slices.
  */
-const FooterBlock = ({ slice }: FooterBlockProps): JSX.Element => {
+const FooterBlock = ({ slice, isFirst }: FooterBlockProps): JSX.Element => {
   const { primary, items } = slice;
+
   return (
     <div className="flex flex-col">
       {isFilled.richText(primary.title) && (
-        <div className="mb-6 font-serif font-semibold capitalize text-white">
+        <div className="mb-6 hidden font-semibold capitalize child:font-sans child:text-xl child:text-white lg:block">
           <PrismicRichText field={primary.title} />
         </div>
       )}
-      <div className="flex flex-col gap-2">
+      <div className={`${isFirst ? 'grid-cols-2' : 'grid-cols-1'} grid gap-2 lg:flex lg:flex-col`}>
         {items.map((item) => {
           return <FooterBlockItem key={uuidv4()} {...item} />;
         })}
