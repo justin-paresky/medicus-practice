@@ -37,7 +37,7 @@ const ColumnText = ({ slice }: ColumnTextProps): JSX.Element => {
             '--columnsSmall': `repeat(${columns.length}, minmax(0, 1fr))`,
           } as React.CSSProperties
         }
-        className="grid grid-cols-1 grid-rows-[var(--columnsSmall)] gap-[72px] md:grid-cols-[var(--columnsMedium)] md:grid-rows-2 lg:grid-cols-[var(--columnsLarge)] lg:grid-rows-1"
+        className="grid grid-cols-1 grid-rows-[var(--columnsSmall)] gap-[72px] px-4 md:grid-cols-[var(--columnsMedium)] md:grid-rows-2 lg:grid-cols-[var(--columnsLarge)] lg:grid-rows-1 lg:px-24"
       >
         {columns.map((column) => {
           const { icon, title, description } = column;

@@ -1,9 +1,11 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { SliceZone } from '@prismicio/react';
+import { SliceZone, PrismicRichText } from '@prismicio/react';
+import { isFilled } from '@prismicio/client';
 
 import { components } from '@/slices';
 import { createClient } from '@/prismicio';
+import ResponsiveContainer from '@/components/ResponsiveContainer';
 
 interface Params {
   uid: string;
@@ -15,6 +17,16 @@ export default async function Page({ params }: { params: Params }) {
 
   return (
     <>
+      {isFilled.richText(page.data.text) && (
+        <ResponsiveContainer className="p-ps">
+          <PrismicRichText
+            components={{
+              paragraph: ({ children }) => <p className="mb-6">{children}</p>,
+            }}
+            field={page.data.text}
+          />
+        </ResponsiveContainer>
+      )}
       <SliceZone slices={page.data.slices} components={components} />
     </>
   );
