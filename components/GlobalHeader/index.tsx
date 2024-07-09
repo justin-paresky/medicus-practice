@@ -1,3 +1,4 @@
+/* eslint-disable no-process-env */
 /* eslint-disable @shopify/jsx-no-hardcoded-content */
 /* eslint-disable no-unused-vars */
 'use client';
@@ -37,7 +38,7 @@ export default function GlobalHeader({ logo, ctas, homeLink }: GlobalHeaderProps
         strategy="afterInteractive"
         src="https://cdn.weglot.com/weglot.min.js"
         onLoad={() => {
-          window.Weglot.initialize({ api_key: 'wg_7bfdd08e6499182187bcb3e6908a64564', cache: true });
+          window.Weglot.initialize({ api_key: process.env.NEXT_PUBLIC_WEGLOT, cache: true });
         }}
       />
       <ResponsiveContainer>
