@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "pmneo.tsimporter",
+        "bradlc.vscode-tailwindcss",
+        "SimonSiefke.svg-preview",
+        "esbenp.prettier-vscode",
+        "unifiedjs.vscode-mdx",
+        "dbaeumer.vscode-eslint"
+    ]
+}
